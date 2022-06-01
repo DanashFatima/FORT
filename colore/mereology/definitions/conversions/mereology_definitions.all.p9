@@ -1,0 +1,14 @@
+formulas(sos).
+(all x all y  (ppart(x,y) <-> (part(x,y) & -(part(y,x))))).
+(all x all y  (overlaps(x,y) <-> (exists z  (part(z,x) & part(z,y))))).
+(all x all y  (disjoint(x,y) <-> -(overlaps(x,y)))).
+(all x all y  (underlaps(x,y) <-> (exists z  (part(x,z) & part(y,z))))).
+(all x  (atomic_part(x) <-> (all y  (part(y,x) -> =(y,x))))).
+(all x all y all z  (sum(x,y,z) <-> (all w  (overlaps(w,z) <-> (overlaps(w,x) | overlaps(w,y)))))).
+(all x all y all z  (prod(x,y,z) <-> (all w  (part(w,z) <-> (part(w,x) | part(w,y)))))).
+(all x all z  (comp(x,z) <-> (all y  (part(y,z) <-> -(overlaps(y,x)))))).
+(all x  (gunky(x) <-> (all y  (part(y,x) -> (exists z  ppart(z,y)))))).
+(all x  part(x,x)).
+(all x all y  ((part(x,y) & part(y,x)) -> =(x,y))).
+(all x all y all z  ((part(x,y) & part(y,z)) -> part(x,z))).
+end_of_list.
