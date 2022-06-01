@@ -1,0 +1,20 @@
+/*******************************************************************************
+ * FORT 2022 Axiomatization, generated in May 2022
+ * An initial implementation.
+ * This work is not licensed yet.
+ * Author: 
+ *    Fatima DANASH - fatme.danash@univ-grenoble-alpes.fr
+ *******************************************************************************/
+ 
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/existing.clif
+
+(cl-comment 'existing relation is asymmetric')
+(cl-comment 'Identifier: FORT_')
+(forall (x t)
+	(if	(existing x t)
+		(not (existing t x) )
+	)
+)
+
+
+)
