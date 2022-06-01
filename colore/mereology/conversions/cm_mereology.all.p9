@@ -1,0 +1,9 @@
+formulas(sos).
+(all x all y  (overlaps(x,y) -> (exists z  (all v  (part(v,z) <-> (part(v,x) & part(v,y))))))).
+(all x all y  (overlaps(x,y) <-> (exists z  (part(z,x) & part(z,y))))).
+(all x  part(x,x)).
+(all x all y  ((part(x,y) & part(y,x)) -> =(x,y))).
+(all x all y all z  ((part(x,y) & part(y,z)) -> part(x,z))).
+(all x all y  (underlaps(x,y) -> (exists z  (all v  (overlaps(v,z) <-> (overlaps(v,x) | overlaps(v,y))))))).
+(all x all y  (underlaps(x,y) <-> (exists z  (part(x,z) & part(y,z))))).
+end_of_list.
