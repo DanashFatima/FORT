@@ -20,9 +20,7 @@
 	(if	(L x y)
 		(L y y)))
 
-)
-
 (forall (x)
-	(iff	(R x) (L x x))
+	(iff	(R x) (L x x)))
 
 )
