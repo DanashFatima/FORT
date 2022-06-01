@@ -1,0 +1,18 @@
+formulas(sos).
+(all x all y all z  ((part(x,y) & L(z,y)) -> PL(z,x))).
+(all x all y all z  ((TP(x,y) & L(z,y)) -> TPL(z,x))).
+(all x all y all z  ((IP(x,y) & L(z,y)) -> IPL(z,x))).
+(all x  (region(x) <-> L(x,x))).
+(all x all y  (PL(x,y) <-> (exists z  (part(z,x) & L(z,y))))).
+(all x all y  (WL(x,y) <-> (exists z  (part(z,y) & L(x,z))))).
+(all x all y  (GL(x,y) <-> (exists z exists w  (part(z,x) & part(w,y) & L(z,w))))).
+(all x all y  (UL(x,y) <-> (exists z  (part(y,z) & L(x,z))))).
+(all x all y  (proper_location(x,y) <-> (L(x,y) & -(L(y,x))))).
+(all x all y  (TPL(x,y) <-> (exists z  (TP(z,x) & L(z,y))))).
+(all x all y  (IPL(x,y) <-> (exists z  (IP(z,x) & L(z,y))))).
+(all x all y all z  ((L(x,y) & L(x,z)) -> =(y,z))).
+(all x all y  (L(x,y) -> L(y,y))).
+(all x  (R(x) <-> L(x,x))).
+(all x all y all z all w  ((part(x,y) & L(x,z) & L(y,w)) -> part(z,w))).
+(all x all y all z all w  ((C(x,y) & L(x,z) & L(y,w)) -> C(z,w))).
+end_of_list.
