@@ -1,0 +1,5 @@
+formulas(sos).
+(all x all y all z  ((L(x,y) & L(x,z)) -> =(y,z))).
+(all x all y  (L(x,y) -> L(y,y))).
+(all x  (R(x) <-> L(x,x))).
+end_of_list.
