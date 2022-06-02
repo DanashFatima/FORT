@@ -1,0 +1,44 @@
+/*******************************************************************************
+ * FORT 2022 Axiomatization, generated in May 2022
+ * An initial implementation.
+ * This work is not licensed yet.
+ * Author: 
+ *    Fatima DANASH - fatme.danash@univ-grenoble-alpes.fr
+ *******************************************************************************/
+ 
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/elementOf_theorems.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/elementOf_definition.clif )
+
+(cl-comment 'elementOf is strict partial order')
+
+(cl-comment 'Identifier: FORT_Pt5')
+(forall (x y z)
+        (if     (and    (elementOf x y)
+                        (elementOf y z))
+                (elementOf x z)
+		)
+)
+
+(cl-comment 'Identifier: FORT_Pt6')
+(forall (x)
+	(not (elementOf x x))
+)
+
+(cl-comment 'Identifier: FORT_Pt7')
+(forall (x y)
+        (if (elementOf x y)
+			(not (elementOf y x))
+		)
+)
+
+(cl-comment 'elementOf satisfies the weak supplmenetation axiom')
+(cl-comment 'Identifier: FORT_Pt8')
+(forall (x y)
+        (if (elementOf x y)
+			( exists (z) (and (part z y) (not(overlaps z x)) )
+			)
+		)
+)
+
+)
