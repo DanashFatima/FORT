@@ -1,0 +1,32 @@
+/*******************************************************************************
+ * FORT 2022 Axiomatization, generated in May 2022
+ * An initial implementation.
+ * This work is not licensed yet.
+ * Author: 
+ *    Fatima DANASH - fatme.danash@univ-grenoble-alpes.fr
+ *******************************************************************************/
+ 
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/componentOf_definition.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/colore/mereology/cem_mereology.clif )
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/dependence_definitions.clif )
+
+(cl-comment 'x is a component of y iff x is a part of y and y is generically existentially dependent on x')
+(cl-comment 'Identifier: FORT_Pd1')
+(forall (x y )
+	(iff	(componentOf x y)
+			(and (part x y) (GED (PHI y) (PSI x))
+ 			)
+	)
+)
+
+(cl-comment 'componentOf is a proper part of relation')
+(cl-comment 'Identifier: FORT_Pa1')
+(forall (x y)
+	(if	(componentOf x y)
+			(ppart x y)
+	)
+)
+
+)
