@@ -1,0 +1,33 @@
+/*******************************************************************************
+ * FORT 2022 Axiomatization, generated in May 2022
+ * An initial implementation.
+ * This work is not licensed yet.
+ * Author: 
+ *    Fatima DANASH - fatme.danash@univ-grenoble-alpes.fr
+ *******************************************************************************/
+
+(cl-text  https://raw.githubusercontent.com/DanashFatima/FORT/main/constitution_C.clif
+
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/elementOf_definition.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/constitution_root.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/constitution_dependence_definitions.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/constitution_dependence_theorems.clif )
+
+
+
+(cl-comment 'Identifier: FORT_Ca7')
+(forall (x y )
+	(if  (constitutes x y)
+		 (GCD (PSI x) (PHI y) )
+	)
+)
+
+(cl-comment 'Identifier: FORT_Ca8')
+(forall (x y)
+	(if  (constitutes x y)
+		 (forall (z) (if (part z x) (elementOf z x) ) )
+	)
+)
+
+)
