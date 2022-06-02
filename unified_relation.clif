@@ -1,0 +1,32 @@
+/*******************************************************************************
+ * FORT 2022 Axiomatization, generated in May 2022
+ * An initial implementation.
+ * This work is not licensed yet.
+ * Author: 
+ *    Fatima DANASH - fatme.danash@univ-grenoble-alpes.fr
+ *******************************************************************************/
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/unified_relation.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/unified_entity_definition.clif)
+
+
+(cl-comment 'Identifier: FORT_Ra1')
+(forall (x)
+	(if (U (R x x))
+	    (forall (a b)
+			(if (R a b) (and (R a a) (R b b) ) )
+		)
+	)
+)
+
+(cl-comment 'Identifier: FORT_Ra2')
+(forall (x)
+	(if (U (R x x))
+	    (forall (a b)
+			(if (R a b) (R b a) )
+		)
+	)
+)
+
+)
