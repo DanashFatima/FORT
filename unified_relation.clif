@@ -8,16 +8,25 @@
 
 (cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/unified_relation.clif
 
-(cl-comment 'Identifier: FORT_Ra1')
-(forall (a b)
-	(if (R a b) (and (R a a) (R b b) ) )
-)
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/unified_entity_definition.clif )
 
+
+(cl-comment 'Identifier: FORT_Ra1')
+(forall (x)
+	(if (U (R x x))
+	    (forall (a b)
+			(if (R a b) (and (R a a) (R b b) ) )
+		)
+	)
+)
 
 (cl-comment 'Identifier: FORT_Ra2')
-(forall (a b)
-	(if (R a b) (R b a) )
+(forall (x)
+	(if (U (R x x))
+	    (forall (a b)
+			(if (R a b) (R b a) )
+		)
+	)
 )
-
 
 )
