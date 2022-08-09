@@ -1,0 +1,3 @@
+formulas(sos).
+(all x  OWLClass(x)).
+end_of_list.

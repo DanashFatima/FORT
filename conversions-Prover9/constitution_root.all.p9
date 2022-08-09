@@ -1,0 +1,11 @@
+formulas(sos).
+(all x  -(constitutes(x,x))).
+(all x all y  (constitutes(x,y) -> -(constitutes(y,x)))).
+(all x all y all z  ((constitutes(x,y) & constitutes(y,z)) -> constitutes(x,z))).
+(all x all y  (constitutes(x,y) -> (exists t  (existing(x,t) & existing(y,t))))).
+(all x all y  ((constitutes(x,y) & part('z',y)) -> (exists w  (part(w,x) & constitutes(w,'z'))))).
+(all x  part(x,x)).
+(all x all y  ((part(x,y) & part(y,x)) -> =(x,y))).
+(all x all y all z  ((part(x,y) & part(y,z)) -> part(x,z))).
+(all x all t  (existing(x,t) -> -(existing(t,x)))).
+end_of_list.
