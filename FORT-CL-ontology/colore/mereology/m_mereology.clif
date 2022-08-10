@@ -1,0 +1,25 @@
+/*******************************************************************************
+ * FORT 2022 Axiomatization, generated in May 2022
+ * An initial implementation.
+ * This work is not licensed yet.
+ * Author: 
+ *    Fatima DANASH - fatme.danash@univ-grenoble-alpes.fr
+ *******************************************************************************/
+ 
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/m_mereology.clif
+
+(forall (x)
+	(part x x))
+
+(forall (x y)
+        (if     (and	(part x y)
+			(part y x))
+		(= x y)))
+
+(forall (x y z)
+        (if     (and    (part x y)
+                        (part y z))
+                (part x z)))
+
+)
