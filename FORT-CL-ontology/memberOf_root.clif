@@ -1,0 +1,92 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/memberOf_root.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/m_mereology.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/definitions/mereology_definitions.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/unified_relation.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/existing.clif )
+
+
+(cl-comment 'Identifier: FORT_Ma1')
+(forall (x)
+	(not (memberOf x x) )
+)
+
+(cl-comment 'Identifier: FORT_Ma2')
+(forall (x y)
+	(if (memberOf x y)
+		(not (memberOf y x) )
+	)
+)
+
+(cl-comment 'Identifier: FORT_Ma3')
+(forall (x y)
+	(if (memberOf y x)
+		(exists (t m n)
+			(and (existing x t)
+				 (not(= m n))
+				 (memberOf m x)
+				 (memberOf n x)
+			)
+		)
+	)
+)
+
+(cl-comment 'Identifier: FORT_Ma4')
+(forall (x p y)
+	(if (and (memberOf y x) (ppart p x) )
+		(exists (o) 
+			(and (memberOf o x) (overlaps o p) )
+		)
+	)
+)
+
+(cl-comment 'Identifier: FORT_Ma5')
+(forall (x y)
+	(if	(memberOf x y)
+		(and (ppart x y)
+			 (forall (m) 
+				 (if (memberOf m y) 
+					 (or (= x d) (not(overlaps m x)) )
+				 )
+			 )
+		)
+	)
+)
+
+
+(cl-comment 'Identifier: FORT_Ma6')
+(forall (x y)
+	(if (memberOf y x)
+		(forall (w) 
+			(iff (overlaps w x) 
+				 (exists (m) 
+					(and (memberOf m x) (overlaps w m) )
+				 ) 
+			)
+		)
+	)
+)
+
+
+(cl-comment 'Identifier: FORT_Ma7')
+(forall (x y)
+		(if (memberOf y x)
+			(and (U (R x x))
+				 (forall (t) (if (existing x t) (U (R x x)) ) ) 
+			)
+	)
+)
+
+
+)

@@ -1,0 +1,20 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/OWLClass.clif
+
+(cl-comment 'Using this concept all the concept names of a given ontology can refer to be an owl class')
+(forall (x)
+	(OWLClass x)
+)
+
+
+)

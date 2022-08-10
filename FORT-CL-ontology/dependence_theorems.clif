@@ -1,0 +1,32 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/dependence_theorems.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/dependence_definitions.clif)
+
+(cl-comment 'specific existential dependence is transitive')
+(cl-comment 'Identifier: FORT_Dt1')
+(forall (x y z)
+	(if 	(and (SED x y) (SED y z) )
+			(SED x z)
+	)
+)
+
+(cl-comment 'generic existential dependence is transitive')
+(cl-comment 'Identifier: FORT_Dt2')
+(forall (PSI PHI RHO)
+	(if 	(and (GED PSI PHI) (GED PHI RHO ) (not (= PSI RHO) ) )
+			(GED PSI RHO)
+	)
+)
+
+)

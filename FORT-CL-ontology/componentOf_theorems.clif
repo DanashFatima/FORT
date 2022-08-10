@@ -1,0 +1,47 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/componentOf_theorems.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/componentOf_definition.clif )
+
+(cl-comment 'componentOf is strict partial order')
+
+(cl-comment 'Identifier: FORT_Pt1')
+(forall (x y z)
+        (if     (and    (componentOf x y)
+                        (componentOf y z))
+                (componentOf x z)
+		)
+)
+
+(cl-comment 'Identifier: FORT_Pt2')
+(forall (x)
+	(not (componentOf x x))
+)
+
+(cl-comment 'Identifier: FORT_Pt3')
+(forall (x y)
+        (if (componentOf x y)
+			(not (componentOf y x))
+		)
+)
+
+(cl-comment 'componentOf satisfies the weak supplmenetation axiom')
+(cl-comment 'Identifier: FORT_Pt4')
+(forall (x y)
+        (if (componentOf x y)
+			( exists (z) (and (part z y) (not(overlaps z x)) )
+			)
+		)
+)
+
+)

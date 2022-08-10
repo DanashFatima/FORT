@@ -1,0 +1,46 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/constitution_dependence_theorems.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/constitution_dependence_definitions.clif )
+
+(cl-comment 'Identifier: FORT_Ct1')
+(forall (x y)
+	(if	(SCD x y) (SED x y) )
+)
+
+
+(cl-comment 'Identifier: FORT_Ct2')
+(forall (x y)
+	(if	(GCD (PSI x) (PHI y)) (GED (PSI x) (PHI y)) )
+)
+
+
+(cl-comment 'Identifier: FORT_Ct3')
+(forall (x y z)
+	(if (and (SCD x y) (SCD y z) ) 
+		(SCD x z)
+	)
+)
+
+
+(cl-comment 'Identifier: FORT_Ct4')
+(forall (x y z)
+	(if	(and (GCD (PSI x) (PHI y)) 
+			 (GCD (PHI y) (RHO z)) 
+			 (not (exists (z) (and (PSI z) (RHO z) ) ) )
+		)
+		(GCD (PSI x) (RHO z) )
+	)
+)
+
+)

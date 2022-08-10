@@ -1,0 +1,34 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/componentOf_definition.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/cem_mereology.clif )
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/dependence_definitions.clif )
+
+(cl-comment 'x is a component of y iff x is a part of y and y is generically existentially dependent on x')
+(cl-comment 'Identifier: FORT_Pd1')
+(forall (x y )
+	(iff	(componentOf x y)
+			(and (part x y) (GED (PSI y) (PHI x))
+ 			)
+	)
+)
+
+(cl-comment 'componentOf is a proper part of relation')
+(cl-comment 'Identifier: FORT_Pa1')
+(forall (x y)
+	(if	(componentOf x y)
+			(ppart x y)
+	)
+)
+
+)

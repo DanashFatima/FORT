@@ -1,0 +1,53 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/constitution_root.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/existing.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/m_mereology.clif )
+
+
+(cl-comment 'Identifier: FORT_Ca1')
+(forall (x)
+	(not (constitutes x x) 	)
+)
+
+(cl-comment 'Identifier: FORT_Ca2')
+(forall (x y)
+	(if (constitutes x y)
+	    (not (constitutes y x ) )
+	)
+)
+
+
+(cl-comment 'Identifier: FORT_Ca3')
+(forall (x y z)
+	(if (and (constitutes x y) (constitutes y z) )
+	    (constitutes x z)
+	)
+)
+
+
+(cl-comment 'Identifier: FORT_Ca4')
+(forall (x y)
+	(if (constitutes x y)
+	    (exists (t) (and (existing x t) (existing y t) ) )
+	)
+)
+
+(cl-comment 'Identifier: FORT_Ca5')
+(forall (x y)
+	(if (and (constitutes x y) (part z y) )
+	    (exists (w) (and (part w x) (constitutes w z) ) )
+	)
+)
+
+)

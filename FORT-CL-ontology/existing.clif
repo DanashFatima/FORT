@@ -1,0 +1,22 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/existing.clif
+
+(cl-comment 'existing relation is asymmetric')
+(cl-comment 'Identifier: FORT_')
+(forall (x t)
+	(if	(existing x t)
+		(not (existing t x) )
+	)
+)
+
+)

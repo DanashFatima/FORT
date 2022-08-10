@@ -1,0 +1,56 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/dependence_definitions.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/existing.clif)
+
+(cl-comment 'x is specifically existentially dependent on y iff at any time t  x cannot exist at t unless y exists at t and x and y are different entities and x exists at some t')
+(cl-comment 'Identifier: FORT_Dd1')
+(forall (x y)
+	(iff	(SED x y)
+			(and	( forall (t)
+						(if (existing x t)
+							(existing y t)
+						)
+					)
+					( not (= x y) )
+					( exists (t)
+						(existing x t)
+					)
+			)
+	)
+)
+
+
+(cl-comment 'x is generically existentially dependent on y iff  at any time t for every x instance of psi x cannot exist at t unless there exists some instance y of phi att and x and y are different entities and there exists time t such that there exists instance x of psi and psi and phi are disjoint')
+(cl-comment 'Identifier: FORT_Dd2')
+(forall (x y)
+	(iff	(GED (PSI x) (PHI y))
+			(and	(forall (x t)
+						(if (and (PSI x) (existing x t) )
+						   (exists (y)
+								(and (PHI y) (existing y t) )
+						   )
+						)
+					)
+					(exists (x t)
+						(and (PSI x) (existing x t))
+					)
+					(not (exists (z) (and (PSI z) (PHI z) ) )
+					)
+			)
+	)
+)
+
+
+
+)

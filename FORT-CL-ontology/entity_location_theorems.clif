@@ -1,0 +1,50 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/entity_location_theorems.clif
+
+(cl-comment 'which already imports colore_m_mereology')
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/entity_location_root.clif ) 
+
+(cl-comment 'the colore_varzi_location_root + colore_varzi_location_mt + colore_varzi_location_definitions')
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/location_varzi/location_L.clif ) 
+
+
+(cl-comment 'Identifier: FORT_ELt1')
+(forall (x y z)
+	(if (and (part x y) (EL y z) )
+		(EL x y)
+	)
+)
+
+(cl-comment 'Identifier: FORT_ELt2')
+(forall (x y z)
+	(if (and (EL x y) (part y z) )
+		(EL x y)
+	)
+)
+
+(cl-comment 'Identifier: FORT_ELt3')
+(forall (x y z)
+	(if (and (EL x y) (L y z) )
+		(WL x z)
+	)
+)
+
+(cl-comment 'Identifier: FORT_ELt4')
+(forall (x y z w)
+	(if (and (EL x y) (L x z) (L y w) )
+		(part z w)
+	)
+)
+
+
+)

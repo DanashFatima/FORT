@@ -1,0 +1,38 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/entity_location_root.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/m_mereology.clif )
+
+(cl-comment 'EL is reflexive and transitive')
+(cl-comment 'Identifier: FORT_ELa1')
+(forall (x)
+	(EL x x)
+)
+
+(cl-comment 'Identifier: FORT_ELa2')
+(forall (x y z)
+        (if     (and    (EL x y)
+                        (EL y z))
+                (EL x z)
+		)
+)
+
+(cl-comment 'if x is part of y then x has y as its entity location')
+(cl-comment 'Identifier: FORT_ELa3')
+(forall (x y)
+	(if	(part x y)
+			(EL x y)
+	)
+)
+
+)

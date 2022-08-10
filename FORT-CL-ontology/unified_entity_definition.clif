@@ -1,0 +1,26 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/unified_entity_definition.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/definitions/mereology_definitions.clif )
+
+(cl-comment 'Identifier: FORT_Rd1')
+(forall (z)
+	(iff (U (R z z)) 
+		 (and (forall (r) (if (R r r) (part r z) ) )
+			  (forall (m) (if (overlaps m z) (exists (r) (and (R r r) (overlaps m r) ) ) ))
+			  (forall (a b) (if (and (R a a) (R b b) (part a z) (part b z) ) (R a b) ) )
+		 )
+	)
+)
+
+)

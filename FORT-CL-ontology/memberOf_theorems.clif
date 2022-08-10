@@ -1,0 +1,25 @@
+/*******************************************************************************
+ * FORT CL-ontology Axiomatization, generated in May 2022
+ *
+ * Copyright (c) Université de Grenoble.
+ * The content of this file is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). 
+ * The legal text of this license can be found at https://creativecommons.org/licenses/by/4.0/legalcode . 
+ * Author: 
+ *    Fatima DANASH - fatima.k.danash@gmail.com
+ *******************************************************************************/
+
+
+(cl-text https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/memberOf_theorems.clif
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/memberOf_root.clif )
+
+
+(cl-comment 'Identifier: FORT_Mt1')
+(forall (x y w z)
+	(if 
+		(and (memberOf x y) (memberOf w z) (U (R y y)) (U (F z z)) (= R F) )
+		(= y z )
+	)
+)
+
+)
