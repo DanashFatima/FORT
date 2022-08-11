@@ -33,52 +33,53 @@ The CIF axiomatization of FORT as a group of ontology modules (micro-theories).
 
 The tree of folders and their modified files in the host directory should look like the following:
 
-*danashf/
+Host-directory/
 
-**********github/
+----------github/
 
-		      **********macleod/	##cloned from the online repository
+
+		      ----------macleod/	##cloned from the online repository
 		      
-**********FORT-CL-ontology/
+----------FORT-CL-ontology/
 
-          **********colore/
+          ----------colore/
 	  
-                    **********mereology/
+                    ----------mereology/
 		    
-                    **********mereotopology/
+                    ----------mereotopology/
 		    
-                    **********location-varzi/
+                    ----------location-varzi/
 		    
-		      **********conversions-tptp
+	  ----------conversions-tptp
 		      
-          **********conversions-p9
+          ----------conversions-p9
 	  
-          **********all_FORT_clif_files
+          ----------all_FORT_clif_files
 	  
-**********macleod/	##files in it are copied from the macleod direcoty in the github repository
+----------macleod/	##files in it are copied from the macleod direcoty in the github repository
 
-          **********logging.conf	##modified
+          ----------logging.conf	##modified
 	  
-          **********macleod_win.conf	##modified
+          ----------macleod_win.conf	##modified
 	  
-          **********symbols.conf
+          ----------symbols.conf
 	  
-**********VirtualEnvironment/
+----------VirtualEnvironment/
 
-          **********Include/
+          ----------Include/
 	  
-          **********Lib/
+          ----------Lib/
 	  
-                  **********site-Packages/
+                  ----------site-Packages/
 		  
-                        **********macleod/
+                        ----------macleod/
 			
-                              **********parsing/
+                              ----------parsing/
 			      
-                                **********parser.python	##modified
+                                     ----------parser.python	##modified
 				
-                              **********scripts/
+                              ----------scripts/
 			      
-                                **********parser.python	##modified
+                                      ----------parser.python	##modified
 				
-          **********scripts/
+          ----------scripts/
