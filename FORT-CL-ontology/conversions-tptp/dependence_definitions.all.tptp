@@ -1,0 +1,3 @@
+fof(axiom10, axiom, (! [X] : ! [Y] :  ((sed(X,Y) <=> ((! [T] :  ((existing(X,T) => existing(Y,T)))) & ~(X=Y) & (? [T] :  (existing(X,T)))))))).
+fof(axiom20, axiom, (! [X] : ! [Y] :  ((ged(psi(X),phi(Y)) <=> ((! [X] : ! [T] :  (((psi(X) & existing(X,T)) => (? [Y] :  ((phi(Y) & existing(Y,T))))))) & (? [X] : ? [T] :  ((psi(X) & existing(X,T)))) & ~(? [Z] :  ((psi(Z) & phi(Z))))))))).
+fof(axiom30, axiom, (! [X] : ! [T] :  ((existing(X,T) => ~(existing(T,X)))))).

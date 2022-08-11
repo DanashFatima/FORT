@@ -1,0 +1,26 @@
+fof(axiom10, axiom, (! [X] : ! [Y] :  ((constitutes(X,Y) => gcd(psi(X),phi(Y)))))).
+fof(axiom20, axiom, (! [X] : ! [Y] :  ((constitutes(X,Y) => (! [Z] :  ((part(Z,X) => elementof(Z,X)))))))).
+fof(axiom230, axiom, (! [X] : ! [Y] :  ((scd(X,Y) => sed(X,Y))))).
+fof(axiom240, axiom, (! [X] : ! [Y] :  ((gcd(psi(X),phi(Y)) => ged(psi(X),phi(Y)))))).
+fof(axiom250, axiom, (! [X] : ! [Y] : ! [Z] :  (((scd(X,Y) & scd(Y,Z)) => scd(X,Z))))).
+fof(axiom260, axiom, (! [X] : ! [Y] : ! [Z] :  (((gcd(psi(X),phi(Y)) & gcd(phi(Y),rho(Z)) & ~(? [Z] :  ((psi(Z) & rho(Z))))) => gcd(psi(X),rho(Z)))))).
+fof(axiom210, axiom, (! [X] : ! [Y] :  ((scd(X,Y) <=> ((? [T] :  (existing(X,T))) & (! [T] :  ((existing(X,T) => constitutes(Y,X))))))))).
+fof(axiom220, axiom, (! [X] : ! [Y] :  ((gcd(psi(X),phi(Y)) <=> (~(? [Z] :  ((psi(Z) & phi(Z)))) & (! [X] :  ((psi(X) => (? [T] :  (existing(X,T)))))) & (! [X] : ! [T] :  (((psi(X) & existing(X,T)) => (? [Y] :  ((phi(Y) & constitutes(Y,X)))))))))))).
+fof(axiom130, axiom, (! [X] : ! [Y] :  ((sed(X,Y) <=> ((! [T] :  ((existing(X,T) => existing(Y,T)))) & ~(X=Y) & (? [T] :  (existing(X,T)))))))).
+fof(axiom140, axiom, (! [X] : ! [Y] :  ((ged(psi(X),phi(Y)) <=> ((! [X] : ! [T] :  (((psi(X) & existing(X,T)) => (? [Y] :  ((phi(Y) & existing(Y,T))))))) & (? [X] : ? [T] :  ((psi(X) & existing(X,T)))) & ~(? [Z] :  ((psi(Z) & phi(Z))))))))).
+fof(axiom150, axiom, (! [X] : ! [T] :  ((existing(X,T) => ~(existing(T,X)))))).
+fof(axiom160, axiom, (! [X] :  (~(constitutes(X,X))))).
+fof(axiom170, axiom, (! [X] : ! [Y] :  ((constitutes(X,Y) => ~(constitutes(Y,X)))))).
+fof(axiom180, axiom, (! [X] : ! [Y] : ! [Z] :  (((constitutes(X,Y) & constitutes(Y,Z)) => constitutes(X,Z))))).
+fof(axiom190, axiom, (! [X] : ! [Y] :  ((constitutes(X,Y) => (? [T] :  ((existing(X,T) & existing(Y,T)))))))).
+fof(axiom200, axiom, (! [X] : ! [Y] :  (((constitutes(X,Y) & part('Z',Y)) => (? [W] :  ((part(W,X) & constitutes(W,'Z')))))))).
+fof(axiom70, axiom, (! [X] :  (part(X,X)))).
+fof(axiom80, axiom, (! [X] : ! [Y] :  (((part(X,Y) & part(Y,X)) => X=Y)))).
+fof(axiom90, axiom, (! [X] : ! [Y] : ! [Z] :  (((part(X,Y) & part(Y,Z)) => part(X,Z))))).
+fof(axiom30, axiom, (! [X] : ! [Y] :  ((elementof(X,Y) <=> (part(X,Y) & sed(Y,X)))))).
+fof(axiom40, axiom, (! [X] : ! [Y] :  ((elementof(X,Y) => ppart(X,Y))))).
+fof(axiom120, axiom, (! [X] : ! [Y] :  ((~(part(X,Y)) => (? [Z] :  ((part(Z,X) & ~(overlaps(Z,Y))))))))).
+fof(axiom60, axiom, (! [X] : ! [Y] :  ((overlaps(X,Y) <=> (? [Z] :  ((part(Z,X) & part(Z,Y)))))))).
+fof(axiom110, axiom, (! [X] : ! [Y] :  ((overlaps(X,Y) => (? [Z] :  ((! [V] :  ((part(V,Z) <=> (part(V,X) & part(V,Y))))))))))).
+fof(axiom50, axiom, (! [X] : ! [Y] :  ((underlaps(X,Y) => (? [Z] :  ((! [V] :  ((overlaps(V,Z) <=> (overlaps(V,X) | overlaps(V,Y))))))))))).
+fof(axiom100, axiom, (! [X] : ! [Y] :  ((underlaps(X,Y) <=> (? [Z] :  ((part(X,Z) & part(Y,Z)))))))).

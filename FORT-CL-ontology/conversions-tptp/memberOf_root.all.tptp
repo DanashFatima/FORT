@@ -1,0 +1,23 @@
+fof(axiom10, axiom, (! [X] :  (~(memberof(X,X))))).
+fof(axiom20, axiom, (! [X] : ! [Y] :  ((memberof(X,Y) => ~(memberof(Y,X)))))).
+fof(axiom30, axiom, (! [X] : ! [Y] :  ((memberof(Y,X) => (? [T] : ? [M] : ? [N] :  ((existing(X,T) & ~(M=N) & memberof(M,X) & memberof(N,X)))))))).
+fof(axiom40, axiom, (! [X] : ! [P] : ! [Y] :  (((memberof(Y,X) & ppart(P,X)) => (? [O] :  ((memberof(O,X) & overlaps(O,P)))))))).
+fof(axiom50, axiom, (! [X] : ! [Y] :  ((memberof(X,Y) => (ppart(X,Y) & (! [M] :  ((memberof(M,Y) => (X=d | ~(overlaps(M,X))))))))))).
+fof(axiom60, axiom, (! [X] : ! [Y] :  ((memberof(Y,X) => (! [W] :  ((overlaps(W,X) <=> (? [M] :  ((memberof(M,X) & overlaps(W,M))))))))))).
+fof(axiom70, axiom, (! [X] : ! [Y] :  ((memberof(Y,X) => (u(r(X,X)) & (! [T] :  ((existing(X,T) => u(r(X,X)))))))))).
+fof(axiom230, axiom, (! [X] : ! [T] :  ((existing(X,T) => ~(existing(T,X)))))).
+fof(axiom200, axiom, (! [X] :  ((u(r(X,X)) => (! [A] : ! [B] :  ((r(A,B) => (r(A,A) & r(B,B))))))))).
+fof(axiom210, axiom, (! [X] :  ((u(r(X,X)) => (! [A] : ! [B] :  ((r(A,B) => r(B,A)))))))).
+fof(axiom220, axiom, (! [Z] :  ((u(r(Z,Z)) <=> ((! [R] :  ((r(R,R) => part(R,Z)))) & (! [M] :  ((overlaps(M,Z) => (? [R] :  ((r(R,R) & overlaps(M,R))))))) & (! [A] : ! [B] :  (((r(A,A) & r(B,B) & part(A,Z) & part(B,Z)) => r(A,B))))))))).
+fof(axiom110, axiom, (! [X] : ! [Y] :  ((ppart(X,Y) <=> (part(X,Y) & ~(part(Y,X))))))).
+fof(axiom120, axiom, (! [X] : ! [Y] :  ((overlaps(X,Y) <=> (? [Z] :  ((part(Z,X) & part(Z,Y)))))))).
+fof(axiom130, axiom, (! [X] : ! [Y] :  ((disjoint(X,Y) <=> ~(overlaps(X,Y)))))).
+fof(axiom140, axiom, (! [X] : ! [Y] :  ((underlaps(X,Y) <=> (? [Z] :  ((part(X,Z) & part(Y,Z)))))))).
+fof(axiom150, axiom, (! [X] :  (('atomic_part'(X) <=> (! [Y] :  ((part(Y,X) => Y=X))))))).
+fof(axiom160, axiom, (! [X] : ! [Y] : ! [Z] :  ((sum(X,Y,Z) <=> (! [W] :  ((overlaps(W,Z) <=> (overlaps(W,X) | overlaps(W,Y))))))))).
+fof(axiom170, axiom, (! [X] : ! [Y] : ! [Z] :  ((prod(X,Y,Z) <=> (! [W] :  ((part(W,Z) <=> (part(W,X) | part(W,Y))))))))).
+fof(axiom180, axiom, (! [X] : ! [Z] :  ((comp(X,Z) <=> (! [Y] :  ((part(Y,Z) <=> ~(overlaps(Y,X))))))))).
+fof(axiom190, axiom, (! [X] :  ((gunky(X) <=> (! [Y] :  ((part(Y,X) => (? [Z] :  (ppart(Z,Y)))))))))).
+fof(axiom80, axiom, (! [X] :  (part(X,X)))).
+fof(axiom90, axiom, (! [X] : ! [Y] :  (((part(X,Y) & part(Y,X)) => X=Y)))).
+fof(axiom100, axiom, (! [X] : ! [Y] : ! [Z] :  (((part(X,Y) & part(Y,Z)) => part(X,Z))))).

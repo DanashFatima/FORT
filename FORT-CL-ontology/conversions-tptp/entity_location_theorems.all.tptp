@@ -1,0 +1,26 @@
+fof(axiom10, axiom, (! [X] : ! [Y] : ! [Z] :  (((part(X,Y) & el(Y,Z)) => el(X,Y))))).
+fof(axiom20, axiom, (! [X] : ! [Y] : ! [Z] :  (((el(X,Y) & part(Y,Z)) => el(X,Y))))).
+fof(axiom30, axiom, (! [X] : ! [Y] : ! [Z] :  (((el(X,Y) & l(Y,Z)) => wl(X,Z))))).
+fof(axiom40, axiom, (! [X] : ! [Y] : ! [Z] : ! [W] :  (((el(X,Y) & l(X,Z) & l(Y,W)) => part(Z,W))))).
+fof(axiom110, axiom, (! [X] : ! [Y] : ! [Z] :  (((part(X,Y) & l(Z,Y)) => pl(Z,X))))).
+fof(axiom120, axiom, (! [X] : ! [Y] : ! [Z] :  (((tp(X,Y) & l(Z,Y)) => tpl(Z,X))))).
+fof(axiom130, axiom, (! [X] : ! [Y] : ! [Z] :  (((ip(X,Y) & l(Z,Y)) => ipl(Z,X))))).
+fof(axiom190, axiom, (! [X] :  ((region(X) <=> l(X,X))))).
+fof(axiom200, axiom, (! [X] : ! [Y] :  ((pl(X,Y) <=> (? [Z] :  ((part(Z,X) & l(Z,Y)))))))).
+fof(axiom210, axiom, (! [X] : ! [Y] :  ((wl(X,Y) <=> (? [Z] :  ((part(Z,Y) & l(X,Z)))))))).
+fof(axiom220, axiom, (! [X] : ! [Y] :  ((gl(X,Y) <=> (? [Z] : ? [W] :  ((part(Z,X) & part(W,Y) & l(Z,W)))))))).
+fof(axiom230, axiom, (! [X] : ! [Y] :  ((ul(X,Y) <=> (? [Z] :  ((part(Y,Z) & l(X,Z)))))))).
+fof(axiom240, axiom, (! [X] : ! [Y] :  (('proper_location'(X,Y) <=> (l(X,Y) & ~(l(Y,X))))))).
+fof(axiom250, axiom, (! [X] : ! [Y] :  ((tpl(X,Y) <=> (? [Z] :  ((tp(Z,X) & l(Z,Y)))))))).
+fof(axiom260, axiom, (! [X] : ! [Y] :  ((ipl(X,Y) <=> (? [Z] :  ((ip(Z,X) & l(Z,Y)))))))).
+fof(axiom160, axiom, (! [X] : ! [Y] : ! [Z] :  (((l(X,Y) & l(X,Z)) => Y=Z)))).
+fof(axiom170, axiom, (! [X] : ! [Y] :  ((l(X,Y) => l(Y,Y))))).
+fof(axiom180, axiom, (! [X] :  ((r(X) <=> l(X,X))))).
+fof(axiom140, axiom, (! [X] : ! [Y] : ! [Z] : ! [W] :  (((part(X,Y) & l(X,Z) & l(Y,W)) => part(Z,W))))).
+fof(axiom150, axiom, (! [X] : ! [Y] : ! [Z] : ! [W] :  (((c(X,Y) & l(X,Z) & l(Y,W)) => c(Z,W))))).
+fof(axiom50, axiom, (! [X] :  (el(X,X)))).
+fof(axiom60, axiom, (! [X] : ! [Y] : ! [Z] :  (((el(X,Y) & el(Y,Z)) => el(X,Z))))).
+fof(axiom70, axiom, (! [X] : ! [Y] :  ((part(X,Y) => el(X,Y))))).
+fof(axiom80, axiom, (! [X] :  (part(X,X)))).
+fof(axiom90, axiom, (! [X] : ! [Y] :  (((part(X,Y) & part(Y,X)) => X=Y)))).
+fof(axiom100, axiom, (! [X] : ! [Y] : ! [Z] :  (((part(X,Y) & part(Y,Z)) => part(X,Z))))).
