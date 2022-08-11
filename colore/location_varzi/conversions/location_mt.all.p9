@@ -1,7 +1,0 @@
-formulas(sos).
-(all x all y all z all w  ((part(x,y) & L(x,z) & L(y,w)) -> part(z,w))).
-(all x all y all z all w  ((C(x,y) & L(x,z) & L(y,w)) -> C(z,w))).
-(all x all y all z  ((L(x,y) & L(x,z)) -> =(y,z))).
-(all x all y  (L(x,y) -> L(y,y))).
-(all x  (R(x) <-> L(x,x))).
-end_of_list.
