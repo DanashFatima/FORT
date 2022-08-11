@@ -1,0 +1,8 @@
+formulas(sos).
+(all x  EL(x,x)).
+(all x all y all z  ((EL(x,y) & EL(y,z)) -> EL(x,z))).
+(all x all y  (part(x,y) -> EL(x,y))).
+(all x  part(x,x)).
+(all x all y  ((part(x,y) & part(y,x)) -> =(x,y))).
+(all x all y all z  ((part(x,y) & part(y,z)) -> part(x,z))).
+end_of_list.
