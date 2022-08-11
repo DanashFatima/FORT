@@ -2,7 +2,6 @@
 The Foundational Ontological Relations Theory.
 ------------------------------------------------
 
-## About FORT-repository:
 
 *FORT-CL-ontology: 
 
