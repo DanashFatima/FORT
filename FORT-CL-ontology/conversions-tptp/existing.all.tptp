@@ -1,0 +1,1 @@
+fof(axiom10, axiom, (! [X] : ! [T] :  ((existing(X,T) => ~(existing(T,X)))))).
