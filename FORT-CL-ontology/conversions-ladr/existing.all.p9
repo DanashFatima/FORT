@@ -1,0 +1,3 @@
+formulas(sos).
+(all x all t  (existing(x,t) -> -(existing(t,x)))).
+end_of_list.
