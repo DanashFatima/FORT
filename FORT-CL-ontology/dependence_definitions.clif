@@ -33,7 +33,7 @@
 
 (cl-comment 'x is generically existentially dependent on y iff  at any time t for every x instance of psi x cannot exist at t unless there exists some instance y of phi att and x and y are different entities and there exists time t such that there exists instance x of psi and psi and phi are disjoint')
 (cl-comment 'Identifier: FORT_Dd2')
-(forall (x y)
+(forall (PSI PHI)
 	(iff	(GED (PSI x) (PHI y))
 			(and	(forall (x t)
 						(if (and (PSI x) (existing x t) )
