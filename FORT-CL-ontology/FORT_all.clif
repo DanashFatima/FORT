@@ -31,7 +31,7 @@
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/entity_location_root.clif )
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/entity_location_theorems.clif )
 
-(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/unified_relation.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/unified_entity_definition.clif )
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/memberOf_root.clif )
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/memberOf_theorems.clif )
 
