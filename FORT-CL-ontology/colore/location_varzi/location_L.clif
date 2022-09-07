@@ -14,19 +14,70 @@
 
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/location_varzi/definitions/location_definitions.clif )
 
+
+(cl-comment 'Identifier: FORT_Lt7')
 (forall (x y z)
 	(if	(and	(part x y)
 			(L z y))
 		(PL z x)))
 
+(cl-comment 'Identifier: FORT_Lt9')
 (forall (x y z)
 	(if	(and	(TP x y)
 			(L z y))
 		(TPL z x)))
 
+
+(cl-comment 'Identifier: FORT_Lt8')
 (forall (x y z)
 	(if	(and	(IP x y)
 			(L z y))
 		(IPL z x)))
+
+
+
+(cl-comment 'Identifier: FORT_Lt4')
+(forall (x y z)
+	(if	(and (P x y) (L y z))
+		(WL x z))
+)
+
+(cl-comment 'Identifier: FORT_Lt5')
+(forall (x y z)
+	(if	(and (TP x y) (L y z))
+		(TWL x z))
+)
+
+
+(cl-comment 'Identifier: FORT_Lt6')
+(forall (x y z)
+	(if	(and (IP x y) (L y z))
+		(IWL x z))
+)
+
+
+(cl-comment 'Identifier: FORT_Lt10')
+(forall (x y z)
+	(if	(and (PL x y) (P z y))
+		(PL x z))
+)
+
+
+(cl-comment 'Identifier: FORT_Lt11')
+(forall (x y z)
+	(if	(and (IPL x y) (P z y))
+		(IPL x z))
+)
+
+
+(cl-comment 'Identifier: FORT_Lt12')
+(forall (x y z)
+	(if	(and (TPL x y) (P z y))
+		(TPL x z))
+)
+
+
+
+
 
 )
