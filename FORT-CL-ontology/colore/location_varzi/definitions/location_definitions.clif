@@ -13,10 +13,9 @@
 
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/location_varzi/location_root.clif )
 
-(forall (x)
-	(iff	(region x)
-		(L x x)))
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereotopology/definitions/mereotopology_definitions.clif )
 
+(cl-comment 'Identifier: FORT_Ld1')
 (forall (x y)
 	(iff	(PL x y)
 		(exists (z)
@@ -25,11 +24,14 @@
 
 (cl-comment 'equivalent to (EL x y)')
 
+
+(cl-comment 'Identifier: FORT_Ld4')
 (forall (x y)
 	(iff	(WL x y)
 		(exists (z)
 			(and	(part z y)
 				(L x z)))))
+
 
 (forall (x y)
 	(iff	(GL x y)
@@ -49,16 +51,49 @@
 		(and	(L x y)
 			(not (L y x)))))
 
+
+
+
+(cl-comment 'Identifier: FORT_Ld2')
 (forall (x y)
 	(iff	(TPL x y)
 		(exists (z)
 			(and	(TP z x)
 				(L z y)))))
 
+
+(cl-comment 'Identifier: FORT_Ld3')
 (forall (x y)
 	(iff	(IPL x y)
 		(exists (z)
 			(and	(IP z x)
 				(L z y)))))
+				
+		
+(cl-comment 'Identifier: FORT_Ld5')		
+(forall (x y)
+	(iff	(TWL x y)
+			(exists (z)
+				(and (TP z y) (L x z) )
+			)
+	)
+)
+
+(cl-comment 'Identifier: FORT_Ld6')
+(forall (x y)
+	(iff	(IWL x y)
+			(exists (z)
+				(and (IP z y) (L x z) )
+			)
+	)
+)
+
+(cl-comment 'Identifier: FORT_La3')
+(forall (x y)
+	(if		(L x y)
+			(and (PL x y) (WL x y) )
+	)
+)
+
 
 )
