@@ -39,6 +39,30 @@
 	(forall (y)
 		(if	(part y x)
 			(= y x)))))
+			
+(forall (x y)
+(iff	(overcross x y) 
+		(and (overlaps x y) (not (part x y)) )
+)
+)
+
+(forall (x y)
+(iff	(undercross x y) 
+		(and (underlaps x y) (not (part y x)) )
+)
+)
+
+(forall (x y)
+(iff	(partialoverlap x y) 
+		(and (overcross x y) (overcross y x) )
+)
+)
+
+(forall (x y)
+(iff	(partialunderlap x y) 
+		(and (undercross x y) (undercross y x) )
+)
+)
 
 (forall (x y z)
 	(iff	(sum x y z)
