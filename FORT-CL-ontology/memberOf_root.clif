@@ -13,7 +13,7 @@
 
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/m_mereology.clif )
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/definitions/mereology_definitions.clif )
-(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/unified_relation.clif )
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/unified_entity_definition.clif )
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/existing.clif )
 
 
@@ -81,10 +81,12 @@
 
 (cl-comment 'Identifier: FORT_Ma7')
 (forall (x y)
-		(if (memberOf y x)
+	(if (memberOf y x)
+		(exists (R)
 			(and (U (R x x))
 				 (forall (t) (if (existing x t) (U (R x x)) ) ) 
 			)
+		)	
 	)
 )
 
