@@ -12,6 +12,10 @@
 
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/location_varzi/location_root.clif )
 
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereology/m_mereology.clif )
+
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/mereotopology/connection.clif )
+
 (forall (x y z w)
 	(if	(and	(part x y)
 			(L x z)
