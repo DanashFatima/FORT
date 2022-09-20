@@ -23,9 +23,9 @@
 
 (cl-comment 'generic existential dependence is transitive')
 (cl-comment 'Identifier: FORT_Dt2')
-(forall (PSI PHI RHO)
-	(if 	(and (GED PSI PHI) (GED PHI RHO ) (not (= PSI RHO) ) )
-			(GED PSI RHO)
+(forall (PSI PHI RHO x y z)
+	(if 	(and (GED (PSI x) (PHI y) ) (GED (PHI y) (RHO z) ) (not (exists (m) (and (PSI m) (RHO m) ) ) ) )
+			(GED (PSI x) (RHO z) )
 	)
 )
 
