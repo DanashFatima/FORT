@@ -20,9 +20,9 @@
 
 
 (cl-comment 'Identifier: FORT_Ca7')
-(forall (x y )
-	(if  (constitutes x y)
-		 (GCD (PSI x) (PHI y) )
+(forall (x y PSI PHI)
+	(if  (and (PSI x) (PHI y) (constitutes x y) )
+		 (  GCD (PSI x) (PHI y) )
 	)
 )
 
