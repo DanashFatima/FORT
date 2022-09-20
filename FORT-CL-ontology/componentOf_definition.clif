@@ -16,9 +16,9 @@
 
 (cl-comment 'x is a component of y iff x is a part of y and y is generically existentially dependent on x')
 (cl-comment 'Identifier: FORT_Pd1')
-(forall (x y )
+(forall (x y)
 	(iff	(componentOf x y)
-			(and (part x y) (GED (PSI y) (PHI x))
+			(and (part x y)  (exists (PSI PHI) (and (PSI y) (PHI x) (GED (PSI y) (PHI x)) ) )
  			)
 	)
 )
