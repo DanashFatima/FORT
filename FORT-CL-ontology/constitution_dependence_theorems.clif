@@ -20,7 +20,7 @@
 
 
 (cl-comment 'Identifier: FORT_Ct2')
-(forall (x y)
+(forall (PSI PHI x y)
 	(if	(GCD (PSI x) (PHI y)) (GED (PSI x) (PHI y)) )
 )
 
@@ -34,9 +34,9 @@
 
 
 (cl-comment 'Identifier: FORT_Ct4')
-(forall (x y z)
-	(if	(and (GCD (PSI x) (PHI y)) 
-			 (GCD (PHI y) (RHO z)) 
+(forall (PSI PHI RHO x y z)
+	(if	(and (GCD (PSI x) (PHI y))
+			 (GCD (PHI y) (RHO z))
 			 (not (exists (z) (and (PSI z) (RHO z) ) ) )
 		)
 		(GCD (PSI x) (RHO z) )
