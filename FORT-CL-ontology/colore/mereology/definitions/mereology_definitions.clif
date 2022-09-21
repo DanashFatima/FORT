@@ -64,6 +64,14 @@
 )
 )
 
+(cl-comment 'Proper Overlap')
+(forall (x y)
+	(iff	(PO x y)
+		(and	(overlaps x y)
+			(not (part x y))
+			(not (part y x))))
+)
+
 (forall (x y z)
 	(iff	(sum x y z)
 		(forall (w)
