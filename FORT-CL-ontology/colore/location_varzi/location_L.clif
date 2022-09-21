@@ -76,7 +76,25 @@
 		(TPL x z))
 )
 
+(cl-comment 'Identifier: FORT_Lt13')
+(forall (x y z)
+	(if	(and (WL x y) (P z x))
+		(WL z y))
+)
 
+
+(cl-comment 'Identifier: FORT_Lt14')
+(forall (x y z)
+	(if	(and (IWL x y) (IP z x))
+		(IWL z y))
+)
+
+
+(cl-comment 'Identifier: FORT_Lt15')
+(forall (x y z)
+	(if	(and (TPL x y) (P z y))
+		(TPL x z))
+)
 
 
 
