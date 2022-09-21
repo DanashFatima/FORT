@@ -1,0 +1,1046 @@
+%{
+
+constants:     op_C, op_DC, op_E, op_EC, op_EL, op_F, op_GCD, op_GED,
+                         op_GL, op_IO, op_IP, op_IPL, op_IPP, op_IU, op_IWL, op_L, op_NTPP,
+                         op_P, op_PL, op_PO, op_R, op_S, op_SC, op_SCD, op_SED, op_TO,
+                         op_TP, op_TPL, op_TPP, op_TU, op_TWL, op_U, op_UL, op_WL,
+                         op_atomic_part, op_boundary_connected, op_comp, op_componentOf,
+                         op_constitutes, op_d, op_disjoint, op_elementOf, op_exxisting,
+                         op_internal_enclosure, op_memberOf, op_overcross, op_overlaps,
+                         op_part, op_partialoverlap, op_partialunderlap, op_ppart, op_prod,
+                         op_proper_enclosure, op_proper_internal_enclosure,
+                         op_proper_location, op_proper_superposition,
+                         op_proper_tangential_enclosure, op_sum, op_superposition,
+                         op_tangential_enclosure, op_undercross, op_underlaps, op_z
+
+predicates:     pred_rel: ($i * $i) > $o,
+                           pred_rel: ($i * $i * $i) > $o,
+                           pred_rel: ($i * $i * $i * $i) > $o,
+                           sort_individual: $i > $o
+
+functors:     op_fun: ($i * $i) > $i,
+                       op_fun: ($i * $i * $i) > $i
+
+}%
+fof(sign_non_empty_sort_individual, axiom,
+         ? [VAR_X]: (sort_individual(VAR_X))).
+fof(sign_op_C, axiom, sort_individual(op_C)).
+fof(sign_op_DC, axiom, sort_individual(op_DC)).
+fof(sign_op_E, axiom, sort_individual(op_E)).
+fof(sign_op_EC, axiom, sort_individual(op_EC)).
+fof(sign_op_EL, axiom, sort_individual(op_EL)).
+fof(sign_op_F, axiom, sort_individual(op_F)).
+fof(sign_op_GCD, axiom, sort_individual(op_GCD)).
+fof(sign_op_GED, axiom, sort_individual(op_GED)).
+fof(sign_op_GL, axiom, sort_individual(op_GL)).
+fof(sign_op_IO, axiom, sort_individual(op_IO)).
+fof(sign_op_IP, axiom, sort_individual(op_IP)).
+fof(sign_op_IPL, axiom, sort_individual(op_IPL)).
+fof(sign_op_IPP, axiom, sort_individual(op_IPP)).
+fof(sign_op_IU, axiom, sort_individual(op_IU)).
+fof(sign_op_IWL, axiom, sort_individual(op_IWL)).
+fof(sign_op_L, axiom, sort_individual(op_L)).
+fof(sign_op_NTPP, axiom, sort_individual(op_NTPP)).
+fof(sign_op_P, axiom, sort_individual(op_P)).
+fof(sign_op_PL, axiom, sort_individual(op_PL)).
+fof(sign_op_PO, axiom, sort_individual(op_PO)).
+fof(sign_op_R, axiom, sort_individual(op_R)).
+fof(sign_op_S, axiom, sort_individual(op_S)).
+fof(sign_op_SC, axiom, sort_individual(op_SC)).
+fof(sign_op_SCD, axiom, sort_individual(op_SCD)).
+fof(sign_op_SED, axiom, sort_individual(op_SED)).
+fof(sign_op_TO, axiom, sort_individual(op_TO)).
+fof(sign_op_TP, axiom, sort_individual(op_TP)).
+fof(sign_op_TPL, axiom, sort_individual(op_TPL)).
+fof(sign_op_TPP, axiom, sort_individual(op_TPP)).
+fof(sign_op_TU, axiom, sort_individual(op_TU)).
+fof(sign_op_TWL, axiom, sort_individual(op_TWL)).
+fof(sign_op_U, axiom, sort_individual(op_U)).
+fof(sign_op_UL, axiom, sort_individual(op_UL)).
+fof(sign_op_WL, axiom, sort_individual(op_WL)).
+fof(sign_op_atomic_part, axiom, sort_individual(op_atomic_part)).
+fof(sign_op_boundary_connected, axiom,
+         sort_individual(op_boundary_connected)).
+fof(sign_op_comp, axiom, sort_individual(op_comp)).
+fof(sign_op_componentOf, axiom, sort_individual(op_componentOf)).
+fof(sign_op_constitutes, axiom, sort_individual(op_constitutes)).
+fof(sign_op_d, axiom, sort_individual(op_d)).
+fof(sign_op_disjoint, axiom, sort_individual(op_disjoint)).
+fof(sign_op_elementOf, axiom, sort_individual(op_elementOf)).
+fof(sign_op_exxisting, axiom, sort_individual(op_exxisting)).
+fof(sign_op_2_fun, axiom,
+         ! [VAR_X1, VAR_X2]:
+         ((sort_individual(VAR_X1) & sort_individual(VAR_X2)) =>
+           sort_individual(op_fun(VAR_X1, VAR_X2)))).
+fof(sign_op_1_fun, axiom,
+         ! [VAR_X1, VAR_X2, VAR_X3]:
+         ((sort_individual(VAR_X1) & sort_individual(VAR_X2) &
+             sort_individual(VAR_X3))
+           => sort_individual(op_fun(VAR_X1, VAR_X2, VAR_X3)))).
+fof(sign_op_internal_enclosure, axiom,
+         sort_individual(op_internal_enclosure)).
+fof(sign_op_memberOf, axiom, sort_individual(op_memberOf)).
+fof(sign_op_overcross, axiom, sort_individual(op_overcross)).
+fof(sign_op_overlaps, axiom, sort_individual(op_overlaps)).
+fof(sign_op_part, axiom, sort_individual(op_part)).
+fof(sign_op_partialoverlap, axiom,
+         sort_individual(op_partialoverlap)).
+fof(sign_op_partialunderlap, axiom,
+         sort_individual(op_partialunderlap)).
+fof(sign_op_ppart, axiom, sort_individual(op_ppart)).
+fof(sign_op_prod, axiom, sort_individual(op_prod)).
+fof(sign_op_proper_enclosure, axiom,
+         sort_individual(op_proper_enclosure)).
+fof(sign_op_proper_internal_enclosure, axiom,
+         sort_individual(op_proper_internal_enclosure)).
+fof(sign_op_proper_location, axiom,
+         sort_individual(op_proper_location)).
+fof(sign_op_proper_superposition, axiom,
+         sort_individual(op_proper_superposition)).
+fof(sign_op_proper_tangential_enclosure, axiom,
+         sort_individual(op_proper_tangential_enclosure)).
+fof(sign_op_sum, axiom, sort_individual(op_sum)).
+fof(sign_op_superposition, axiom,
+         sort_individual(op_superposition)).
+fof(sign_op_tangential_enclosure, axiom,
+         sort_individual(op_tangential_enclosure)).
+fof(sign_op_undercross, axiom, sort_individual(op_undercross)).
+fof(sign_op_underlaps, axiom, sort_individual(op_underlaps)).
+fof(sign_op_z, axiom, sort_individual(op_z)).
+fof(ax_PRIME_MINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUS_mereology_PRIME,
+         axiom,
+         (! [VAR_xx]:
+           ((sort_individual(VAR_xx)) => pred_rel(op_part, VAR_xx, VAR_xx))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             ((pred_rel(op_part, VAR_xx, VAR_y) &
+                 pred_rel(op_part, VAR_y, VAR_xx))
+               => VAR_xx = VAR_y))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_part, VAR_xx, VAR_y) &
+                 pred_rel(op_part, VAR_y, VAR_z))
+               => pred_rel(op_part, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_overlaps, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_part, VAR_z, VAR_xx) &
+                   pred_rel(op_part, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_underlaps, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_part, VAR_xx, VAR_z) &
+                   pred_rel(op_part, VAR_y, VAR_z)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_underlaps, VAR_xx, VAR_y) =>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 ! [VAR_v]:
+                 ((sort_individual(VAR_v)) =>
+                   (pred_rel(op_overlaps, VAR_v, VAR_z) <=>
+                     (pred_rel(op_overlaps, VAR_v, VAR_xx) |
+                       pred_rel(op_overlaps, VAR_v, VAR_y)))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_overlaps, VAR_xx, VAR_y) =>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 ! [VAR_v]:
+                 ((sort_individual(VAR_v)) =>
+                   (pred_rel(op_part, VAR_v, VAR_z) <=>
+                     (pred_rel(op_part, VAR_v, VAR_xx) &
+                       pred_rel(op_part, VAR_v, VAR_y)))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (~ pred_rel(op_part, VAR_xx, VAR_y) =>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_part, VAR_z, VAR_xx) &
+                   ~ pred_rel(op_overlaps, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_ppart, VAR_xx, VAR_y) <=>
+               (pred_rel(op_part, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_part, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_overcross, VAR_xx, VAR_y) <=>
+               (pred_rel(op_overlaps, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_part, VAR_xx, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_undercross, VAR_xx, VAR_y) <=>
+               (pred_rel(op_underlaps, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_part, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_partialoverlap, VAR_xx, VAR_y) <=>
+               (pred_rel(op_overcross, VAR_xx, VAR_y) &
+                 pred_rel(op_overcross, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_partialunderlap, VAR_xx, VAR_y) <=>
+               (pred_rel(op_undercross, VAR_xx, VAR_y) &
+                 pred_rel(op_undercross, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_PO, VAR_xx, VAR_y) <=>
+               (pred_rel(op_overlaps, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_part, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_part, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             (pred_rel(op_sum, VAR_xx, VAR_y, VAR_z) <=>
+               ! [VAR_w]:
+               ((sort_individual(VAR_w)) =>
+                 (pred_rel(op_overlaps, VAR_w, VAR_z) <=>
+                   (pred_rel(op_overlaps, VAR_w, VAR_xx) |
+                     pred_rel(op_overlaps, VAR_w, VAR_y))))))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             (pred_rel(op_prod, VAR_xx, VAR_y, VAR_z) <=>
+               ! [VAR_w]:
+               ((sort_individual(VAR_w)) =>
+                 (pred_rel(op_part, VAR_w, VAR_z) <=>
+                   (pred_rel(op_part, VAR_w, VAR_xx) |
+                     pred_rel(op_part, VAR_w, VAR_y))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_disjoint, VAR_xx, VAR_y) <=>
+               ~ pred_rel(op_overlaps, VAR_xx, VAR_y)))
+           &
+           ! [VAR_xx]:
+           ((sort_individual(VAR_xx)) =>
+             (pred_rel(op_atomic_part, VAR_xx) <=>
+               ! [VAR_y]:
+               ((sort_individual(VAR_y)) =>
+                 (pred_rel(op_part, VAR_y, VAR_xx) => VAR_y = VAR_xx))))
+           &
+           ! [VAR_xx, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_z)) =>
+             (pred_rel(op_comp, VAR_xx, VAR_z) <=>
+               ! [VAR_y]:
+               ((sort_individual(VAR_y)) =>
+                 (pred_rel(op_part, VAR_y, VAR_z) <=>
+                   ~ pred_rel(op_overlaps, VAR_y, VAR_xx)))))
+           &
+           ! [VAR_xx]:
+           ((sort_individual(VAR_xx)) => pred_rel(op_C, VAR_xx, VAR_xx))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_C, VAR_xx, VAR_y) =>
+               pred_rel(op_C, VAR_y, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_part, VAR_xx, VAR_y) =>
+               ! [VAR_z]:
+               ((sort_individual(VAR_z)) =>
+                 (pred_rel(op_C, VAR_xx, VAR_z) =>
+                   pred_rel(op_C, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_DC, VAR_xx, VAR_y) <=>
+               ~ pred_rel(op_C, VAR_xx, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_EC, VAR_xx, VAR_y) <=>
+               (pred_rel(op_C, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_overlaps, VAR_xx, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_IP, VAR_xx, VAR_y) <=>
+               (pred_rel(op_part, VAR_xx, VAR_y) &
+                 ! [VAR_z]:
+                 ((sort_individual(VAR_z)) =>
+                   (pred_rel(op_C, VAR_z, VAR_xx) =>
+                     pred_rel(op_overlaps, VAR_z, VAR_y))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_TP, VAR_xx, VAR_y) <=>
+               (pred_rel(op_part, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_IP, VAR_xx, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_IO, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_IP, VAR_z, VAR_xx) &
+                   pred_rel(op_IP, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_TO, VAR_xx, VAR_y) <=>
+               (pred_rel(op_overlaps, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_IO, VAR_xx, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_IU, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_IP, VAR_xx, VAR_z) &
+                   pred_rel(op_IP, VAR_y, VAR_z)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_TU, VAR_xx, VAR_y) <=>
+               (pred_rel(op_underlaps, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_IU, VAR_xx, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_IPP, VAR_xx, VAR_y) <=>
+               (pred_rel(op_IP, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_IP, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_TPP, VAR_xx, VAR_y) <=>
+               (pred_rel(op_part, VAR_xx, VAR_y) & ~ VAR_xx = VAR_y &
+                 ? [VAR_z]:
+                 ((sort_individual(VAR_z)) &
+                   (pred_rel(op_EC, VAR_z, VAR_xx) &
+                     pred_rel(op_EC, VAR_z, VAR_y))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_NTPP, VAR_xx, VAR_y) <=>
+               (pred_rel(op_part, VAR_xx, VAR_y) & ~ VAR_xx = VAR_y &
+                 ~
+                 ? [VAR_z]:
+                 ((sort_individual(VAR_z)) &
+                   (pred_rel(op_EC, VAR_z, VAR_xx) &
+                     pred_rel(op_EC, VAR_z, VAR_y))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_E, VAR_xx, VAR_y) <=>
+               ! [VAR_z]:
+               ((sort_individual(VAR_z)) =>
+                 (pred_rel(op_C, VAR_z, VAR_xx) =>
+                   pred_rel(op_C, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_superposition, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_E, VAR_z, VAR_xx) &
+                   pred_rel(op_E, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_proper_superposition, VAR_xx, VAR_y) <=>
+               (pred_rel(op_superposition, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_E, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_E, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_boundary_connected, VAR_xx, VAR_y) <=>
+               (pred_rel(op_C, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_superposition, VAR_xx, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_internal_enclosure, VAR_xx, VAR_y) <=>
+               ! [VAR_z]:
+               ((sort_individual(VAR_z)) =>
+                 (pred_rel(op_C, VAR_z, VAR_xx) =>
+                   pred_rel(op_S, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_proper_internal_enclosure, VAR_xx, VAR_y) <=>
+               (pred_rel(op_internal_enclosure, VAR_xx, VAR_y) &
+                 pred_rel(op_E, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_E, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_tangential_enclosure, VAR_xx, VAR_y) <=>
+               (pred_rel(op_E, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_internal_enclosure, VAR_xx, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_proper_tangential_enclosure, VAR_xx, VAR_y) <=>
+               (pred_rel(op_tangential_enclosure, VAR_xx, VAR_y) &
+                 pred_rel(op_proper_enclosure, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx]:
+           ((sort_individual(VAR_xx)) =>
+             (pred_rel(op_SC, VAR_xx) <=>
+               ! [VAR_y, VAR_z]:
+               ((sort_individual(VAR_y) & sort_individual(VAR_z)) =>
+                 (! [VAR_w]:
+                   ((sort_individual(VAR_w)) =>
+                     (pred_rel(op_overlaps, VAR_w, VAR_xx) <=>
+                       (pred_rel(op_overlaps, VAR_w, VAR_y) |
+                         pred_rel(op_overlaps, VAR_w, VAR_z))))
+                   => pred_rel(op_C, VAR_y, VAR_z)))))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_L, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_xx, VAR_z))
+               => VAR_y = VAR_z))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_L, VAR_xx, VAR_y) => pred_rel(op_L, VAR_y, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_PL, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_part, VAR_z, VAR_xx) &
+                   pred_rel(op_L, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_TPL, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_TP, VAR_z, VAR_xx) &
+                   pred_rel(op_L, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_IPL, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_IP, VAR_z, VAR_xx) &
+                   pred_rel(op_L, VAR_z, VAR_y)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_WL, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_part, VAR_z, VAR_y) &
+                   pred_rel(op_L, VAR_xx, VAR_z)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_TWL, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_TP, VAR_z, VAR_y) &
+                   pred_rel(op_L, VAR_xx, VAR_z)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_IWL, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_IP, VAR_z, VAR_y) &
+                   pred_rel(op_L, VAR_xx, VAR_z)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_L, VAR_xx, VAR_y) =>
+               (pred_rel(op_PL, VAR_xx, VAR_y) &
+                 pred_rel(op_WL, VAR_xx, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_GL, VAR_xx, VAR_y) <=>
+               ? [VAR_z, VAR_w]:
+               ((sort_individual(VAR_z) & sort_individual(VAR_w)) &
+                 (pred_rel(op_part, VAR_z, VAR_xx) &
+                   pred_rel(op_part, VAR_w, VAR_y) &
+                   pred_rel(op_L, VAR_z, VAR_w)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_UL, VAR_xx, VAR_y) <=>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_part, VAR_y, VAR_z) &
+                   pred_rel(op_L, VAR_xx, VAR_z)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_proper_location, VAR_xx, VAR_y) <=>
+               (pred_rel(op_L, VAR_xx, VAR_y) &
+                 ~ pred_rel(op_L, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y, VAR_z, VAR_w]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z) & sort_individual(VAR_w))
+             =>
+             ((pred_rel(op_part, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_xx, VAR_z) & pred_rel(op_L, VAR_y, VAR_w))
+               => pred_rel(op_part, VAR_z, VAR_w)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z, VAR_w]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z) & sort_individual(VAR_w))
+             =>
+             ((pred_rel(op_C, VAR_xx, VAR_y) & pred_rel(op_L, VAR_xx, VAR_z)
+                 & pred_rel(op_L, VAR_y, VAR_w))
+               => pred_rel(op_C, VAR_z, VAR_w)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_P, VAR_xx, VAR_y) & pred_rel(op_L, VAR_y, VAR_z))
+               => pred_rel(op_WL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_TP, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_y, VAR_z))
+               => pred_rel(op_TWL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_IP, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_y, VAR_z))
+               => pred_rel(op_IWL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_part, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_z, VAR_y))
+               => pred_rel(op_PL, VAR_z, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_TP, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_z, VAR_y))
+               => pred_rel(op_TPL, VAR_z, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_IP, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_z, VAR_y))
+               => pred_rel(op_IPL, VAR_z, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_PL, VAR_xx, VAR_y) &
+                 pred_rel(op_P, VAR_z, VAR_y))
+               => pred_rel(op_PL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_IPL, VAR_xx, VAR_y) &
+                 pred_rel(op_P, VAR_z, VAR_y))
+               => pred_rel(op_IPL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_TPL, VAR_xx, VAR_y) &
+                 pred_rel(op_P, VAR_z, VAR_y))
+               => pred_rel(op_TPL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_WL, VAR_xx, VAR_y) &
+                 pred_rel(op_P, VAR_z, VAR_xx))
+               => pred_rel(op_WL, VAR_z, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_IWL, VAR_xx, VAR_y) &
+                 pred_rel(op_IP, VAR_z, VAR_xx))
+               => pred_rel(op_IWL, VAR_z, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_TPL, VAR_xx, VAR_y) &
+                 pred_rel(op_P, VAR_z, VAR_y))
+               => pred_rel(op_TPL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_t]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_t)) =>
+             (pred_rel(op_exxisting, VAR_xx, VAR_t) =>
+               ~ pred_rel(op_exxisting, VAR_t, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_SED, VAR_xx, VAR_y) <=>
+               (! [VAR_t]:
+                 ((sort_individual(VAR_t)) =>
+                   (pred_rel(op_exxisting, VAR_xx, VAR_t) =>
+                     pred_rel(op_exxisting, VAR_y, VAR_t)))
+                 & ~ VAR_xx = VAR_y &
+                 ? [VAR_t]:
+                 ((sort_individual(VAR_t)) &
+                   pred_rel(op_exxisting, VAR_xx, VAR_t)))))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_SED, VAR_xx, VAR_y) &
+                 pred_rel(op_SED, VAR_y, VAR_z))
+               => pred_rel(op_SED, VAR_xx, VAR_z)))
+           &
+           ! [VAR_PSI, VAR_PHI, VAR_xx, VAR_y]:
+           ((sort_individual(VAR_PSI) & sort_individual(VAR_PHI) &
+               sort_individual(VAR_xx) & sort_individual(VAR_y))
+             =>
+             (pred_rel(op_GED, op_fun(VAR_PSI, VAR_xx), op_fun(VAR_PHI, VAR_y))
+               <=>
+               (! [VAR_xx, VAR_t]:
+                 ((sort_individual(VAR_xx) & sort_individual(VAR_t)) =>
+                   ((pred_rel(VAR_PSI, VAR_xx) &
+                       pred_rel(op_exxisting, VAR_xx, VAR_t))
+                     =>
+                     ? [VAR_y]:
+                     ((sort_individual(VAR_y)) &
+                       (pred_rel(VAR_PHI, VAR_y) &
+                         pred_rel(op_exxisting, VAR_y, VAR_t)))))
+                 &
+                 ? [VAR_xx, VAR_t]:
+                 ((sort_individual(VAR_xx) & sort_individual(VAR_t)) &
+                   (pred_rel(VAR_PSI, VAR_xx) &
+                     pred_rel(op_exxisting, VAR_xx, VAR_t)))
+                 &
+                 ~
+                 ? [VAR_z]:
+                 ((sort_individual(VAR_z)) &
+                   (pred_rel(VAR_PSI, VAR_z) & pred_rel(VAR_PHI, VAR_z))))))
+           &
+           ! [VAR_PSI, VAR_PHI, VAR_RHO, VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_PSI) & sort_individual(VAR_PHI) &
+               sort_individual(VAR_RHO) & sort_individual(VAR_xx) &
+               sort_individual(VAR_y) & sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_GED, op_fun(VAR_PSI, VAR_xx), op_fun(VAR_PHI, VAR_y))
+                 &
+                 pred_rel(op_GED, op_fun(VAR_PHI, VAR_y), op_fun(VAR_RHO, VAR_z))
+                 &
+                 ~
+                 ? [VAR_m]:
+                 ((sort_individual(VAR_m)) &
+                   (pred_rel(VAR_PSI, VAR_m) & pred_rel(VAR_RHO, VAR_m))))
+               =>
+               pred_rel(op_GED, op_fun(VAR_PSI, VAR_xx), op_fun(VAR_RHO, VAR_z))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_componentOf, VAR_xx, VAR_y) <=>
+               (pred_rel(op_part, VAR_xx, VAR_y) &
+                 ? [VAR_PSI, VAR_PHI]:
+                 ((sort_individual(VAR_PSI) & sort_individual(VAR_PHI)) &
+                   (pred_rel(VAR_PSI, VAR_y) & pred_rel(VAR_PHI, VAR_xx) &
+                     pred_rel(op_GED, op_fun(VAR_PSI, VAR_y),
+                                       op_fun(VAR_PHI, VAR_xx)))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_componentOf, VAR_xx, VAR_y) =>
+               pred_rel(op_ppart, VAR_xx, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_componentOf, VAR_xx, VAR_y) &
+                 pred_rel(op_componentOf, VAR_y, VAR_z))
+               => pred_rel(op_componentOf, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx]:
+           ((sort_individual(VAR_xx)) =>
+             ~ pred_rel(op_componentOf, VAR_xx, VAR_xx))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_componentOf, VAR_xx, VAR_y) =>
+               ~ pred_rel(op_componentOf, VAR_y, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_componentOf, VAR_xx, VAR_y) =>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_part, VAR_z, VAR_y) &
+                   ~ pred_rel(op_overlaps, VAR_z, VAR_xx)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_elementOf, VAR_xx, VAR_y) <=>
+               (pred_rel(op_part, VAR_xx, VAR_y) &
+                 pred_rel(op_SED, VAR_y, VAR_xx))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_elementOf, VAR_xx, VAR_y) =>
+               pred_rel(op_ppart, VAR_xx, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_elementOf, VAR_xx, VAR_y) &
+                 pred_rel(op_elementOf, VAR_y, VAR_z))
+               => pred_rel(op_elementOf, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx]:
+           ((sort_individual(VAR_xx)) =>
+             ~ pred_rel(op_elementOf, VAR_xx, VAR_xx))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_elementOf, VAR_xx, VAR_y) =>
+               ~ pred_rel(op_elementOf, VAR_y, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_elementOf, VAR_xx, VAR_y) =>
+               ? [VAR_z]:
+               ((sort_individual(VAR_z)) &
+                 (pred_rel(op_part, VAR_z, VAR_y) &
+                   ~ pred_rel(op_overlaps, VAR_z, VAR_xx)))))
+           &
+           ! [VAR_xx]:
+           ((sort_individual(VAR_xx)) => pred_rel(op_EL, VAR_xx, VAR_xx))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_EL, VAR_xx, VAR_y) &
+                 pred_rel(op_EL, VAR_y, VAR_z))
+               => pred_rel(op_EL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_part, VAR_xx, VAR_y) =>
+               pred_rel(op_EL, VAR_xx, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_part, VAR_xx, VAR_y) &
+                 pred_rel(op_EL, VAR_y, VAR_z))
+               => pred_rel(op_EL, VAR_xx, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_EL, VAR_xx, VAR_y) &
+                 pred_rel(op_part, VAR_y, VAR_z))
+               => pred_rel(op_EL, VAR_xx, VAR_y)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_EL, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_y, VAR_z))
+               => pred_rel(op_WL, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z, VAR_w]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z) & sort_individual(VAR_w))
+             =>
+             ((pred_rel(op_EL, VAR_xx, VAR_y) &
+                 pred_rel(op_L, VAR_xx, VAR_z) & pred_rel(op_L, VAR_y, VAR_w))
+               => pred_rel(op_part, VAR_z, VAR_w)))
+           &
+           ! [VAR_z]:
+           ((sort_individual(VAR_z)) =>
+             ? [VAR_R]:
+             ((sort_individual(VAR_R)) &
+               (pred_rel(op_U, op_fun(VAR_R, VAR_z, VAR_z)) <=>
+                 (! [VAR_r]:
+                   ((sort_individual(VAR_r)) =>
+                     (pred_rel(VAR_R, VAR_r, VAR_r) =>
+                       pred_rel(op_part, VAR_r, VAR_z)))
+                   &
+                   ! [VAR_m]:
+                   ((sort_individual(VAR_m)) =>
+                     (pred_rel(op_overlaps, VAR_m, VAR_z) =>
+                       ? [VAR_r]:
+                       ((sort_individual(VAR_r)) &
+                         (pred_rel(VAR_R, VAR_r, VAR_r) &
+                           pred_rel(op_overlaps, VAR_m, VAR_r)))))
+                   &
+                   ! [VAR_a, VAR_b]:
+                   ((sort_individual(VAR_a) & sort_individual(VAR_b)) =>
+                     ((pred_rel(VAR_R, VAR_a, VAR_a) & pred_rel(VAR_R, VAR_b, VAR_b)
+                         & pred_rel(op_part, VAR_a, VAR_z) &
+                         pred_rel(op_part, VAR_b, VAR_z))
+                       => pred_rel(VAR_R, VAR_a, VAR_b)))
+                   &
+                   ! [VAR_a, VAR_b]:
+                   ((sort_individual(VAR_a) & sort_individual(VAR_b)) =>
+                     (pred_rel(VAR_R, VAR_a, VAR_b) =>
+                       (pred_rel(VAR_R, VAR_a, VAR_a) &
+                         pred_rel(VAR_R, VAR_b, VAR_b))))
+                   &
+                   ! [VAR_a, VAR_b]:
+                   ((sort_individual(VAR_a) & sort_individual(VAR_b)) =>
+                     (pred_rel(VAR_R, VAR_a, VAR_b) =>
+                       pred_rel(VAR_R, VAR_b, VAR_a)))))))
+           &
+           ! [VAR_xx]:
+           ((sort_individual(VAR_xx)) =>
+             ~ pred_rel(op_memberOf, VAR_xx, VAR_xx))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_memberOf, VAR_xx, VAR_y) =>
+               ~ pred_rel(op_memberOf, VAR_y, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_memberOf, VAR_y, VAR_xx) =>
+               ? [VAR_t, VAR_m, VAR_n]:
+               ((sort_individual(VAR_t) & sort_individual(VAR_m) &
+                   sort_individual(VAR_n))
+                 &
+                 (pred_rel(op_exxisting, VAR_xx, VAR_t) & ~ VAR_m = VAR_n &
+                   pred_rel(op_memberOf, VAR_m, VAR_xx) &
+                   pred_rel(op_memberOf, VAR_n, VAR_xx)))))
+           &
+           ! [VAR_xx, VAR_p, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_p) &
+               sort_individual(VAR_y))
+             =>
+             ((pred_rel(op_memberOf, VAR_y, VAR_xx) &
+                 pred_rel(op_ppart, VAR_p, VAR_xx))
+               =>
+               ? [VAR_o]:
+               ((sort_individual(VAR_o)) &
+                 (pred_rel(op_memberOf, VAR_o, VAR_xx) &
+                   pred_rel(op_overlaps, VAR_o, VAR_p)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_memberOf, VAR_xx, VAR_y) =>
+               (pred_rel(op_ppart, VAR_xx, VAR_y) &
+                 ! [VAR_m]:
+                 ((sort_individual(VAR_m)) =>
+                   (pred_rel(op_memberOf, VAR_m, VAR_y) =>
+                     (VAR_xx = op_d | ~ pred_rel(op_overlaps, VAR_m, VAR_xx)))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_memberOf, VAR_y, VAR_xx) =>
+               ! [VAR_w]:
+               ((sort_individual(VAR_w)) =>
+                 (pred_rel(op_overlaps, VAR_w, VAR_xx) <=>
+                   ? [VAR_m]:
+                   ((sort_individual(VAR_m)) &
+                     (pred_rel(op_memberOf, VAR_m, VAR_xx) &
+                       pred_rel(op_overlaps, VAR_w, VAR_m)))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_memberOf, VAR_y, VAR_xx) =>
+               ? [VAR_R]:
+               ((sort_individual(VAR_R)) &
+                 (pred_rel(op_U, op_fun(VAR_R, VAR_xx, VAR_xx)) &
+                   ! [VAR_t]:
+                   ((sort_individual(VAR_t)) =>
+                     (pred_rel(op_exxisting, VAR_xx, VAR_t) =>
+                       pred_rel(op_U, op_fun(VAR_R, VAR_xx, VAR_xx))))))))
+           &
+           ! [VAR_xx, VAR_y, VAR_w, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_w) & sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_memberOf, VAR_xx, VAR_y) &
+                 pred_rel(op_memberOf, VAR_w, VAR_z) &
+                 pred_rel(op_U, op_fun(op_R, VAR_y, VAR_y)) &
+                 pred_rel(op_U, op_fun(op_F, VAR_z, VAR_z)) & op_R = op_F)
+               => VAR_y = VAR_z))
+           &
+           ! [VAR_xx]:
+           ((sort_individual(VAR_xx)) =>
+             ~ pred_rel(op_constitutes, VAR_xx, VAR_xx))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_constitutes, VAR_xx, VAR_y) =>
+               ~ pred_rel(op_constitutes, VAR_y, VAR_xx)))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_constitutes, VAR_xx, VAR_y) &
+                 pred_rel(op_constitutes, VAR_y, VAR_z))
+               => pred_rel(op_constitutes, VAR_xx, VAR_z)))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_constitutes, VAR_xx, VAR_y) =>
+               ? [VAR_t]:
+               ((sort_individual(VAR_t)) &
+                 (pred_rel(op_exxisting, VAR_xx, VAR_t) &
+                   pred_rel(op_exxisting, VAR_y, VAR_t)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             ((pred_rel(op_constitutes, VAR_xx, VAR_y) &
+                 pred_rel(op_part, op_z, VAR_y))
+               =>
+               ? [VAR_w]:
+               ((sort_individual(VAR_w)) &
+                 (pred_rel(op_part, VAR_w, VAR_xx) &
+                   pred_rel(op_constitutes, VAR_w, op_z)))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_SCD, VAR_xx, VAR_y) <=>
+               (? [VAR_t]:
+                 ((sort_individual(VAR_t)) &
+                   pred_rel(op_exxisting, VAR_xx, VAR_t))
+                 &
+                 ! [VAR_t]:
+                 ((sort_individual(VAR_t)) =>
+                   (pred_rel(op_exxisting, VAR_xx, VAR_t) =>
+                     pred_rel(op_constitutes, VAR_y, VAR_xx))))))
+           &
+           ! [VAR_PSI, VAR_PHI, VAR_xx, VAR_y]:
+           ((sort_individual(VAR_PSI) & sort_individual(VAR_PHI) &
+               sort_individual(VAR_xx) & sort_individual(VAR_y))
+             =>
+             (pred_rel(op_GCD, op_fun(VAR_PSI, VAR_xx), op_fun(VAR_PHI, VAR_y))
+               <=>
+               (~
+                 ? [VAR_z]:
+                 ((sort_individual(VAR_z)) &
+                   (pred_rel(VAR_PSI, VAR_z) & pred_rel(VAR_PHI, VAR_z)))
+                 &
+                 ! [VAR_xx]:
+                 ((sort_individual(VAR_xx)) =>
+                   (pred_rel(VAR_PSI, VAR_xx) =>
+                     ? [VAR_t]:
+                     ((sort_individual(VAR_t)) &
+                       pred_rel(op_exxisting, VAR_xx, VAR_t))))
+                 &
+                 ! [VAR_xx, VAR_t]:
+                 ((sort_individual(VAR_xx) & sort_individual(VAR_t)) =>
+                   ((pred_rel(VAR_PSI, VAR_xx) &
+                       pred_rel(op_exxisting, VAR_xx, VAR_t))
+                     =>
+                     ? [VAR_y]:
+                     ((sort_individual(VAR_y)) &
+                       (pred_rel(VAR_PHI, VAR_y) &
+                         pred_rel(op_constitutes, VAR_y, VAR_xx))))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_SCD, VAR_xx, VAR_y) =>
+               pred_rel(op_SED, VAR_xx, VAR_y)))
+           &
+           ! [VAR_PSI, VAR_PHI, VAR_xx, VAR_y]:
+           ((sort_individual(VAR_PSI) & sort_individual(VAR_PHI) &
+               sort_individual(VAR_xx) & sort_individual(VAR_y))
+             =>
+             (pred_rel(op_GCD, op_fun(VAR_PSI, VAR_xx), op_fun(VAR_PHI, VAR_y))
+               =>
+               pred_rel(op_GED, op_fun(VAR_PSI, VAR_xx), op_fun(VAR_PHI, VAR_y))))
+           &
+           ! [VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_SCD, VAR_xx, VAR_y) &
+                 pred_rel(op_SCD, VAR_y, VAR_z))
+               => pred_rel(op_SCD, VAR_xx, VAR_z)))
+           &
+           ! [VAR_PSI, VAR_PHI, VAR_RHO, VAR_xx, VAR_y, VAR_z]:
+           ((sort_individual(VAR_PSI) & sort_individual(VAR_PHI) &
+               sort_individual(VAR_RHO) & sort_individual(VAR_xx) &
+               sort_individual(VAR_y) & sort_individual(VAR_z))
+             =>
+             ((pred_rel(op_GCD, op_fun(VAR_PSI, VAR_xx), op_fun(VAR_PHI, VAR_y))
+                 &
+                 pred_rel(op_GCD, op_fun(VAR_PHI, VAR_y), op_fun(VAR_RHO, VAR_z))
+                 &
+                 ~
+                 ? [VAR_z]:
+                 ((sort_individual(VAR_z)) &
+                   (pred_rel(VAR_PSI, VAR_z) & pred_rel(VAR_RHO, VAR_z))))
+               =>
+               pred_rel(op_GCD, op_fun(VAR_PSI, VAR_xx), op_fun(VAR_RHO, VAR_z))))
+           &
+           ! [VAR_xx, VAR_y, VAR_PSI, VAR_PHI]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y) &
+               sort_individual(VAR_PSI) & sort_individual(VAR_PHI))
+             =>
+             (pred_rel(op_constitutes, VAR_xx, VAR_y) =>
+               ? [VAR_PSI, VAR_PHI]:
+               ((sort_individual(VAR_PSI) & sort_individual(VAR_PHI)) &
+                 (pred_rel(VAR_PSI, VAR_y) & pred_rel(VAR_PHI, VAR_xx) &
+                   pred_rel(op_GCD, op_fun(VAR_PSI, VAR_y),
+                                     op_fun(VAR_PHI, VAR_xx))))))
+           &
+           ! [VAR_xx, VAR_y]:
+           ((sort_individual(VAR_xx) & sort_individual(VAR_y)) =>
+             (pred_rel(op_constitutes, VAR_xx, VAR_y) =>
+               ! [VAR_z]:
+               ((sort_individual(VAR_z)) =>
+                 (pred_rel(op_part, VAR_z, VAR_xx) =>
+                   pred_rel(op_elementOf, VAR_z, VAR_xx))))))).

@@ -1,0 +1,538 @@
+sorts individual
+op C : individual
+op DC : individual
+op E : individual
+op EC : individual
+op EL : individual
+op F : individual
+op GCD : individual
+op GED : individual
+op GL : individual
+op IO : individual
+op IP : individual
+op IPL : individual
+op IPP : individual
+op IU : individual
+op IWL : individual
+op L : individual
+op NTPP : individual
+op P : individual
+op PL : individual
+op PO : individual
+op R : individual
+op S : individual
+op SC : individual
+op SCD : individual
+op SED : individual
+op TO : individual
+op TP : individual
+op TPL : individual
+op TPP : individual
+op TU : individual
+op TWL : individual
+op U : individual
+op UL : individual
+op WL : individual
+op atomic_part : individual
+op boundary_connected : individual
+op comp : individual
+op componentOf : individual
+op constitutes : individual
+op d : individual
+op disjoint : individual
+op elementOf : individual
+op exxisting : individual
+op fun : individual * individual -> individual
+op fun : individual * individual * individual -> individual
+op internal_enclosure : individual
+op memberOf : individual
+op overcross : individual
+op overlaps : individual
+op part : individual
+op partialoverlap : individual
+op partialunderlap : individual
+op ppart : individual
+op prod : individual
+op proper_enclosure : individual
+op proper_internal_enclosure : individual
+op proper_location : individual
+op proper_superposition : individual
+op proper_tangential_enclosure : individual
+op sum : individual
+op superposition : individual
+op tangential_enclosure : individual
+op undercross : individual
+op underlaps : individual
+op z : individual
+pred rel : individual * individual
+pred rel : individual * individual * individual
+pred rel : individual * individual * individual * individual
+. (forall xx : individual . rel(part, xx, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(part, xx, y) /\ rel(part, y, xx) => xx = y)
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(part, xx, y) /\ rel(part, y, (var z : individual))
+                 => rel(part, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(overlaps, xx, y)
+                 <=> exists z : individual
+                                     . rel(part, (var z : individual), xx)
+                                         /\ rel(part, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(underlaps, xx, y)
+                 <=> exists z : individual
+                                     . rel(part, xx, (var z : individual))
+                                         /\ rel(part, y, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(underlaps, xx, y)
+                 => exists z : individual
+                             . forall v : individual
+                                 . rel(overlaps, v, (var z : individual))
+                                     <=> rel(overlaps, v, xx) \/ rel(overlaps, v, y))
+     /\ (forall xx : individual; y : individual
+             . rel(overlaps, xx, y)
+                 => exists z : individual
+                             . forall v : individual
+                                 . rel(part, v, (var z : individual))
+                                     <=> rel(part, v, xx) /\ rel(part, v, y))
+     /\ (forall xx : individual; y : individual
+             . not rel(part, xx, y)
+                 => exists z : individual
+                             . rel(part, (var z : individual), xx)
+                                 /\ not rel(overlaps, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(ppart, xx, y)
+                 <=> rel(part, xx, y) /\ not rel(part, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(overcross, xx, y)
+                 <=> rel(overlaps, xx, y) /\ not rel(part, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(undercross, xx, y)
+                 <=> rel(underlaps, xx, y) /\ not rel(part, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(partialoverlap, xx, y)
+                 <=> rel(overcross, xx, y) /\ rel(overcross, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(partialunderlap, xx, y)
+                 <=> rel(undercross, xx, y) /\ rel(undercross, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(PO, xx, y)
+                 <=> rel(overlaps, xx, y) /\ not rel(part, xx, y)
+                                     /\ not rel(part, y, xx))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(sum, xx, y, (var z : individual))
+                 <=> forall w : individual
+                                     . rel(overlaps, w, (var z : individual))
+                                         <=> rel(overlaps, w, xx) \/ rel(overlaps, w, y))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(prod, xx, y, (var z : individual))
+                 <=> forall w : individual
+                                     . rel(part, w, (var z : individual))
+                                         <=> rel(part, w, xx) \/ rel(part, w, y))
+     /\ (forall xx : individual; y : individual
+             . rel(disjoint, xx, y) <=> not rel(overlaps, xx, y))
+     /\ (forall xx : individual
+             . rel(atomic_part, xx)
+                 <=> forall y : individual . rel(part, y, xx) => y = xx)
+     /\ (forall xx : individual; z : individual
+             . rel(comp, xx, (var z : individual))
+                 <=> forall y : individual
+                                     . rel(part, y, (var z : individual))
+                                         <=> not rel(overlaps, y, xx))
+     /\ (forall xx : individual . rel(C, xx, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(C, xx, y) => rel(C, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(part, xx, y)
+                 => forall z : individual
+                             . rel(C, xx, (var z : individual))
+                                 => rel(C, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(DC, xx, y) <=> not rel(C, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(EC, xx, y)
+                 <=> rel(C, xx, y) /\ not rel(overlaps, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(IP, xx, y)
+                 <=> rel(part, xx, y)
+                                     /\ forall z : individual
+                                           . rel(C, (var z : individual), xx)
+                                               => rel(overlaps, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(TP, xx, y) <=> rel(part, xx, y) /\ not rel(IP, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(IO, xx, y)
+                 <=> exists z : individual
+                                     . rel(IP, (var z : individual), xx)
+                                         /\ rel(IP, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(TO, xx, y)
+                 <=> rel(overlaps, xx, y) /\ not rel(IO, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(IU, xx, y)
+                 <=> exists z : individual
+                                     . rel(IP, xx, (var z : individual))
+                                         /\ rel(IP, y, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(TU, xx, y)
+                 <=> rel(underlaps, xx, y) /\ not rel(IU, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(IPP, xx, y) <=> rel(IP, xx, y) /\ not rel(IP, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(TPP, xx, y)
+                 <=> rel(part, xx, y) /\ not xx = y
+                                     /\ exists z : individual
+                                           . rel(EC, (var z : individual), xx)
+                                               /\ rel(EC, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(NTPP, xx, y)
+                 <=> rel(part, xx, y) /\ not xx = y
+                                     /\ not exists z : individual
+                                                   . rel(EC, (var z : individual), xx)
+                                                       /\ rel(EC, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(E, xx, y)
+                 <=> forall z : individual
+                                     . rel(C, (var z : individual), xx)
+                                         => rel(C, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(superposition, xx, y)
+                 <=> exists z : individual
+                                     . rel(E, (var z : individual), xx)
+                                         /\ rel(E, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(proper_superposition, xx, y)
+                 <=> rel(superposition, xx, y) /\ not rel(E, xx, y)
+                                     /\ not rel(E, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(boundary_connected, xx, y)
+                 <=> rel(C, xx, y) /\ not rel(superposition, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(internal_enclosure, xx, y)
+                 <=> forall z : individual
+                                     . rel(C, (var z : individual), xx)
+                                         => rel(S, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(proper_internal_enclosure, xx, y)
+                 <=> rel(internal_enclosure, xx, y) /\ rel(E, xx, y)
+                                     /\ not rel(E, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(tangential_enclosure, xx, y)
+                 <=> rel(E, xx, y) /\ not rel(internal_enclosure, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(proper_tangential_enclosure, xx, y)
+                 <=> rel(tangential_enclosure, xx, y)
+                                     /\ rel(proper_enclosure, y, xx))
+     /\ (forall xx : individual
+             . rel(SC, xx)
+                 <=> forall y : individual; z : individual
+                                     . (forall w : individual
+                                           . rel(overlaps, w, xx)
+                                               <=> rel(overlaps, w, y)
+                                                                   \/ rel(overlaps, w, (var z : individual)))
+                                         => rel(C, y, (var z : individual)))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(L, xx, y) /\ rel(L, xx, (var z : individual))
+                 => y = (var z : individual))
+     /\ (forall xx : individual; y : individual
+             . rel(L, xx, y) => rel(L, y, y))
+     /\ (forall xx : individual; y : individual
+             . rel(PL, xx, y)
+                 <=> exists z : individual
+                                     . rel(part, (var z : individual), xx)
+                                         /\ rel(L, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(TPL, xx, y)
+                 <=> exists z : individual
+                                     . rel(TP, (var z : individual), xx)
+                                         /\ rel(L, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(IPL, xx, y)
+                 <=> exists z : individual
+                                     . rel(IP, (var z : individual), xx)
+                                         /\ rel(L, (var z : individual), y))
+     /\ (forall xx : individual; y : individual
+             . rel(WL, xx, y)
+                 <=> exists z : individual
+                                     . rel(part, (var z : individual), y)
+                                         /\ rel(L, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(TWL, xx, y)
+                 <=> exists z : individual
+                                     . rel(TP, (var z : individual), y)
+                                         /\ rel(L, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(IWL, xx, y)
+                 <=> exists z : individual
+                                     . rel(IP, (var z : individual), y)
+                                         /\ rel(L, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(L, xx, y) => rel(PL, xx, y) /\ rel(WL, xx, y))
+     /\ (forall xx : individual; y : individual
+             . rel(GL, xx, y)
+                 <=> exists z : individual; w : individual
+                                     . rel(part, (var z : individual), xx) /\ rel(part, w, y)
+                                         /\ rel(L, (var z : individual), w))
+     /\ (forall xx : individual; y : individual
+             . rel(UL, xx, y)
+                 <=> exists z : individual
+                                     . rel(part, y, (var z : individual))
+                                         /\ rel(L, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(proper_location, xx, y)
+                 <=> rel(L, xx, y) /\ not rel(L, y, xx))
+     /\ (forall xx : individual; y : individual; z : individual;
+             w : individual
+             . rel(part, xx, y) /\ rel(L, xx, (var z : individual))
+                 /\ rel(L, y, w)
+                 => rel(part, (var z : individual), w))
+     /\ (forall xx : individual; y : individual; z : individual;
+             w : individual
+             . rel(C, xx, y) /\ rel(L, xx, (var z : individual)) /\ rel(L, y, w)
+                 => rel(C, (var z : individual), w))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(P, xx, y) /\ rel(L, y, (var z : individual))
+                 => rel(WL, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(TP, xx, y) /\ rel(L, y, (var z : individual))
+                 => rel(TWL, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(IP, xx, y) /\ rel(L, y, (var z : individual))
+                 => rel(IWL, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(part, xx, y) /\ rel(L, (var z : individual), y)
+                 => rel(PL, (var z : individual), xx))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(TP, xx, y) /\ rel(L, (var z : individual), y)
+                 => rel(TPL, (var z : individual), xx))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(IP, xx, y) /\ rel(L, (var z : individual), y)
+                 => rel(IPL, (var z : individual), xx))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(PL, xx, y) /\ rel(P, (var z : individual), y)
+                 => rel(PL, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(IPL, xx, y) /\ rel(P, (var z : individual), y)
+                 => rel(IPL, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(TPL, xx, y) /\ rel(P, (var z : individual), y)
+                 => rel(TPL, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(WL, xx, y) /\ rel(P, (var z : individual), xx)
+                 => rel(WL, (var z : individual), y))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(IWL, xx, y) /\ rel(IP, (var z : individual), xx)
+                 => rel(IWL, (var z : individual), y))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(TPL, xx, y) /\ rel(P, (var z : individual), y)
+                 => rel(TPL, xx, (var z : individual)))
+     /\ (forall xx : individual; t : individual
+             . rel(exxisting, xx, t) => not rel(exxisting, t, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(SED, xx, y)
+                 <=> (forall t : individual
+                                       . rel(exxisting, xx, t) => rel(exxisting, y, t))
+                                     /\ not xx = y
+                                     /\ exists t : individual . rel(exxisting, xx, t))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(SED, xx, y) /\ rel(SED, y, (var z : individual))
+                 => rel(SED, xx, (var z : individual)))
+     /\ (forall PSI : individual; PHI : individual; xx : individual;
+             y : individual
+             . rel(GED, fun(PSI, xx), fun(PHI, y))
+                 <=> (forall xx : individual; t : individual
+                                       . rel(PSI, xx) /\ rel(exxisting, xx, t)
+                                           => exists y : individual
+                                                       . rel(PHI, y) /\ rel(exxisting, y, t))
+                                     /\ (exists xx : individual; t : individual
+                                             . rel(PSI, xx) /\ rel(exxisting, xx, t))
+                                     /\ not exists z : individual
+                                                   . rel(PSI, (var z : individual))
+                                                       /\ rel(PHI, (var z : individual)))
+     /\ (forall PSI : individual; PHI : individual; RHO : individual;
+             xx : individual; y : individual; z : individual
+             . (rel(GED, fun(PSI, xx), fun(PHI, y))
+                   /\ rel(GED, fun(PHI, y), fun(RHO, (var z : individual)))
+                   /\ not exists m : individual . rel(PSI, m) /\ rel(RHO, m))
+                 => rel(GED, fun(PSI, xx), fun(RHO, (var z : individual))))
+     /\ (forall xx : individual; y : individual
+             . rel(componentOf, xx, y)
+                 <=> rel(part, xx, y)
+                                     /\ exists PSI : individual; PHI : individual
+                                           . rel(PSI, y) /\ rel(PHI, xx)
+                                               /\ rel(GED, fun(PSI, y), fun(PHI, xx)))
+     /\ (forall xx : individual; y : individual
+             . rel(componentOf, xx, y) => rel(ppart, xx, y))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(componentOf, xx, y)
+                 /\ rel(componentOf, y, (var z : individual))
+                 => rel(componentOf, xx, (var z : individual)))
+     /\ (forall xx : individual . not rel(componentOf, xx, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(componentOf, xx, y) => not rel(componentOf, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(componentOf, xx, y)
+                 => exists z : individual
+                             . rel(part, (var z : individual), y)
+                                 /\ not rel(overlaps, (var z : individual), xx))
+     /\ (forall xx : individual; y : individual
+             . rel(elementOf, xx, y)
+                 <=> rel(part, xx, y) /\ rel(SED, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(elementOf, xx, y) => rel(ppart, xx, y))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(elementOf, xx, y) /\ rel(elementOf, y, (var z : individual))
+                 => rel(elementOf, xx, (var z : individual)))
+     /\ (forall xx : individual . not rel(elementOf, xx, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(elementOf, xx, y) => not rel(elementOf, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(elementOf, xx, y)
+                 => exists z : individual
+                             . rel(part, (var z : individual), y)
+                                 /\ not rel(overlaps, (var z : individual), xx))
+     /\ (forall xx : individual . rel(EL, xx, xx))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(EL, xx, y) /\ rel(EL, y, (var z : individual))
+                 => rel(EL, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(part, xx, y) => rel(EL, xx, y))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(part, xx, y) /\ rel(EL, y, (var z : individual))
+                 => rel(EL, xx, y))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(EL, xx, y) /\ rel(part, y, (var z : individual))
+                 => rel(EL, xx, y))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(EL, xx, y) /\ rel(L, y, (var z : individual))
+                 => rel(WL, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual; z : individual;
+             w : individual
+             . rel(EL, xx, y) /\ rel(L, xx, (var z : individual))
+                 /\ rel(L, y, w)
+                 => rel(part, (var z : individual), w))
+     /\ (forall z : individual
+             . exists R : individual
+                 . rel(U,
+                             fun((var R : individual), (var z : individual),
+                                     (var z : individual)))
+                     <=> (forall r : individual
+                                           . rel((var R : individual), r, r)
+                                               => rel(part, r, (var z : individual)))
+                                         /\ (forall m : individual
+                                                 . rel(overlaps, m, (var z : individual))
+                                                     => exists r : individual
+                                                                 . rel((var R : individual), r, r)
+                                                                     /\ rel(overlaps, m, r))
+                                         /\ (forall a : individual; b : individual
+                                                 . rel((var R : individual), a, a)
+                                                     /\ rel((var R : individual), b, b)
+                                                     /\ rel(part, a, (var z : individual))
+                                                     /\ rel(part, b, (var z : individual))
+                                                     => rel((var R : individual), a, b))
+                                         /\ (forall a : individual; b : individual
+                                                 . rel((var R : individual), a, b)
+                                                     => rel((var R : individual), a, a)
+                                                                 /\ rel((var R : individual), b, b))
+                                         /\ forall a : individual; b : individual
+                                               . rel((var R : individual), a, b)
+                                                   => rel((var R : individual), b, a))
+     /\ (forall xx : individual . not rel(memberOf, xx, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(memberOf, xx, y) => not rel(memberOf, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(memberOf, y, xx)
+                 => exists t : individual; m : individual; n : individual
+                             . rel(exxisting, xx, t) /\ not m = n /\ rel(memberOf, m, xx)
+                                 /\ rel(memberOf, n, xx))
+     /\ (forall xx : individual; p : individual; y : individual
+             . rel(memberOf, y, xx) /\ rel(ppart, p, xx)
+                 => exists o : individual
+                             . rel(memberOf, o, xx) /\ rel(overlaps, o, p))
+     /\ (forall xx : individual; y : individual
+             . rel(memberOf, xx, y)
+                 => rel(ppart, xx, y)
+                             /\ forall m : individual
+                                   . rel(memberOf, m, y) => xx = d \/ not rel(overlaps, m, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(memberOf, y, xx)
+                 => forall w : individual
+                             . rel(overlaps, w, xx)
+                                 <=> exists m : individual
+                                                     . rel(memberOf, m, xx) /\ rel(overlaps, w, m))
+     /\ (forall xx : individual; y : individual
+             . rel(memberOf, y, xx)
+                 => exists R : individual
+                             . rel(U, fun((var R : individual), xx, xx))
+                                 /\ forall t : individual
+                                       . rel(exxisting, xx, t)
+                                           => rel(U, fun((var R : individual), xx, xx)))
+     /\ (forall xx : individual; y : individual; w : individual;
+             z : individual
+             . rel(memberOf, xx, y) /\ rel(memberOf, w, (var z : individual))
+                 /\ rel(U, fun(R, y, y))
+                 /\ rel(U, fun(F, (var z : individual), (var z : individual)))
+                 /\ R = F
+                 => y = (var z : individual))
+     /\ (forall xx : individual . not rel(constitutes, xx, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(constitutes, xx, y) => not rel(constitutes, y, xx))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(constitutes, xx, y)
+                 /\ rel(constitutes, y, (var z : individual))
+                 => rel(constitutes, xx, (var z : individual)))
+     /\ (forall xx : individual; y : individual
+             . rel(constitutes, xx, y)
+                 => exists t : individual
+                             . rel(exxisting, xx, t) /\ rel(exxisting, y, t))
+     /\ (forall xx : individual; y : individual
+             . rel(constitutes, xx, y) /\ rel(part, z, y)
+                 => exists w : individual
+                             . rel(part, w, xx) /\ rel(constitutes, w, z))
+     /\ (forall xx : individual; y : individual
+             . rel(SCD, xx, y)
+                 <=> (exists t : individual . rel(exxisting, xx, t))
+                                     /\ forall t : individual
+                                           . rel(exxisting, xx, t) => rel(constitutes, y, xx))
+     /\ (forall PSI : individual; PHI : individual; xx : individual;
+             y : individual
+             . rel(GCD, fun(PSI, xx), fun(PHI, y))
+                 <=> (not exists z : individual
+                                               . rel(PSI, (var z : individual))
+                                                   /\ rel(PHI, (var z : individual)))
+                                     /\ (forall xx : individual
+                                             . rel(PSI, xx)
+                                                 => exists t : individual . rel(exxisting, xx, t))
+                                     /\ forall xx : individual; t : individual
+                                           . rel(PSI, xx) /\ rel(exxisting, xx, t)
+                                               => exists y : individual
+                                                           . rel(PHI, y) /\ rel(constitutes, y, xx))
+     /\ (forall xx : individual; y : individual
+             . rel(SCD, xx, y) => rel(SED, xx, y))
+     /\ (forall PSI : individual; PHI : individual; xx : individual;
+             y : individual
+             . rel(GCD, fun(PSI, xx), fun(PHI, y))
+                 => rel(GED, fun(PSI, xx), fun(PHI, y)))
+     /\ (forall xx : individual; y : individual; z : individual
+             . rel(SCD, xx, y) /\ rel(SCD, y, (var z : individual))
+                 => rel(SCD, xx, (var z : individual)))
+     /\ (forall PSI : individual; PHI : individual; RHO : individual;
+             xx : individual; y : individual; z : individual
+             . (rel(GCD, fun(PSI, xx), fun(PHI, y))
+                   /\ rel(GCD, fun(PHI, y), fun(RHO, (var z : individual)))
+                   /\ not exists z : individual
+                                 . rel(PSI, (var z : individual))
+                                     /\ rel(RHO, (var z : individual)))
+                 => rel(GCD, fun(PSI, xx), fun(RHO, (var z : individual))))
+     /\ (forall xx : individual; y : individual; PSI : individual;
+             PHI : individual
+             . rel(constitutes, xx, y)
+                 => exists PSI : individual; PHI : individual
+                             . rel(PSI, y) /\ rel(PHI, xx)
+                                 /\ rel(GCD, fun(PSI, y), fun(PHI, xx)))
+     /\ forall xx : individual; y : individual
+           . rel(constitutes, xx, y)
+               => forall z : individual
+                           . rel(part, (var z : individual), xx)
+                               => rel(elementOf, (var z : individual), xx)
+%(' ---------------------------------------------------- Mereology ')%
