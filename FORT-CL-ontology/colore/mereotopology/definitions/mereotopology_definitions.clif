@@ -23,15 +23,6 @@
 
 
 
-(cl-comment 'Proper Overlap')
-(forall (x y)
-	(iff	(PO x y)
-		(and	(overlaps x y)
-			(not (part x y))
-			(not (part y x)))))
-
-
-
 (cl-comment 'External Connection')
 (forall (x y)
 	(iff	(EC x y)
