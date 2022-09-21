@@ -1,0 +1,965 @@
+assumption
+Results for Ax_0 (Proved)
+Used Prover
+SPASS
+
+Tactic Script
+1
+
+Proof Tree
+Used Time
+0.289999999999 0 0 0.289999999999
+Used Axioms
+sign_op_a sign_op_now sign_op_z
+Prover Output
+--------------------------SPASS-START-----------------------------
+Input Problem:
+1[0:Inp] ||  -> sort_individual(skc2)*.
+2[0:Inp] ||  -> sort_list(skc3)*.
+3[0:Inp] ||  -> sort_individual(op_C)*.
+4[0:Inp] ||  -> sort_individual(op_DC)*.
+5[0:Inp] ||  -> sort_individual(op_E)*.
+6[0:Inp] ||  -> sort_individual(op_EC)*.
+7[0:Inp] ||  -> sort_individual(op_EL)*.
+8[0:Inp] ||  -> sort_individual(op_F)*.
+9[0:Inp] ||  -> sort_individual(op_GCD)*.
+10[0:Inp] ||  -> sort_individual(op_GED)*.
+11[0:Inp] ||  -> sort_individual(op_GL)*.
+12[0:Inp] ||  -> sort_individual(op_IO)*.
+13[0:Inp] ||  -> sort_individual(op_IP)*.
+14[0:Inp] ||  -> sort_individual(op_IPL)*.
+15[0:Inp] ||  -> sort_individual(op_IPP)*.
+16[0:Inp] ||  -> sort_individual(op_IU)*.
+17[0:Inp] ||  -> sort_individual(op_IWL)*.
+18[0:Inp] ||  -> sort_individual(op_L)*.
+19[0:Inp] ||  -> sort_individual(op_NTPP)*.
+20[0:Inp] ||  -> sort_individual(op_P)*.
+21[0:Inp] ||  -> sort_individual(op_PL)*.
+22[0:Inp] ||  -> sort_individual(op_PO)*.
+23[0:Inp] ||  -> sort_individual(op_R)*.
+24[0:Inp] ||  -> sort_individual(op_S)*.
+25[0:Inp] ||  -> sort_individual(op_SC)*.
+26[0:Inp] ||  -> sort_individual(op_SCD)*.
+27[0:Inp] ||  -> sort_individual(op_SED)*.
+28[0:Inp] ||  -> sort_individual(op_TO)*.
+29[0:Inp] ||  -> sort_individual(op_TP)*.
+30[0:Inp] ||  -> sort_individual(op_TPL)*.
+31[0:Inp] ||  -> sort_individual(op_TPP)*.
+32[0:Inp] ||  -> sort_individual(op_TU)*.
+33[0:Inp] ||  -> sort_individual(op_TWL)*.
+34[0:Inp] ||  -> sort_individual(op_U)*.
+35[0:Inp] ||  -> sort_individual(op_UL)*.
+36[0:Inp] ||  -> sort_individual(op_WL)*.
+37[0:Inp] ||  -> sort_individual(op_a)*.
+38[0:Inp] ||  -> sort_individual(op_atomic_part)*.
+39[0:Inp] ||  -> sort_individual(op_boundary_connected)*.
+40[0:Inp] ||  -> sort_individual(op_comp)*.
+41[0:Inp] ||  -> sort_individual(op_componentOf)*.
+42[0:Inp] ||  -> sort_individual(op_constitutes)*.
+43[0:Inp] ||  -> sort_individual(op_d)*.
+44[0:Inp] ||  -> sort_individual(op_disjoint)*.
+45[0:Inp] ||  -> sort_individual(op_elementOf)*.
+46[0:Inp] ||  -> sort_individual(op_exxisting)*.
+47[0:Inp] ||  -> sort_individual(op_indiscourse)*.
+48[0:Inp] ||  -> sort_individual(op_internal_enclosure)*.
+49[0:Inp] ||  -> sort_individual(op_memberOf)*.
+50[0:Inp] ||  -> sort_list(op_nil)*.
+51[0:Inp] ||  -> sort_individual(op_now)*.
+52[0:Inp] ||  -> sort_individual(op_overcross)*.
+53[0:Inp] ||  -> sort_individual(op_overlaps)*.
+54[0:Inp] ||  -> sort_individual(op_part)*.
+55[0:Inp] ||  -> sort_individual(op_partialoverlap)*.
+56[0:Inp] ||  -> sort_individual(op_partialunderlap)*.
+57[0:Inp] ||  -> sort_individual(op_ppart)*.
+58[0:Inp] ||  -> sort_individual(op_prod)*.
+59[0:Inp] ||  -> sort_individual(op_proper_enclosure)*.
+60[0:Inp] ||  -> sort_individual(op_proper_internal_enclosure)*.
+61[0:Inp] ||  -> sort_individual(op_proper_location)*.
+62[0:Inp] ||  -> sort_individual(op_proper_superposition)*.
+63[0:Inp] ||  -> sort_individual(op_proper_tangential_enclosure)*.
+64[0:Inp] ||  -> sort_individual(op_sum)*.
+65[0:Inp] ||  -> sort_individual(op_superposition)*.
+66[0:Inp] ||  -> sort_individual(op_tangential_enclosure)*.
+67[0:Inp] ||  -> sort_individual(op_undercross)*.
+68[0:Inp] ||  -> sort_individual(op_underlaps)*.
+69[0:Inp] ||  -> sort_individual(op_z)*.
+70[0:Inp] ||  -> sort_individual(skf138(u))*.
+71[0:Inp] ||  -> sort_individual(skf137(u))*.
+72[0:Inp] ||  -> sort_individual(skf130(u))*.
+73[0:Inp] ||  -> sort_individual(skf129(u))*.
+74[0:Inp] ||  -> sort_individual(skf118(u))*.
+75[0:Inp] ||  -> sort_individual(skf117(u))*.
+76[0:Inp] ||  -> sort_individual(skf116(u))*.
+77[0:Inp] ||  -> sort_individual(skf114(u))*.
+78[0:Inp] ||  -> sort_individual(skf111(u))*.
+79[0:Inp] ||  -> sort_individual(skf110(u))*.
+80[0:Inp] ||  -> sort_individual(skf109(u))*.
+81[0:Inp] ||  -> sort_individual(skf108(u))*.
+82[0:Inp] ||  -> sort_individual(skf107(u))*.
+83[0:Inp] ||  -> sort_individual(skf106(u))*.
+84[0:Inp] ||  -> sort_individual(skf101(u))*.
+85[0:Inp] ||  -> sort_individual(skf100(u))*.
+86[0:Inp] ||  -> sort_individual(skf98(u))*.
+87[0:Inp] ||  -> sort_individual(skf88(u))*.
+88[0:Inp] ||  -> sort_individual(skf87(u))*.
+89[0:Inp] ||  -> sort_individual(skf75(u))*.
+90[0:Inp] ||  -> sort_individual(skf136(u,v))*.
+91[0:Inp] ||  -> sort_individual(skf135(u,v))*.
+92[0:Inp] ||  -> sort_individual(skf134(u,v))*.
+93[0:Inp] ||  -> sort_individual(skf133(u,v))*.
+94[0:Inp] ||  -> sort_individual(skf132(u,v))*.
+95[0:Inp] ||  -> sort_individual(skf131(u,v))*.
+96[0:Inp] ||  -> sort_individual(skf128(u,v))*.
+97[0:Inp] ||  -> sort_individual(skf127(u,v))*.
+98[0:Inp] ||  -> sort_individual(skf125(u,v))*.
+99[0:Inp] ||  -> sort_individual(skf124(u,v))*.
+100[0:Inp] ||  -> sort_individual(skf123(u,v))*.
+101[0:Inp] ||  -> sort_individual(skf122(u,v))*.
+102[0:Inp] ||  -> sort_individual(skf121(u,v))*.
+103[0:Inp] ||  -> sort_individual(skf119(u,v))*.
+104[0:Inp] ||  -> sort_individual(skf115(u,v))*.
+105[0:Inp] ||  -> sort_individual(skf113(u,v))*.
+106[0:Inp] ||  -> sort_individual(skf112(u,v))*.
+107[0:Inp] ||  -> sort_individual(skf105(u,v))*.
+108[0:Inp] ||  -> sort_individual(skf104(u,v))*.
+109[0:Inp] ||  -> sort_individual(skf103(u,v))*.
+110[0:Inp] ||  -> sort_individual(skf102(u,v))*.
+111[0:Inp] ||  -> sort_individual(skf99(u,v))*.
+112[0:Inp] ||  -> sort_individual(skf97(u,v))*.
+113[0:Inp] ||  -> sort_individual(skf96(u,v))*.
+114[0:Inp] ||  -> sort_individual(skf95(u,v))*.
+115[0:Inp] ||  -> sort_individual(skf94(u,v))*.
+116[0:Inp] ||  -> sort_individual(skf93(u,v))*.
+117[0:Inp] ||  -> sort_individual(skf92(u,v))*.
+118[0:Inp] ||  -> sort_individual(skf91(u,v))*.
+119[0:Inp] ||  -> sort_individual(skf90(u,v))*.
+120[0:Inp] ||  -> sort_individual(skf89(u,v))*.
+121[0:Inp] ||  -> sort_individual(skf84(u,v))*.
+122[0:Inp] ||  -> sort_individual(skf83(u,v))*.
+123[0:Inp] ||  -> sort_individual(skf82(u,v))*.
+124[0:Inp] ||  -> sort_individual(skf81(u,v))*.
+125[0:Inp] ||  -> sort_individual(skf80(u,v))*.
+126[0:Inp] ||  -> sort_individual(skf79(u,v))*.
+127[0:Inp] ||  -> sort_individual(skf78(u,v))*.
+128[0:Inp] ||  -> sort_individual(skf77(u,v))*.
+129[0:Inp] ||  -> sort_individual(skf76(u,v))*.
+130[0:Inp] ||  -> sort_individual(skf72(u,v))*.
+131[0:Inp] ||  -> sort_individual(skf71(u,v))*.
+132[0:Inp] ||  -> sort_individual(skf70(u,v))*.
+133[0:Inp] ||  -> sort_individual(skf69(u,v))*.
+134[0:Inp] ||  -> sort_individual(skf68(u,v))*.
+135[0:Inp] ||  -> sort_individual(skf85(u,v,w))*.
+136[0:Inp] ||  -> sort_individual(skf74(u,v,w))*.
+137[0:Inp] ||  -> sort_individual(skf73(u,v,w))*.
+138[0:Inp] ||  -> pred_rel(op_indiscourse,op_cons(op_a,op_nil))*.
+139[0:Inp] ||  -> pred_rel(op_indiscourse,op_cons(op_now,op_nil))*.
+140[0:Inp] || sort_individual(u)* sort_list(u) -> .
+141[0:Inp] || sort_list(u) sort_individual(u)* -> .
+142[0:Inp] ||  -> pred_rel(op_exxisting,op_cons(op_a,op_cons(op_now,op_nil)))*.
+143[0:Inp] ||  -> pred_rel(op_exxisting,op_cons(op_now,op_cons(op_a,op_nil)))*.
+144[0:Inp] || sort_list(u) -> equal(op_append(op_nil,u),u)**.
+145[0:Inp] ||  -> pred_rel(u,op_cons(skf130(u),op_nil))* SkP1(u).
+146[0:Inp] || sort_list(u) sort_list(v) -> sort_list(op_append(u,v))*.
+147[0:Inp] || sort_individual(u) sort_list(v) -> sort_list(op_cons(u,v))*.
+148[0:Inp] || sort_individual(u) sort_list(v) -> sort_individual(op_fun(u,v))*.
+149[0:Inp] || sort_individual(u) -> pred_rel(op_part,op_cons(u,op_cons(u,op_nil)))*.
+150[0:Inp] || sort_individual(u) -> pred_rel(op_C,op_cons(u,op_cons(u,op_nil)))*.
+151[0:Inp] || sort_individual(u) -> pred_rel(op_EL,op_cons(u,op_cons(u,op_nil)))*.
+152[0:Inp] ||  -> pred_rel(u,op_cons(skf128(v,u),op_nil))* SkP0(v,u).
+153[0:Inp] || sort_individual(u) pred_rel(op_componentOf,op_cons(u,op_cons(u,op_nil)))* -> .
+154[0:Inp] || sort_individual(u) pred_rel(op_elementOf,op_cons(u,op_cons(u,op_nil)))* -> .
+155[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(u,op_cons(u,op_nil)))* -> .
+156[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(u,op_nil)))* -> .
+157[0:Inp] || SkP2(u,v) -> pred_rel(v,op_cons(skf131(u,v),op_nil))*.
+158[0:Inp] || SkP2(u,v) -> pred_rel(u,op_cons(skf131(u,v),op_nil))*.
+159[0:Inp] ||  -> pred_rel(u,op_cons(skf138(u),op_cons(skf137(u),op_nil)))* SkP6(u).
+160[0:Inp] || sort_individual(u) equal(op_cons(u,v),op_nil)** sort_list(v) -> .
+161[0:Inp] ||  -> pred_rel(op_overlaps,op_cons(skf134(u,v),op_cons(v,op_nil)))* SkP4(u,v).
+162[0:Inp] ||  -> pred_rel(op_part,op_cons(skf136(u,v),op_cons(u,op_nil)))* SkP5(u,v).
+163[0:Inp] ||  -> pred_rel(op_part,op_cons(skf135(u,v),op_cons(u,op_nil)))* SkP5(u,v).
+164[0:Inp] || equal(skf75(u),u) sort_individual(u) -> pred_rel(op_atomic_part,op_cons(u,op_nil))*.
+165[0:Inp] || pred_rel(op_part,op_cons(skf132(u,v),op_cons(u,op_nil)))* -> SkP3(u,v).
+166[0:Inp] ||  -> pred_rel(op_exxisting,op_cons(skf128(u,v),op_cons(skf127(u,v),op_nil)))* SkP0(u,v).
+167[0:Inp] || sort_individual(u) pred_rel(op_exxisting,op_cons(skf130(v),op_cons(u,op_nil)))* -> SkP1(v).
+168[0:Inp] ||  -> pred_rel(u,op_cons(skf132(v,u),op_cons(skf132(v,u),op_nil)))* SkP3(v,u).
+169[0:Inp] ||  -> pred_rel(u,op_cons(skf136(v,u),op_cons(skf136(v,u),op_nil)))* SkP5(v,u).
+170[0:Inp] ||  -> pred_rel(u,op_cons(skf135(v,u),op_cons(skf135(v,u),op_nil)))* SkP5(v,u).
+171[0:Inp] || pred_rel(u,op_cons(skf136(v,u),op_cons(skf135(v,u),op_nil)))* -> SkP5(v,u).
+172[0:Inp] || sort_individual(u) -> pred_rel(op_part,op_cons(skf75(u),op_cons(u,op_nil)))* pred_rel(op_atomic_part,op_cons(u,op_nil)).
+173[0:Inp] || equal(u,v) pred_rel(op_TPP,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> .
+174[0:Inp] || equal(u,v) pred_rel(op_NTPP,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> .
+175[0:Inp] || pred_rel(op_C,op_cons(skf88(u),op_cons(skf87(u),op_nil)))* sort_individual(u) -> pred_rel(op_SC,op_cons(u,op_nil)).
+176[0:Inp] || equal(u,v) pred_rel(op_SED,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> .
+177[0:Inp] || sort_individual(u) pred_rel(v,op_cons(u,op_nil))* pred_rel(w,op_cons(u,op_nil))* -> SkP2(w,v)*.
+178[0:Inp] || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* sort_individual(u) -> SkP6(skf106(u)).
+179[0:Inp] || SkP1(u) sort_individual(v) pred_rel(u,op_cons(v,op_nil))* -> pred_rel(op_exxisting,op_cons(v,op_cons(skf129(v),op_nil)))*.
+180[0:Inp] || equal(skf109(u),skf110(u)) sort_individual(u) pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> .
+181[0:Inp] || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* sort_individual(u) -> SkP5(u,skf106(u)).
+182[0:Inp] || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* sort_individual(u) -> SkP4(skf106(u),u).
+183[0:Inp] || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* sort_individual(u) -> SkP3(u,skf106(u)).
+184[0:Inp] || sort_individual(u) sort_individual(v) -> pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_DC,op_cons(u,op_cons(v,op_nil))).
+185[0:Inp] || sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) pred_rel(op_disjoint,op_cons(u,op_cons(v,op_nil)))*.
+186[0:Inp] || sort_individual(u) sort_list(v) sort_list(w) -> equal(op_append(op_cons(u,v),w),op_cons(u,op_append(v,w)))**.
+187[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(skf123(u,v),op_cons(u,op_nil))*.
+188[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(skf124(u,v),op_cons(v,op_nil))*.
+189[0:Inp] || sort_individual(u) pred_rel(op_SCD,op_cons(u,op_cons(v,op_nil)))* sort_individual(v) -> pred_rel(op_SED,op_cons(u,op_cons(v,op_nil))).
+190[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* sort_individual(v) -> pred_rel(op_ppart,op_cons(u,op_cons(v,op_nil))).
+191[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(op_EL,op_cons(u,op_cons(v,op_nil)))*.
+192[0:Inp] || sort_individual(u) pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil)))* sort_individual(v) -> pred_rel(op_ppart,op_cons(u,op_cons(v,op_nil))).
+193[0:Inp] || pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_SED,op_cons(v,op_cons(u,op_nil)))*.
+194[0:Inp] || pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+195[0:Inp] || sort_individual(u) pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil)))* sort_individual(v) -> pred_rel(op_ppart,op_cons(u,op_cons(v,op_nil))).
+196[0:Inp] || pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(skf102(u,v),op_cons(u,op_nil))*.
+197[0:Inp] || pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(skf103(u,v),op_cons(v,op_nil))*.
+198[0:Inp] || pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+199[0:Inp] || pred_rel(op_proper_location,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))*.
+200[0:Inp] || sort_individual(u) pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* sort_individual(v) -> pred_rel(op_WL,op_cons(u,op_cons(v,op_nil))).
+201[0:Inp] || sort_individual(u) pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* sort_individual(v) -> pred_rel(op_PL,op_cons(u,op_cons(v,op_nil))).
+202[0:Inp] || sort_individual(u) pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* sort_individual(v) -> pred_rel(op_L,op_cons(v,op_cons(v,op_nil)))*.
+203[0:Inp] || pred_rel(op_proper_tangential_enclosure,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_proper_enclosure,op_cons(v,op_cons(u,op_nil)))*.
+204[0:Inp] || pred_rel(op_proper_tangential_enclosure,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_tangential_enclosure,op_cons(u,op_cons(v,op_nil))).
+205[0:Inp] || pred_rel(op_tangential_enclosure,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))*.
+206[0:Inp] || pred_rel(op_proper_internal_enclosure,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))*.
+207[0:Inp] || pred_rel(op_proper_internal_enclosure,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_internal_enclosure,op_cons(u,op_cons(v,op_nil)))*.
+208[0:Inp] || pred_rel(op_boundary_connected,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))*.
+209[0:Inp] || pred_rel(op_proper_superposition,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_superposition,op_cons(u,op_cons(v,op_nil))).
+210[0:Inp] || pred_rel(op_NTPP,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+211[0:Inp] || pred_rel(op_TPP,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+212[0:Inp] || pred_rel(op_IPP,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))*.
+213[0:Inp] || pred_rel(op_TU,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_underlaps,op_cons(u,op_cons(v,op_nil))).
+214[0:Inp] || pred_rel(op_TO,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))).
+215[0:Inp] || pred_rel(op_TP,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+216[0:Inp] || pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+217[0:Inp] || pred_rel(op_EC,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))*.
+218[0:Inp] || sort_individual(u) pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))* sort_individual(v) -> pred_rel(op_C,op_cons(v,op_cons(u,op_nil)))*.
+219[0:Inp] || pred_rel(op_PO,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))).
+220[0:Inp] || pred_rel(op_partialunderlap,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_undercross,op_cons(v,op_cons(u,op_nil))).
+221[0:Inp] || pred_rel(op_partialunderlap,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_undercross,op_cons(u,op_cons(v,op_nil))).
+222[0:Inp] || pred_rel(op_partialoverlap,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_overcross,op_cons(v,op_cons(u,op_nil)))*.
+223[0:Inp] || pred_rel(op_partialoverlap,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_overcross,op_cons(u,op_cons(v,op_nil)))*.
+224[0:Inp] || pred_rel(op_undercross,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_underlaps,op_cons(u,op_cons(v,op_nil))).
+225[0:Inp] || pred_rel(op_overcross,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))).
+226[0:Inp] || pred_rel(op_ppart,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))*.
+227[0:Inp] || pred_rel(u,op_cons(skf138(u),op_cons(skf138(u),op_nil))) pred_rel(u,op_cons(skf137(u),op_cons(skf137(u),op_nil)))* -> SkP6(u).
+228[0:Inp] || SkP3(u,v)* sort_individual(w) pred_rel(v,op_cons(w,op_cons(w,op_nil)))* -> pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))*.
+229[0:Inp] || sort_individual(u) pred_rel(v,op_cons(u,op_nil)) pred_rel(op_exxisting,op_cons(u,op_cons(skf127(v,w),op_nil)))* -> SkP0(v,w).
+230[0:Inp] || pred_rel(op_SCD,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_exxisting,op_cons(u,op_cons(skf117(u),op_nil)))*.
+231[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> .
+232[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> pred_rel(op_exxisting,op_cons(u,op_cons(skf111(u),op_nil)))*.
+233[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> pred_rel(op_memberOf,op_cons(skf109(u),op_cons(u,op_nil)))*.
+234[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> pred_rel(op_memberOf,op_cons(skf110(u),op_cons(u,op_nil)))*.
+235[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> .
+236[0:Inp] || sort_individual(u) pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> .
+237[0:Inp] || sort_individual(u) pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> .
+238[0:Inp] || pred_rel(op_SED,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_exxisting,op_cons(u,op_cons(skf98(u),op_nil)))*.
+239[0:Inp] || sort_individual(u) pred_rel(op_exxisting,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> .
+240[0:Inp] || pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_proper_location,op_cons(v,op_cons(u,op_nil))) sort_individual(v) sort_individual(u) -> .
+241[0:Inp] || pred_rel(op_internal_enclosure,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_tangential_enclosure,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> .
+242[0:Inp] || pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_proper_internal_enclosure,op_cons(v,op_cons(u,op_nil))) sort_individual(v) sort_individual(u) -> .
+243[0:Inp] || sort_individual(u) sort_individual(v) -> pred_rel(op_C,op_cons(skf84(v,u),op_cons(u,op_nil)))* pred_rel(op_internal_enclosure,op_cons(u,op_cons(v,op_nil))).
+244[0:Inp] || pred_rel(op_superposition,op_cons(u,op_cons(v,op_nil))) pred_rel(op_boundary_connected,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> .
+245[0:Inp] || pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_proper_superposition,op_cons(v,op_cons(u,op_nil))) sort_individual(v) sort_individual(u) -> .
+246[0:Inp] || pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_proper_superposition,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> .
+247[0:Inp] || sort_individual(u) sort_individual(v) -> pred_rel(op_C,op_cons(skf82(v,u),op_cons(u,op_nil)))* pred_rel(op_E,op_cons(u,op_cons(v,op_nil))).
+248[0:Inp] || pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_IPP,op_cons(v,op_cons(u,op_nil))) sort_individual(v) sort_individual(u) -> .
+249[0:Inp] || pred_rel(op_IU,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_TU,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> .
+250[0:Inp] || pred_rel(op_IO,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_TO,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> .
+251[0:Inp] || pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_TP,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> .
+252[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) pred_rel(op_EC,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> .
+253[0:Inp] || pred_rel(op_DC,op_cons(u,op_cons(v,op_nil))) pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> .
+254[0:Inp] || pred_rel(op_disjoint,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> .
+255[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) pred_rel(op_PO,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) sort_individual(u) -> .
+256[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) pred_rel(op_PO,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> .
+257[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_undercross,op_cons(v,op_cons(u,op_nil))) sort_individual(v) sort_individual(u) -> .
+258[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) pred_rel(op_overcross,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> .
+259[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_ppart,op_cons(v,op_cons(u,op_nil))) sort_individual(v) sort_individual(u) -> .
+260[0:Inp] || sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(skf72(v,u),op_cons(u,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+261[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(op_exxisting,op_cons(v,op_cons(skf115(v,u),op_nil)))*.
+262[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(op_exxisting,op_cons(u,op_cons(skf115(v,u),op_nil)))*.
+263[0:Inp] || sort_individual(u) pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(op_part,op_cons(skf105(u,v),op_cons(v,op_nil)))*.
+264[0:Inp] || sort_individual(u) pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(op_part,op_cons(skf104(u,v),op_cons(v,op_nil)))*.
+265[0:Inp] || pred_rel(op_UL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(u,op_cons(skf97(u,v),op_nil)))*.
+266[0:Inp] || pred_rel(op_UL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(v,op_cons(skf97(u,v),op_nil)))*.
+267[0:Inp] || pred_rel(op_GL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(skf95(v,u),op_cons(v,op_nil)))*.
+268[0:Inp] || pred_rel(op_GL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(skf96(v,u),op_cons(u,op_nil)))*.
+269[0:Inp] || pred_rel(op_IWL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(u,op_cons(skf94(u,v),op_nil)))*.
+270[0:Inp] || pred_rel(op_IWL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(skf94(u,v),op_cons(v,op_nil)))*.
+271[0:Inp] || pred_rel(op_TWL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(u,op_cons(skf93(u,v),op_nil)))*.
+272[0:Inp] || pred_rel(op_TWL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_TP,op_cons(skf93(u,v),op_cons(v,op_nil)))*.
+273[0:Inp] || pred_rel(op_WL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(u,op_cons(skf92(u,v),op_nil)))*.
+274[0:Inp] || pred_rel(op_WL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(skf92(u,v),op_cons(v,op_nil)))*.
+275[0:Inp] || pred_rel(op_IPL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(skf91(v,u),op_cons(v,op_nil)))*.
+276[0:Inp] || pred_rel(op_IPL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(skf91(v,u),op_cons(u,op_nil)))*.
+277[0:Inp] || pred_rel(op_TPL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(skf90(v,u),op_cons(v,op_nil)))*.
+278[0:Inp] || pred_rel(op_TPL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_TP,op_cons(skf90(v,u),op_cons(u,op_nil)))*.
+279[0:Inp] || pred_rel(op_PL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(skf89(v,u),op_cons(v,op_nil)))*.
+280[0:Inp] || pred_rel(op_PL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(skf89(v,u),op_cons(u,op_nil)))*.
+281[0:Inp] || pred_rel(op_S,op_cons(skf84(u,v),op_cons(u,op_nil)))* sort_individual(v) sort_individual(u) -> pred_rel(op_internal_enclosure,op_cons(v,op_cons(u,op_nil))).
+282[0:Inp] || pred_rel(op_superposition,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_E,op_cons(skf83(v,u),op_cons(v,op_nil)))*.
+283[0:Inp] || pred_rel(op_superposition,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_E,op_cons(skf83(v,u),op_cons(u,op_nil)))*.
+284[0:Inp] || pred_rel(op_C,op_cons(skf82(u,v),op_cons(u,op_nil)))* sort_individual(v) sort_individual(u) -> pred_rel(op_E,op_cons(v,op_cons(u,op_nil))).
+285[0:Inp] || pred_rel(op_TPP,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_EC,op_cons(skf80(v,u),op_cons(v,op_nil)))*.
+286[0:Inp] || pred_rel(op_TPP,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_EC,op_cons(skf80(v,u),op_cons(u,op_nil)))*.
+287[0:Inp] || pred_rel(op_IU,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(v,op_cons(skf79(v,u),op_nil)))*.
+288[0:Inp] || pred_rel(op_IU,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(u,op_cons(skf79(v,u),op_nil)))*.
+289[0:Inp] || pred_rel(op_IO,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(skf78(v,u),op_cons(v,op_nil)))*.
+290[0:Inp] || pred_rel(op_IO,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(skf78(v,u),op_cons(u,op_nil)))*.
+291[0:Inp] || pred_rel(op_atomic_part,op_cons(u,op_nil)) sort_individual(v) pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* sort_individual(u) -> equal(v,u).
+292[0:Inp] || pred_rel(op_overlaps,op_cons(skf72(u,v),op_cons(u,op_nil)))* sort_individual(v) sort_individual(u) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil))).
+293[0:Inp] || pred_rel(op_underlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(v,op_cons(skf69(v,u),op_nil)))*.
+294[0:Inp] || pred_rel(op_underlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(skf69(v,u),op_nil)))*.
+295[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(skf68(v,u),op_cons(v,op_nil)))*.
+296[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(skf68(v,u),op_cons(u,op_nil)))*.
+297[0:Inp] || equal(op_cons(u,v),op_cons(w,x))* sort_individual(u) sort_individual(w) sort_list(v) sort_list(x) -> equal(v,x).
+298[0:Inp] || equal(op_cons(u,v),op_cons(w,x))* sort_individual(u) sort_individual(w) sort_list(v) sort_list(x) -> equal(u,w).
+299[0:Inp] || SkP6(u) sort_individual(v) pred_rel(u,op_cons(v,op_cons(w,op_nil)))* sort_individual(w) -> pred_rel(u,op_cons(w,op_cons(w,op_nil)))*.
+300[0:Inp] || SkP6(u) sort_individual(v) pred_rel(u,op_cons(v,op_cons(w,op_nil)))* sort_individual(w) -> pred_rel(u,op_cons(v,op_cons(v,op_nil)))*.
+301[0:Inp] || sort_individual(u) pred_rel(v,op_cons(u,op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(skf134(v,w),op_cons(u,op_nil)))* -> SkP4(v,w).
+302[0:Inp] || SkP4(u,v)* sort_individual(w) pred_rel(op_overlaps,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_overlaps,op_cons(w,op_cons(skf133(w,u),op_nil)))*.
+303[0:Inp] || pred_rel(op_overlaps,op_cons(skf105(u,v),op_cons(u,op_nil)))* sort_individual(u) pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> .
+304[0:Inp] || pred_rel(op_overlaps,op_cons(skf104(u,v),op_cons(u,op_nil)))* sort_individual(u) pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> .
+305[0:Inp] || pred_rel(op_GL,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(skf96(v,u),op_cons(skf95(v,u),op_nil)))*.
+306[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> equal(u,v).
+307[0:Inp] || SkP4(u,v)* sort_individual(w) pred_rel(op_overlaps,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(u,op_cons(skf133(w,u),op_cons(skf133(w,u),op_nil)))*.
+308[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) -> pred_rel(op_U,op_cons(op_fun(skf114(u),op_cons(u,op_cons(u,op_nil))),op_nil))*.
+309[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(skf87(v),op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) pred_rel(op_SC,op_cons(v,op_nil)).
+310[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(skf88(v),op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) pred_rel(op_SC,op_cons(v,op_nil)).
+311[0:Inp] || equal(u,v) equal(w,x) sort_individual(u) sort_individual(v) sort_list(w) sort_list(x) -> equal(op_cons(u,w),op_cons(v,x))*.
+312[0:Inp] || pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_L,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_proper_location,op_cons(u,op_cons(v,op_nil))).
+313[0:Inp] || sort_individual(u) pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> equal(v,w)*.
+314[0:Inp] || pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_internal_enclosure,op_cons(u,op_cons(v,op_nil))) pred_rel(op_tangential_enclosure,op_cons(u,op_cons(v,op_nil))).
+315[0:Inp] || pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_superposition,op_cons(u,op_cons(v,op_nil))) pred_rel(op_boundary_connected,op_cons(u,op_cons(v,op_nil))).
+316[0:Inp] || pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_IPP,op_cons(u,op_cons(v,op_nil))).
+317[0:Inp] || pred_rel(op_underlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IU,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_TU,op_cons(u,op_cons(v,op_nil))).
+318[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IO,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_TO,op_cons(u,op_cons(v,op_nil))).
+319[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_TP,op_cons(u,op_cons(v,op_nil))).
+320[0:Inp] || pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) pred_rel(op_EC,op_cons(u,op_cons(v,op_nil))).
+321[0:Inp] || pred_rel(op_underlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_undercross,op_cons(u,op_cons(v,op_nil))).
+322[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) pred_rel(op_overcross,op_cons(u,op_cons(v,op_nil)))*.
+323[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_ppart,op_cons(u,op_cons(v,op_nil))).
+324[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) pred_rel(op_SED,op_cons(v,op_cons(u,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil))).
+325[0:Inp] || pred_rel(op_tangential_enclosure,op_cons(u,op_cons(v,op_nil))) pred_rel(op_proper_enclosure,op_cons(v,op_cons(u,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_proper_tangential_enclosure,op_cons(u,op_cons(v,op_nil))).
+326[0:Inp] || pred_rel(op_undercross,op_cons(u,op_cons(v,op_nil))) pred_rel(op_undercross,op_cons(v,op_cons(u,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_partialunderlap,op_cons(u,op_cons(v,op_nil)))*.
+327[0:Inp] || pred_rel(op_overcross,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_overcross,op_cons(v,op_cons(u,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_partialoverlap,op_cons(u,op_cons(v,op_nil))).
+328[0:Inp] || pred_rel(op_GCD,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(x,op_nil)),op_nil)))* sort_individual(u) sort_individual(w) sort_individual(v) sort_individual(x) -> SkP1(u).
+329[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(op_z,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(op_constitutes,op_cons(skf116(u),op_cons(op_z,op_nil)))*.
+330[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(op_z,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(op_part,op_cons(skf116(u),op_cons(u,op_nil)))*.
+331[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_C,op_cons(skf77(v,u),op_cons(u,op_nil)))* pred_rel(op_IP,op_cons(u,op_cons(v,op_nil))).
+332[0:Inp] || SkP0(u,v)* sort_individual(w) pred_rel(v,op_cons(w,op_nil))* pred_rel(op_exxisting,op_cons(w,op_cons(x,op_nil)))* sort_individual(x) -> pred_rel(u,op_cons(skf125(x,u),op_nil))*.
+333[0:Inp] || pred_rel(op_GED,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(x,op_nil)),op_nil)))* sort_individual(u) sort_individual(w) sort_individual(v) sort_individual(x) -> SkP0(w,u).
+334[0:Inp] || pred_rel(op_overlaps,op_cons(skf77(u,v),op_cons(u,op_nil)))* pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) sort_individual(v) sort_individual(u) -> pred_rel(op_IP,op_cons(v,op_cons(u,op_nil))).
+335[0:Inp] || pred_rel(op_comp,op_cons(u,op_cons(v,op_nil)))* sort_individual(w) sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(v,op_nil)))*.
+336[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil)))* sort_individual(w) pred_rel(op_part,op_cons(w,op_cons(u,op_nil))) sort_individual(v) -> pred_rel(op_elementOf,op_cons(w,op_cons(u,op_nil)))*.
+337[0:Inp] || sort_individual(u) pred_rel(op_SCD,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_SCD,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_SCD,op_cons(u,op_cons(w,op_nil)))*.
+338[0:Inp] || SkP2(u,v) pred_rel(op_GCD,op_cons(op_fun(v,op_cons(w,op_nil)),op_cons(op_fun(u,op_cons(x,op_nil)),op_nil)))* sort_individual(v) sort_individual(u) sort_individual(w) sort_individual(x) -> .
+339[0:Inp] || pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil))) sort_individual(w) pred_rel(op_exxisting,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(u) -> pred_rel(op_SCD,op_cons(v,op_cons(u,op_nil)))*.
+340[0:Inp] || sort_individual(u) pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_exxisting,op_cons(v,op_cons(skf118(v),op_nil)))* pred_rel(op_SCD,op_cons(v,op_cons(w,op_nil)))*.
+341[0:Inp] || sort_individual(u) pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_SCD,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_constitutes,op_cons(w,op_cons(v,op_nil))).
+342[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_constitutes,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_constitutes,op_cons(u,op_cons(w,op_nil)))*.
+343[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(w,op_cons(u,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_overlaps,op_cons(w,op_cons(v,op_nil)))*.
+344[0:Inp] || sort_individual(u) pred_rel(op_EL,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_WL,op_cons(u,op_cons(w,op_nil)))*.
+345[0:Inp] || sort_individual(u) pred_rel(op_EL,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_EL,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_EL,op_cons(u,op_cons(w,op_nil)))*.
+346[0:Inp] || sort_individual(u) pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_elementOf,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_elementOf,op_cons(u,op_cons(w,op_nil)))*.
+347[0:Inp] || sort_individual(u) pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_componentOf,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_componentOf,op_cons(u,op_cons(w,op_nil)))*.
+348[0:Inp] || SkP2(u,v) pred_rel(op_GED,op_cons(op_fun(v,op_cons(w,op_nil)),op_cons(op_fun(u,op_cons(x,op_nil)),op_nil)))* sort_individual(v) sort_individual(u) sort_individual(w) sort_individual(x) -> .
+349[0:Inp] || sort_individual(u) pred_rel(op_SED,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_SED,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_SED,op_cons(u,op_cons(w,op_nil)))*.
+350[0:Inp] || sort_individual(u) pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_SED,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_exxisting,op_cons(w,op_cons(u,op_nil)))*.
+351[0:Inp] || sort_individual(u) pred_rel(op_IWL,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_IP,op_cons(w,op_cons(u,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_IWL,op_cons(w,op_cons(v,op_nil)))*.
+352[0:Inp] || sort_individual(u) pred_rel(op_WL,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_P,op_cons(w,op_cons(u,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_WL,op_cons(w,op_cons(v,op_nil)))*.
+353[0:Inp] || sort_individual(u) pred_rel(op_TPL,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_P,op_cons(w,op_cons(v,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_TPL,op_cons(u,op_cons(w,op_nil)))*.
+354[0:Inp] || sort_individual(u) pred_rel(op_IPL,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_P,op_cons(w,op_cons(v,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_IPL,op_cons(u,op_cons(w,op_nil)))*.
+355[0:Inp] || sort_individual(u) pred_rel(op_PL,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_P,op_cons(w,op_cons(v,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_PL,op_cons(u,op_cons(w,op_nil)))*.
+356[0:Inp] || sort_individual(u) pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(w,op_cons(v,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_IPL,op_cons(w,op_cons(u,op_nil)))*.
+357[0:Inp] || sort_individual(u) pred_rel(op_TP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(w,op_cons(v,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_TPL,op_cons(w,op_cons(u,op_nil)))*.
+358[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(w,op_cons(v,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_PL,op_cons(w,op_cons(u,op_nil)))*.
+359[0:Inp] || sort_individual(u) pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_IWL,op_cons(u,op_cons(w,op_nil)))*.
+360[0:Inp] || sort_individual(u) pred_rel(op_TP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_TWL,op_cons(u,op_cons(w,op_nil)))*.
+361[0:Inp] || sort_individual(u) pred_rel(op_P,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_WL,op_cons(u,op_cons(w,op_nil)))*.
+362[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* sort_individual(w) sort_individual(v) -> pred_rel(op_UL,op_cons(w,op_cons(v,op_nil)))*.
+363[0:Inp] || sort_individual(u) pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* sort_individual(w) sort_individual(v) -> pred_rel(op_IWL,op_cons(w,op_cons(v,op_nil)))*.
+364[0:Inp] || sort_individual(u) pred_rel(op_TP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* sort_individual(w) sort_individual(v) -> pred_rel(op_TWL,op_cons(w,op_cons(v,op_nil)))*.
+365[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* sort_individual(w) sort_individual(v) -> pred_rel(op_WL,op_cons(w,op_cons(v,op_nil)))*.
+366[0:Inp] || sort_individual(u) pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_IPL,op_cons(v,op_cons(w,op_nil)))*.
+367[0:Inp] || sort_individual(u) pred_rel(op_TP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_TPL,op_cons(v,op_cons(w,op_nil)))*.
+368[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_PL,op_cons(v,op_cons(w,op_nil)))*.
+369[0:Inp] || pred_rel(op_internal_enclosure,op_cons(u,op_cons(v,op_nil)))* sort_individual(w) pred_rel(op_C,op_cons(w,op_cons(u,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_S,op_cons(w,op_cons(v,op_nil)))*.
+370[0:Inp] || sort_individual(u) pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_E,op_cons(u,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_superposition,op_cons(v,op_cons(w,op_nil)))*.
+371[0:Inp] || pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))* sort_individual(w) pred_rel(op_C,op_cons(w,op_cons(u,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_C,op_cons(w,op_cons(v,op_nil)))*.
+372[0:Inp] || sort_individual(u) pred_rel(op_IP,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_IP,op_cons(w,op_cons(u,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_IU,op_cons(v,op_cons(w,op_nil)))*.
+373[0:Inp] || sort_individual(u) pred_rel(op_IP,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_IP,op_cons(u,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_IO,op_cons(v,op_cons(w,op_nil)))*.
+374[0:Inp] || sort_individual(u) pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_IP,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_overlaps,op_cons(u,op_cons(w,op_nil)))*.
+375[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* sort_individual(w) pred_rel(op_C,op_cons(u,op_cons(w,op_nil)))* sort_individual(v) -> pred_rel(op_C,op_cons(w,op_cons(v,op_nil)))*.
+376[0:Inp] || pred_rel(op_part,op_cons(skf76(u,v),op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(skf76(u,v),op_cons(u,op_nil)))* pred_rel(op_comp,op_cons(u,op_cons(v,op_nil))).
+377[0:Inp] || pred_rel(op_overlaps,op_cons(skf76(u,v),op_cons(u,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(skf76(u,v),op_cons(v,op_nil)))* pred_rel(op_comp,op_cons(u,op_cons(v,op_nil))).
+378[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_underlaps,op_cons(v,op_cons(w,op_nil)))*.
+379[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_overlaps,op_cons(v,op_cons(w,op_nil)))*.
+380[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_part,op_cons(u,op_cons(w,op_nil)))*.
+381[0:Inp] || SkP0(u,v)* sort_individual(w) pred_rel(v,op_cons(w,op_nil))* pred_rel(op_exxisting,op_cons(w,op_cons(x,op_nil)))* sort_individual(x) -> pred_rel(op_exxisting,op_cons(skf125(x,u),op_cons(x,op_nil)))*.
+382[0:Inp] || sort_individual(u) pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil))) sort_individual(v) -> pred_rel(op_GCD,op_cons(op_fun(skf124(u,v),op_cons(v,op_nil)),op_cons(op_fun(skf123(u,v),op_cons(u,op_nil)),op_nil)))*.
+383[0:Inp] || pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_GED,op_cons(op_fun(skf103(u,v),op_cons(v,op_nil)),op_cons(op_fun(skf102(u,v),op_cons(u,op_nil)),op_nil)))*.
+384[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_EC,op_cons(skf81(v,u),op_cons(v,op_nil)))* equal(u,v) pred_rel(op_NTPP,op_cons(u,op_cons(v,op_nil))).
+385[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_EC,op_cons(skf81(v,u),op_cons(u,op_nil)))* equal(u,v) pred_rel(op_NTPP,op_cons(u,op_cons(v,op_nil))).
+386[0:Inp] || sort_individual(u) pred_rel(op_EC,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_EC,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_NTPP,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(w) -> .
+387[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_comp,op_cons(w,op_cons(v,op_nil)))* sort_individual(u) sort_individual(w) sort_individual(v) -> .
+388[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(v) pred_rel(op_memberOf,op_cons(w,op_cons(v,op_nil)))* sort_individual(u) sort_individual(w) -> pred_rel(op_overlaps,op_cons(u,op_cons(skf113(u,v),op_nil)))*.
+389[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(v) pred_rel(op_memberOf,op_cons(w,op_cons(v,op_nil)))* sort_individual(u) sort_individual(w) -> pred_rel(op_memberOf,op_cons(skf113(u,v),op_cons(v,op_nil)))*.
+390[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_ppart,op_cons(w,op_cons(u,op_nil))) sort_individual(w) sort_individual(v) -> pred_rel(op_overlaps,op_cons(skf112(w,u),op_cons(w,op_nil)))*.
+391[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_ppart,op_cons(w,op_cons(u,op_nil))) sort_individual(w) sort_individual(v) -> pred_rel(op_memberOf,op_cons(skf112(w,u),op_cons(u,op_nil)))*.
+392[0:Inp] || pred_rel(op_GED,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(x,op_nil)),op_nil)))* sort_individual(u) sort_individual(w) sort_individual(v) sort_individual(x) -> pred_rel(u,op_cons(skf101(u),op_nil))*.
+393[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(skf71(v,w),op_nil)))* sort_individual(w) pred_rel(op_overlaps,op_cons(w,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+394[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(skf71(v,w),op_nil)))* sort_individual(w) pred_rel(op_overlaps,op_cons(w,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(w,op_nil))).
+395[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(w) pred_rel(op_underlaps,op_cons(w,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(skf70(v,w),op_nil)))*.
+396[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(v) pred_rel(op_underlaps,op_cons(v,op_cons(w,op_nil))) sort_individual(u) sort_individual(w) -> pred_rel(op_overlaps,op_cons(u,op_cons(skf70(w,v),op_nil)))*.
+397[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(skf88(v),op_nil))) pred_rel(op_overlaps,op_cons(u,op_cons(skf87(v),op_nil)))* pred_rel(op_SC,op_cons(v,op_nil)).
+398[0:Inp] || pred_rel(op_superposition,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_E,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_proper_superposition,op_cons(u,op_cons(v,op_nil))).
+399[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) pred_rel(op_PO,op_cons(u,op_cons(v,op_nil)))*.
+400[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(u,op_cons(w,op_nil)))* sort_individual(w) pred_rel(op_memberOf,op_cons(w,op_cons(v,op_nil)))* sort_individual(v) -> equal(w,op_d).
+401[0:Inp] || sort_individual(u) pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* sort_individual(v) sort_individual(w) -> pred_rel(op_exxisting,op_cons(v,op_cons(skf99(w,v),op_nil)))* equal(v,w) pred_rel(op_SED,op_cons(v,op_cons(w,op_nil))).
+402[0:Inp] || pred_rel(op_internal_enclosure,op_cons(u,op_cons(v,op_nil))) pred_rel(op_E,op_cons(u,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> pred_rel(op_E,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_proper_internal_enclosure,op_cons(u,op_cons(v,op_nil))).
+403[0:Inp] || pred_rel(op_GED,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(x,op_nil)),op_nil)))* sort_individual(u) sort_individual(w) sort_individual(v) sort_individual(x) -> pred_rel(op_exxisting,op_cons(skf101(u),op_cons(skf100(u),op_nil)))*.
+404[0:Inp] || pred_rel(op_exxisting,op_cons(u,op_cons(skf99(u,v),op_nil)))* sort_individual(w) pred_rel(op_exxisting,op_cons(v,op_cons(w,op_nil)))* sort_individual(v) sort_individual(u) -> equal(v,u) pred_rel(op_SED,op_cons(v,op_cons(u,op_nil))).
+405[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_prod,op_cons(w,op_cons(v,op_cons(x,op_nil))))* sort_individual(u) sort_individual(w) sort_individual(v) sort_individual(x) -> pred_rel(op_part,op_cons(u,op_cons(x,op_nil)))*.
+406[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_prod,op_cons(v,op_cons(w,op_cons(x,op_nil))))* sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) -> pred_rel(op_part,op_cons(u,op_cons(x,op_nil)))*.
+407[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_sum,op_cons(w,op_cons(v,op_cons(x,op_nil))))* sort_individual(u) sort_individual(w) sort_individual(v) sort_individual(x) -> pred_rel(op_overlaps,op_cons(u,op_cons(x,op_nil)))*.
+408[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_sum,op_cons(v,op_cons(w,op_cons(x,op_nil))))* sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) -> pred_rel(op_overlaps,op_cons(u,op_cons(x,op_nil)))*.
+409[0:Inp] || sort_individual(u) pred_rel(skf106(v),op_cons(u,op_cons(w,op_nil)))* sort_individual(w) pred_rel(op_U,op_cons(op_fun(skf106(v),op_cons(v,op_cons(v,op_nil))),op_nil))* sort_individual(v) -> pred_rel(skf106(v),op_cons(w,op_cons(u,op_nil)))*.
+410[0:Inp] || SkP1(u) sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) -> pred_rel(u,op_cons(skf122(v,u),op_nil))* SkP2(v,u) pred_rel(op_GCD,op_cons(op_fun(u,op_cons(w,op_nil)),op_cons(op_fun(v,op_cons(x,op_nil)),op_nil)))*.
+411[0:Inp] || pred_rel(op_part,op_cons(skf74(u,v,w),op_cons(u,op_nil)))* pred_rel(op_part,op_cons(skf74(u,v,w),op_cons(w,op_nil)))* sort_individual(v) sort_individual(u) sort_individual(w) -> pred_rel(op_prod,op_cons(v,op_cons(u,op_cons(w,op_nil)))).
+412[0:Inp] || pred_rel(op_part,op_cons(skf74(u,v,w),op_cons(v,op_nil)))* pred_rel(op_part,op_cons(skf74(u,v,w),op_cons(w,op_nil)))* sort_individual(v) sort_individual(u) sort_individual(w) -> pred_rel(op_prod,op_cons(v,op_cons(u,op_cons(w,op_nil)))).
+413[0:Inp] || pred_rel(op_overlaps,op_cons(skf73(u,v,w),op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(skf73(u,v,w),op_cons(w,op_nil)))* sort_individual(v) sort_individual(u) sort_individual(w) -> pred_rel(op_sum,op_cons(v,op_cons(u,op_cons(w,op_nil)))).
+414[0:Inp] || pred_rel(op_overlaps,op_cons(skf73(u,v,w),op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(skf73(u,v,w),op_cons(w,op_nil)))* sort_individual(v) sort_individual(u) sort_individual(w) -> pred_rel(op_sum,op_cons(v,op_cons(u,op_cons(w,op_nil)))).
+415[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(skf70(v,w),op_nil)))* sort_individual(w) pred_rel(op_underlaps,op_cons(w,op_cons(v,op_nil))) sort_individual(u) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(w,op_nil))) pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil))).
+416[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) pred_rel(op_part,op_cons(u,op_cons(w,op_nil))) sort_individual(v) pred_rel(op_overlaps,op_cons(v,op_cons(w,op_nil))) sort_individual(u) sort_individual(w) -> pred_rel(op_part,op_cons(u,op_cons(skf71(w,v),op_nil)))*.
+417[0:Inp] || sort_individual(u) pred_rel(op_GCD,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(x,op_nil)),op_nil)))* sort_individual(w) sort_individual(v) sort_individual(x) -> pred_rel(op_GED,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(x,op_nil)),op_nil))).
+418[0:Inp] || sort_individual(u) pred_rel(op_EL,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_L,op_cons(v,op_cons(x,op_nil)))* sort_individual(v) sort_individual(w) sort_individual(x) -> pred_rel(op_part,op_cons(w,op_cons(x,op_nil)))*.
+419[0:Inp] || sort_individual(u) pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_L,op_cons(v,op_cons(x,op_nil)))* sort_individual(v) sort_individual(w) sort_individual(x) -> pred_rel(op_C,op_cons(w,op_cons(x,op_nil)))*.
+420[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_L,op_cons(v,op_cons(x,op_nil)))* sort_individual(v) sort_individual(w) sort_individual(x) -> pred_rel(op_part,op_cons(w,op_cons(x,op_nil)))*.
+421[0:Inp] || sort_individual(u) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(x,op_nil)))* sort_individual(w) sort_individual(v) sort_individual(x) -> pred_rel(op_GL,op_cons(v,op_cons(x,op_nil)))*.
+422[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) sort_individual(w) pred_rel(op_EC,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_EC,op_cons(w,op_cons(v,op_nil)))* sort_individual(u) sort_individual(v) -> equal(u,v) pred_rel(op_TPP,op_cons(u,op_cons(v,op_nil)))*.
+423[0:Inp] || SkP1(u) sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) -> pred_rel(op_exxisting,op_cons(skf122(v,u),op_cons(skf121(v,u),op_nil)))* SkP2(v,u) pred_rel(op_GCD,op_cons(op_fun(u,op_cons(w,op_nil)),op_cons(op_fun(v,op_cons(x,op_nil)),op_nil)))*.
+424[0:Inp] || SkP3(u,skf106(u)) SkP4(skf106(u),u) SkP5(u,skf106(u)) SkP6(skf106(u)) sort_individual(u) -> pred_rel(skf106(u),op_cons(skf108(u),op_cons(skf107(u),op_nil))) pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))*.
+425[0:Inp] || pred_rel(op_overlaps,op_cons(skf85(u,v,w),op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(skf85(u,v,w),op_cons(w,op_nil)))* pred_rel(op_SC,op_cons(w,op_nil)) sort_individual(v) sort_individual(u) sort_individual(w) -> pred_rel(op_C,op_cons(v,op_cons(u,op_nil))).
+426[0:Inp] || pred_rel(op_overlaps,op_cons(skf85(u,v,w),op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(skf85(u,v,w),op_cons(w,op_nil)))* pred_rel(op_SC,op_cons(w,op_nil)) sort_individual(v) sort_individual(u) sort_individual(w) -> pred_rel(op_C,op_cons(v,op_cons(u,op_nil))).
+427[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_prod,op_cons(w,op_cons(x,op_cons(v,op_nil))))* sort_individual(u) sort_individual(w) sort_individual(x) sort_individual(v) -> pred_rel(op_part,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(x,op_nil)))*.
+428[0:Inp] || pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_sum,op_cons(w,op_cons(x,op_cons(v,op_nil))))* sort_individual(u) sort_individual(w) sort_individual(x) sort_individual(v) -> pred_rel(op_overlaps,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_overlaps,op_cons(u,op_cons(x,op_nil)))*.
+429[0:Inp] || pred_rel(skf106(u),op_cons(skf107(u),op_cons(skf108(u),op_nil))) SkP3(u,skf106(u)) SkP4(skf106(u),u) SkP5(u,skf106(u)) SkP6(skf106(u)) sort_individual(u) -> pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))*.
+430[0:Inp] || sort_individual(u) sort_individual(v) sort_individual(w) -> pred_rel(op_part,op_cons(skf74(v,u,w),op_cons(w,op_nil)))* pred_rel(op_part,op_cons(skf74(v,u,w),op_cons(u,op_nil)))* pred_rel(op_part,op_cons(skf74(v,u,w),op_cons(v,op_nil)))* pred_rel(op_prod,op_cons(u,op_cons(v,op_cons(w,op_nil)))).
+431[0:Inp] || sort_individual(u) sort_individual(v) sort_individual(w) -> pred_rel(op_overlaps,op_cons(skf73(v,u,w),op_cons(w,op_nil)))* pred_rel(op_overlaps,op_cons(skf73(v,u,w),op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(skf73(v,u,w),op_cons(v,op_nil)))* pred_rel(op_sum,op_cons(u,op_cons(v,op_cons(w,op_nil)))).
+432[0:Inp] || SkP5(u,v)* sort_individual(w) pred_rel(v,op_cons(w,op_cons(w,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(x,op_cons(u,op_nil)))* pred_rel(v,op_cons(x,op_cons(x,op_nil)))* sort_individual(x) -> pred_rel(v,op_cons(w,op_cons(x,op_nil)))*.
+433[0:Inp] || sort_individual(u) pred_rel(v,op_cons(u,op_nil)) pred_rel(op_constitutes,op_cons(u,op_cons(skf122(v,w),op_nil)))* SkP1(w) sort_individual(w) sort_individual(v) sort_individual(x) sort_individual(y) -> SkP2(v,w) pred_rel(op_GCD,op_cons(op_fun(w,op_cons(x,op_nil)),op_cons(op_fun(v,op_cons(y,op_nil)),op_nil)))*.
+434[0:Inp] || pred_rel(op_SC,op_cons(u,op_nil)) sort_individual(v) sort_individual(w) sort_individual(u) -> pred_rel(op_overlaps,op_cons(skf85(w,v,u),op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(skf85(w,v,u),op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(skf85(w,v,u),op_cons(w,op_nil)))* pred_rel(op_C,op_cons(v,op_cons(w,op_nil))).
+435[0:Inp] || SkP0(u,v) sort_individual(w) pred_rel(v,op_cons(w,op_nil))* pred_rel(op_exxisting,op_cons(w,op_cons(x,op_nil)))* sort_individual(x) sort_individual(v) sort_individual(u) sort_individual(y) sort_individual(z) -> SkP2(u,v) pred_rel(op_GED,op_cons(op_fun(v,op_cons(y,op_nil)),op_cons(op_fun(u,op_cons(z,op_nil)),op_nil)))*.
+436[0:Inp] || sort_individual(u) pred_rel(v,op_cons(u,op_nil))* pred_rel(op_exxisting,op_cons(u,op_cons(w,op_nil)))* sort_individual(w) pred_rel(op_GCD,op_cons(op_fun(v,op_cons(x,op_nil)),op_cons(op_fun(y,op_cons(z,op_nil)),op_nil)))* sort_individual(v) sort_individual(y) sort_individual(x) sort_individual(z) -> pred_rel(y,op_cons(skf119(u,y),op_nil))*.
+437[0:Inp] || pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) sort_individual(w) pred_rel(w,op_cons(v,op_nil)) pred_rel(op_GED,op_cons(op_fun(w,op_cons(v,op_nil)),op_cons(op_fun(x,op_cons(u,op_nil)),op_nil)))* pred_rel(x,op_cons(u,op_nil)) sort_individual(x) sort_individual(u) sort_individual(v) -> pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil))).
+438[0:Inp] || sort_individual(u) pred_rel(v,op_cons(u,op_nil))* pred_rel(op_exxisting,op_cons(u,op_cons(w,op_nil)))* sort_individual(w) pred_rel(op_GCD,op_cons(op_fun(v,op_cons(x,op_nil)),op_cons(op_fun(y,op_cons(z,op_nil)),op_nil)))* sort_individual(v) sort_individual(y) sort_individual(x) sort_individual(z) -> pred_rel(op_constitutes,op_cons(skf119(u,y),op_cons(u,op_nil)))*.
+439[0:Inp] || sort_individual(u) pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_U,op_cons(op_fun(op_F,op_cons(v,op_cons(v,op_nil))),op_nil))* sort_individual(v) sort_individual(w) pred_rel(op_memberOf,op_cons(w,op_cons(x,op_nil)))* pred_rel(op_U,op_cons(op_fun(op_R,op_cons(x,op_cons(x,op_nil))),op_nil))* sort_individual(x) equal(op_F,op_R) -> equal(x,v)*.
+440[0:Inp] || sort_individual(u) pred_rel(op_GCD,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(x,op_nil)),op_nil)))* pred_rel(op_GCD,op_cons(op_fun(w,op_cons(x,op_nil)),op_cons(op_fun(y,op_cons(z,op_nil)),op_nil)))* sort_individual(w) sort_individual(y) sort_individual(v) sort_individual(x) sort_individual(z) -> SkP2(y,u) pred_rel(op_GCD,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(y,op_cons(z,op_nil)),op_nil)))*.
+441[0:Inp] || sort_individual(u) pred_rel(op_GED,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(x,op_nil)),op_nil)))* pred_rel(op_GED,op_cons(op_fun(w,op_cons(x,op_nil)),op_cons(op_fun(y,op_cons(z,op_nil)),op_nil)))* sort_individual(w) sort_individual(y) sort_individual(v) sort_individual(x) sort_individual(z) -> SkP2(y,u) pred_rel(op_GED,op_cons(op_fun(u,op_cons(v,op_nil)),op_cons(op_fun(y,op_cons(z,op_nil)),op_nil)))*.
+ This is a first-order Non-Horn problem containing equality.
+ This is a problem that contains sort information.
+ All equations are many sorted.
+ The conjecture is ground.
+ Axiom clauses: 439 Conjecture clauses: 2
+ Inferences: IEmS=1 ISoR=1 IEqR=1 IEqF=1 ISpR=1 ISpL=1 IORe=1 IOFc=1 
+ Reductions: RFRew=1 RBRew=1 RFMRR=1 RBMRR=1 RObv=1 RUnC=1 RTaut=1 RSST=1 RSSi=1 RFSub=1 RBSub=1 RAED=1 RCon=1 
+ Extras    : Input Saturation, Dynamic Selection, Full Splitting, Full Reduction,  Ratio: 5, FuncWeight: 1, VarWeight: 1
+ Precedence: skf85 > skf74 > skf73 > skf17 > skf6 > skf5 > skf136 > skf135 > skf134 > skf133 > skf132 > skf131 > skf128 > skf127 > skf125 > skf124 > skf123 > skf122 > skf121 > skf119 > skf115 > skf113 > skf112 > skf105 > skf104 > skf103 > skf102 > skf99 > skf97 > skf96 > skf95 > skf94 > skf93 > skf92 > skf91 > skf90 > skf89 > skf86 > skf84 > skf83 > skf82 > skf81 > skf80 > skf79 > skf78 > skf77 > skf76 > skf72 > skf71 > skf70 > skf69 > skf68 > skf65 > skf64 > skf63 > skf62 > skf61 > skf60 > skf57 > skf56 > skf55 > skf54 > skf53 > skf52 > skf51 > skf50 > skf46 > skf44 > skf43 > skf36 > skf35 > skf34 > skf33 > skf30 > skf28 > skf27 > skf26 > skf25 > skf24 > skf23 > skf22 > skf21 > skf20 > skf16 > skf15 > skf14 > skf13 > skf12 > skf11 > skf10 > skf9 > skf8 > skf4 > skf3 > skf2 > skf1 > skf0 > op_fun > op_cons > op_append > skf138 > skf137 > skf130 > skf129 > skf126 > skf120 > skf118 > skf117 > skf116 > skf114 > skf111 > skf110 > skf109 > skf108 > skf107 > skf106 > skf101 > skf100 > skf98 > skf88 > skf87 > skf75 > skf67 > skf66 > skf59 > skf58 > skf49 > skf48 > skf47 > skf45 > skf42 > skf41 > skf40 > skf39 > skf38 > skf37 > skf32 > skf31 > skf29 > skf19 > skf18 > skf7 > SkP6 > SkP5 > SkP4 > SkP3 > SkP2 > SkP1 > SkP0 > pred_rel > sort_list > sort_individual > SkP7 > skc26 > skc25 > skc24 > skc23 > skc22 > skc21 > skc20 > skc19 > skc18 > skc17 > skc16 > skc15 > skc14 > skc13 > skc12 > skc11 > skc10 > skc9 > skc8 > skc7 > skc6 > skc5 > skc4 > skc3 > skc2 > skc1 > skc0 > op_z > op_underlaps > op_undercross > op_tangential_enclosure > op_superposition > op_sum > op_proper_tangential_enclosure > op_proper_superposition > op_proper_location > op_proper_internal_enclosure > op_proper_enclosure > op_prod > op_ppart > op_partialunderlap > op_partialoverlap > op_part > op_overlaps > op_overcross > op_now > op_nil > op_memberOf > op_internal_enclosure > op_indiscourse > op_exxisting > op_elementOf > op_disjoint > op_d > op_constitutes > op_componentOf > op_comp > op_boundary_connected > op_atomic_part > op_a > op_WL > op_UL > op_U > op_TWL > op_TU > op_TPP > op_TPL > op_TP > op_TO > op_SED > op_SCD > op_SC > op_S > op_R > op_PO > op_PL > op_P > op_NTPP > op_L > op_IWL > op_IU > op_IPP > op_IPL > op_IP > op_IO > op_GL > op_GED > op_GCD > op_F > op_EL > op_EC > op_E > op_DC > op_C
+ Ordering  : KBO
+Processed Problem:
+
+Worked Off Clauses:
+
+Usable Clauses:
+2[0:Inp] ||  -> sort_list(skc3)*.
+50[0:Inp] ||  -> sort_list(op_nil)*.
+1[0:Inp] ||  -> sort_individual(skc2)*.
+3[0:Inp] ||  -> sort_individual(op_C)*.
+4[0:Inp] ||  -> sort_individual(op_DC)*.
+5[0:Inp] ||  -> sort_individual(op_E)*.
+6[0:Inp] ||  -> sort_individual(op_EC)*.
+7[0:Inp] ||  -> sort_individual(op_EL)*.
+8[0:Inp] ||  -> sort_individual(op_F)*.
+9[0:Inp] ||  -> sort_individual(op_GCD)*.
+10[0:Inp] ||  -> sort_individual(op_GED)*.
+11[0:Inp] ||  -> sort_individual(op_GL)*.
+12[0:Inp] ||  -> sort_individual(op_IO)*.
+13[0:Inp] ||  -> sort_individual(op_IP)*.
+14[0:Inp] ||  -> sort_individual(op_IPL)*.
+15[0:Inp] ||  -> sort_individual(op_IPP)*.
+16[0:Inp] ||  -> sort_individual(op_IU)*.
+17[0:Inp] ||  -> sort_individual(op_IWL)*.
+18[0:Inp] ||  -> sort_individual(op_L)*.
+19[0:Inp] ||  -> sort_individual(op_NTPP)*.
+20[0:Inp] ||  -> sort_individual(op_P)*.
+21[0:Inp] ||  -> sort_individual(op_PL)*.
+22[0:Inp] ||  -> sort_individual(op_PO)*.
+23[0:Inp] ||  -> sort_individual(op_R)*.
+24[0:Inp] ||  -> sort_individual(op_S)*.
+25[0:Inp] ||  -> sort_individual(op_SC)*.
+26[0:Inp] ||  -> sort_individual(op_SCD)*.
+27[0:Inp] ||  -> sort_individual(op_SED)*.
+28[0:Inp] ||  -> sort_individual(op_TO)*.
+29[0:Inp] ||  -> sort_individual(op_TP)*.
+30[0:Inp] ||  -> sort_individual(op_TPL)*.
+31[0:Inp] ||  -> sort_individual(op_TPP)*.
+32[0:Inp] ||  -> sort_individual(op_TU)*.
+33[0:Inp] ||  -> sort_individual(op_TWL)*.
+34[0:Inp] ||  -> sort_individual(op_U)*.
+35[0:Inp] ||  -> sort_individual(op_UL)*.
+36[0:Inp] ||  -> sort_individual(op_WL)*.
+37[0:Inp] ||  -> sort_individual(op_a)*.
+38[0:Inp] ||  -> sort_individual(op_atomic_part)*.
+39[0:Inp] ||  -> sort_individual(op_boundary_connected)*.
+40[0:Inp] ||  -> sort_individual(op_comp)*.
+41[0:Inp] ||  -> sort_individual(op_componentOf)*.
+42[0:Inp] ||  -> sort_individual(op_constitutes)*.
+43[0:Inp] ||  -> sort_individual(op_d)*.
+44[0:Inp] ||  -> sort_individual(op_disjoint)*.
+45[0:Inp] ||  -> sort_individual(op_elementOf)*.
+46[0:Inp] ||  -> sort_individual(op_exxisting)*.
+47[0:Inp] ||  -> sort_individual(op_indiscourse)*.
+48[0:Inp] ||  -> sort_individual(op_internal_enclosure)*.
+49[0:Inp] ||  -> sort_individual(op_memberOf)*.
+51[0:Inp] ||  -> sort_individual(op_now)*.
+52[0:Inp] ||  -> sort_individual(op_overcross)*.
+53[0:Inp] ||  -> sort_individual(op_overlaps)*.
+54[0:Inp] ||  -> sort_individual(op_part)*.
+55[0:Inp] ||  -> sort_individual(op_partialoverlap)*.
+56[0:Inp] ||  -> sort_individual(op_partialunderlap)*.
+57[0:Inp] ||  -> sort_individual(op_ppart)*.
+58[0:Inp] ||  -> sort_individual(op_prod)*.
+59[0:Inp] ||  -> sort_individual(op_proper_enclosure)*.
+60[0:Inp] ||  -> sort_individual(op_proper_internal_enclosure)*.
+61[0:Inp] ||  -> sort_individual(op_proper_location)*.
+62[0:Inp] ||  -> sort_individual(op_proper_superposition)*.
+63[0:Inp] ||  -> sort_individual(op_proper_tangential_enclosure)*.
+64[0:Inp] ||  -> sort_individual(op_sum)*.
+65[0:Inp] ||  -> sort_individual(op_superposition)*.
+66[0:Inp] ||  -> sort_individual(op_tangential_enclosure)*.
+67[0:Inp] ||  -> sort_individual(op_undercross)*.
+68[0:Inp] ||  -> sort_individual(op_underlaps)*.
+69[0:Inp] ||  -> sort_individual(op_z)*.
+70[0:Inp] ||  -> sort_individual(skf138(u))*.
+71[0:Inp] ||  -> sort_individual(skf137(u))*.
+72[0:Inp] ||  -> sort_individual(skf130(u))*.
+73[0:Inp] ||  -> sort_individual(skf129(u))*.
+74[0:Inp] ||  -> sort_individual(skf118(u))*.
+75[0:Inp] ||  -> sort_individual(skf117(u))*.
+76[0:Inp] ||  -> sort_individual(skf116(u))*.
+77[0:Inp] ||  -> sort_individual(skf114(u))*.
+78[0:Inp] ||  -> sort_individual(skf111(u))*.
+79[0:Inp] ||  -> sort_individual(skf110(u))*.
+80[0:Inp] ||  -> sort_individual(skf109(u))*.
+81[0:Inp] ||  -> sort_individual(skf108(u))*.
+82[0:Inp] ||  -> sort_individual(skf107(u))*.
+83[0:Inp] ||  -> sort_individual(skf106(u))*.
+84[0:Inp] ||  -> sort_individual(skf101(u))*.
+85[0:Inp] ||  -> sort_individual(skf100(u))*.
+86[0:Inp] ||  -> sort_individual(skf98(u))*.
+87[0:Inp] ||  -> sort_individual(skf88(u))*.
+88[0:Inp] ||  -> sort_individual(skf87(u))*.
+89[0:Inp] ||  -> sort_individual(skf75(u))*.
+90[0:Inp] ||  -> sort_individual(skf136(u,v))*.
+91[0:Inp] ||  -> sort_individual(skf135(u,v))*.
+92[0:Inp] ||  -> sort_individual(skf134(u,v))*.
+93[0:Inp] ||  -> sort_individual(skf133(u,v))*.
+94[0:Inp] ||  -> sort_individual(skf132(u,v))*.
+95[0:Inp] ||  -> sort_individual(skf131(u,v))*.
+96[0:Inp] ||  -> sort_individual(skf128(u,v))*.
+97[0:Inp] ||  -> sort_individual(skf127(u,v))*.
+98[0:Inp] ||  -> sort_individual(skf125(u,v))*.
+99[0:Inp] ||  -> sort_individual(skf124(u,v))*.
+100[0:Inp] ||  -> sort_individual(skf123(u,v))*.
+101[0:Inp] ||  -> sort_individual(skf122(u,v))*.
+102[0:Inp] ||  -> sort_individual(skf121(u,v))*.
+103[0:Inp] ||  -> sort_individual(skf119(u,v))*.
+104[0:Inp] ||  -> sort_individual(skf115(u,v))*.
+105[0:Inp] ||  -> sort_individual(skf113(u,v))*.
+106[0:Inp] ||  -> sort_individual(skf112(u,v))*.
+107[0:Inp] ||  -> sort_individual(skf105(u,v))*.
+108[0:Inp] ||  -> sort_individual(skf104(u,v))*.
+109[0:Inp] ||  -> sort_individual(skf103(u,v))*.
+110[0:Inp] ||  -> sort_individual(skf102(u,v))*.
+111[0:Inp] ||  -> sort_individual(skf99(u,v))*.
+112[0:Inp] ||  -> sort_individual(skf97(u,v))*.
+113[0:Inp] ||  -> sort_individual(skf96(u,v))*.
+114[0:Inp] ||  -> sort_individual(skf95(u,v))*.
+115[0:Inp] ||  -> sort_individual(skf94(u,v))*.
+116[0:Inp] ||  -> sort_individual(skf93(u,v))*.
+117[0:Inp] ||  -> sort_individual(skf92(u,v))*.
+118[0:Inp] ||  -> sort_individual(skf91(u,v))*.
+119[0:Inp] ||  -> sort_individual(skf90(u,v))*.
+120[0:Inp] ||  -> sort_individual(skf89(u,v))*.
+121[0:Inp] ||  -> sort_individual(skf84(u,v))*.
+122[0:Inp] ||  -> sort_individual(skf83(u,v))*.
+123[0:Inp] ||  -> sort_individual(skf82(u,v))*.
+124[0:Inp] ||  -> sort_individual(skf81(u,v))*.
+125[0:Inp] ||  -> sort_individual(skf80(u,v))*.
+126[0:Inp] ||  -> sort_individual(skf79(u,v))*.
+127[0:Inp] ||  -> sort_individual(skf78(u,v))*.
+128[0:Inp] ||  -> sort_individual(skf77(u,v))*.
+129[0:Inp] ||  -> sort_individual(skf76(u,v))*.
+130[0:Inp] ||  -> sort_individual(skf72(u,v))*.
+131[0:Inp] ||  -> sort_individual(skf71(u,v))*.
+132[0:Inp] ||  -> sort_individual(skf70(u,v))*.
+133[0:Inp] ||  -> sort_individual(skf69(u,v))*.
+134[0:Inp] ||  -> sort_individual(skf68(u,v))*.
+138[0:Inp] ||  -> pred_rel(op_indiscourse,op_cons(op_a,op_nil))*.
+139[0:Inp] ||  -> pred_rel(op_indiscourse,op_cons(op_now,op_nil))*.
+135[0:Inp] ||  -> sort_individual(skf85(u,v,w))*.
+136[0:Inp] ||  -> sort_individual(skf74(u,v,w))*.
+137[0:Inp] ||  -> sort_individual(skf73(u,v,w))*.
+141[0:Inp] sort_individual(u) sort_list(u) ||  -> .
+142[0:Inp] ||  -> pred_rel(op_exxisting,op_cons(op_a,op_cons(op_now,op_nil)))*.
+143[0:Inp] ||  -> pred_rel(op_exxisting,op_cons(op_now,op_cons(op_a,op_nil)))*.
+144[0:Inp] sort_list(u) ||  -> equal(op_append(op_nil,u),u)**.
+145[0:Inp] ||  -> SkP1(u) pred_rel(u,op_cons(skf130(u),op_nil))*.
+149[0:Inp] sort_individual(u) ||  -> pred_rel(op_part,op_cons(u,op_cons(u,op_nil)))*.
+150[0:Inp] sort_individual(u) ||  -> pred_rel(op_C,op_cons(u,op_cons(u,op_nil)))*.
+151[0:Inp] sort_individual(u) ||  -> pred_rel(op_EL,op_cons(u,op_cons(u,op_nil)))*.
+146[0:Inp] sort_list(u) sort_list(v) ||  -> sort_list(op_append(v,u))*.
+147[0:Inp] sort_list(u) sort_individual(v) ||  -> sort_list(op_cons(v,u))*.
+148[0:Inp] sort_list(u) sort_individual(v) ||  -> sort_individual(op_fun(v,u))*.
+152[0:Inp] ||  -> SkP0(u,v) pred_rel(v,op_cons(skf128(u,v),op_nil))*.
+159[0:Inp] ||  -> SkP6(u) pred_rel(u,op_cons(skf138(u),op_cons(skf137(u),op_nil)))*.
+153[0:Inp] sort_individual(u) || pred_rel(op_componentOf,op_cons(u,op_cons(u,op_nil)))* -> .
+154[0:Inp] sort_individual(u) || pred_rel(op_elementOf,op_cons(u,op_cons(u,op_nil)))* -> .
+155[0:Inp] sort_individual(u) || pred_rel(op_memberOf,op_cons(u,op_cons(u,op_nil)))* -> .
+156[0:Inp] sort_individual(u) || pred_rel(op_constitutes,op_cons(u,op_cons(u,op_nil)))* -> .
+157[0:Inp] || SkP2(u,v) -> pred_rel(v,op_cons(skf131(u,v),op_nil))*.
+158[0:Inp] || SkP2(u,v) -> pred_rel(u,op_cons(skf131(u,v),op_nil))*.
+161[0:Inp] ||  -> SkP4(u,v) pred_rel(op_overlaps,op_cons(skf134(u,v),op_cons(v,op_nil)))*.
+162[0:Inp] ||  -> SkP5(u,v) pred_rel(op_part,op_cons(skf136(u,v),op_cons(u,op_nil)))*.
+163[0:Inp] ||  -> SkP5(u,v) pred_rel(op_part,op_cons(skf135(u,v),op_cons(u,op_nil)))*.
+160[0:Inp] sort_list(u) sort_individual(v) || equal(op_cons(v,u),op_nil)** -> .
+164[0:Inp] sort_individual(u) || equal(skf75(u),u) -> pred_rel(op_atomic_part,op_cons(u,op_nil))*.
+165[0:Inp] || pred_rel(op_part,op_cons(skf132(u,v),op_cons(u,op_nil)))* -> SkP3(u,v).
+166[0:Inp] ||  -> SkP0(u,v) pred_rel(op_exxisting,op_cons(skf128(u,v),op_cons(skf127(u,v),op_nil)))*.
+168[0:Inp] ||  -> SkP3(u,v) pred_rel(v,op_cons(skf132(u,v),op_cons(skf132(u,v),op_nil)))*.
+169[0:Inp] ||  -> SkP5(u,v) pred_rel(v,op_cons(skf136(u,v),op_cons(skf136(u,v),op_nil)))*.
+170[0:Inp] ||  -> SkP5(u,v) pred_rel(v,op_cons(skf135(u,v),op_cons(skf135(u,v),op_nil)))*.
+167[0:Inp] sort_individual(u) || pred_rel(op_exxisting,op_cons(skf130(v),op_cons(u,op_nil)))* -> SkP1(v).
+457[0:Res:143.0,239.3] sort_individual(op_a) sort_individual(op_now) || pred_rel(op_exxisting,op_cons(op_a,op_cons(op_now,op_nil)))* -> .
+464[0:Res:142.0,239.2] sort_individual(op_a) sort_individual(op_now) || pred_rel(op_exxisting,op_cons(op_now,op_cons(op_a,op_nil)))* -> .
+472[0:Res:142.0,239.3] sort_individual(op_now) sort_individual(op_a) || pred_rel(op_exxisting,op_cons(op_now,op_cons(op_a,op_nil)))* -> .
+171[0:Inp] || pred_rel(u,op_cons(skf136(v,u),op_cons(skf135(v,u),op_nil)))* -> SkP5(v,u).
+172[0:Inp] sort_individual(u) ||  -> pred_rel(op_atomic_part,op_cons(u,op_nil)) pred_rel(op_part,op_cons(skf75(u),op_cons(u,op_nil)))*.
+450[0:Res:143.0,300.3] sort_individual(op_a) sort_individual(op_now) SkP6(op_exxisting) ||  -> pred_rel(op_exxisting,op_cons(op_now,op_cons(op_now,op_nil)))*.
+451[0:Res:143.0,299.3] sort_individual(op_a) sort_individual(op_now) SkP6(op_exxisting) ||  -> pred_rel(op_exxisting,op_cons(op_a,op_cons(op_a,op_nil)))*.
+465[0:Res:142.0,300.3] sort_individual(op_now) sort_individual(op_a) SkP6(op_exxisting) ||  -> pred_rel(op_exxisting,op_cons(op_a,op_cons(op_a,op_nil)))*.
+466[0:Res:142.0,299.3] sort_individual(op_now) sort_individual(op_a) SkP6(op_exxisting) ||  -> pred_rel(op_exxisting,op_cons(op_now,op_cons(op_now,op_nil)))*.
+175[0:Inp] sort_individual(u) || pred_rel(op_C,op_cons(skf88(u),op_cons(skf87(u),op_nil)))* -> pred_rel(op_SC,op_cons(u,op_nil)).
+173[0:Inp] sort_individual(u) sort_individual(v) || equal(v,u) pred_rel(op_TPP,op_cons(v,op_cons(u,op_nil)))* -> .
+174[0:Inp] sort_individual(u) sort_individual(v) || equal(v,u) pred_rel(op_NTPP,op_cons(v,op_cons(u,op_nil)))* -> .
+176[0:Inp] sort_individual(u) sort_individual(v) || equal(v,u) pred_rel(op_SED,op_cons(v,op_cons(u,op_nil)))* -> .
+177[0:Inp] sort_individual(u) || pred_rel(v,op_cons(u,op_nil))* pred_rel(w,op_cons(u,op_nil))* -> SkP2(v,w)*.
+178[0:Inp] sort_individual(u) || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* -> SkP6(skf106(u)).
+182[0:Inp] sort_individual(u) || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* -> SkP4(skf106(u),u).
+183[0:Inp] sort_individual(u) || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* -> SkP3(u,skf106(u)).
+181[0:Inp] sort_individual(u) || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* -> SkP5(u,skf106(u)).
+185[0:Inp] sort_individual(u) sort_individual(v) ||  -> pred_rel(op_disjoint,op_cons(v,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))*.
+184[0:Inp] sort_individual(u) sort_individual(v) ||  -> pred_rel(op_DC,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_C,op_cons(v,op_cons(u,op_nil))).
+179[0:Inp] sort_individual(u) SkP1(v) || pred_rel(v,op_cons(u,op_nil))* -> pred_rel(op_exxisting,op_cons(u,op_cons(skf129(u),op_nil)))*.
+180[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* equal(skf110(v),skf109(v)) -> .
+186[0:Inp] sort_list(u) sort_list(v) sort_individual(w) ||  -> equal(op_cons(w,op_append(v,u)),op_append(op_cons(w,v),u))**.
+197[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(skf103(v,u),op_cons(u,op_nil))*.
+196[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(skf102(v,u),op_cons(v,op_nil))*.
+188[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil))) -> pred_rel(skf124(v,u),op_cons(u,op_nil))*.
+187[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil))) -> pred_rel(skf123(v,u),op_cons(v,op_nil))*.
+226[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_ppart,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil))).
+225[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overcross,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))*.
+224[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_undercross,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_underlaps,op_cons(v,op_cons(u,op_nil)))*.
+223[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_partialoverlap,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_overcross,op_cons(v,op_cons(u,op_nil))).
+222[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_partialoverlap,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_overcross,op_cons(u,op_cons(v,op_nil))).
+221[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_partialunderlap,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_undercross,op_cons(v,op_cons(u,op_nil)))*.
+220[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_partialunderlap,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_undercross,op_cons(u,op_cons(v,op_nil)))*.
+219[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_PO,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))*.
+217[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_EC,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_C,op_cons(v,op_cons(u,op_nil))).
+216[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IP,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+215[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TP,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+214[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TO,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))*.
+213[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TU,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_underlaps,op_cons(v,op_cons(u,op_nil)))*.
+212[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IPP,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_IP,op_cons(v,op_cons(u,op_nil))).
+211[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TPP,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+210[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_NTPP,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+209[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_superposition,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_superposition,op_cons(v,op_cons(u,op_nil)))*.
+208[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_boundary_connected,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_C,op_cons(v,op_cons(u,op_nil))).
+207[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_internal_enclosure,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_internal_enclosure,op_cons(v,op_cons(u,op_nil))).
+206[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_internal_enclosure,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_E,op_cons(v,op_cons(u,op_nil))).
+205[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_tangential_enclosure,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_E,op_cons(v,op_cons(u,op_nil))).
+204[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_tangential_enclosure,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_tangential_enclosure,op_cons(v,op_cons(u,op_nil)))*.
+203[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_tangential_enclosure,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_proper_enclosure,op_cons(u,op_cons(v,op_nil))).
+201[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_L,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_PL,op_cons(v,op_cons(u,op_nil)))*.
+200[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_L,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_WL,op_cons(v,op_cons(u,op_nil)))*.
+199[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_location,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_L,op_cons(v,op_cons(u,op_nil))).
+198[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+195[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_ppart,op_cons(v,op_cons(u,op_nil)))*.
+194[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+193[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_SED,op_cons(u,op_cons(v,op_nil))).
+192[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_ppart,op_cons(v,op_cons(u,op_nil)))*.
+191[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_EL,op_cons(v,op_cons(u,op_nil))).
+190[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_ppart,op_cons(v,op_cons(u,op_nil)))*.
+189[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_SCD,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_SED,op_cons(v,op_cons(u,op_nil)))*.
+218[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_C,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_C,op_cons(u,op_cons(v,op_nil)))*.
+202[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_L,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_L,op_cons(u,op_cons(u,op_nil)))*.
+227[0:Inp] || pred_rel(u,op_cons(skf137(u),op_cons(skf137(u),op_nil))) pred_rel(u,op_cons(skf138(u),op_cons(skf138(u),op_nil)))* -> SkP6(u).
+247[0:Inp] sort_individual(u) sort_individual(v) ||  -> pred_rel(op_E,op_cons(v,op_cons(u,op_nil))) pred_rel(op_C,op_cons(skf82(u,v),op_cons(v,op_nil)))*.
+243[0:Inp] sort_individual(u) sort_individual(v) ||  -> pred_rel(op_internal_enclosure,op_cons(v,op_cons(u,op_nil))) pred_rel(op_C,op_cons(skf84(u,v),op_cons(v,op_nil)))*.
+260[0:Inp] sort_individual(u) sort_individual(v) ||  -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) pred_rel(op_part,op_cons(skf72(u,v),op_cons(v,op_nil)))*.
+234[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* -> pred_rel(op_memberOf,op_cons(skf110(v),op_cons(v,op_nil)))*.
+233[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* -> pred_rel(op_memberOf,op_cons(skf109(v),op_cons(v,op_nil)))*.
+238[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_SED,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_exxisting,op_cons(v,op_cons(skf98(v),op_nil)))*.
+232[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* -> pred_rel(op_exxisting,op_cons(v,op_cons(skf111(v),op_nil)))*.
+230[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_SCD,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_exxisting,op_cons(v,op_cons(skf117(v),op_nil)))*.
+259[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_ppart,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) -> .
+258[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overcross,op_cons(v,op_cons(u,op_nil))) pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* -> .
+257[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_undercross,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(v,op_nil))) -> .
+256[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_PO,op_cons(v,op_cons(u,op_nil))) pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* -> .
+255[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_PO,op_cons(v,op_cons(u,op_nil))) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* -> .
+254[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_disjoint,op_cons(v,op_cons(u,op_nil))) -> .
+253[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_C,op_cons(v,op_cons(u,op_nil))) pred_rel(op_DC,op_cons(v,op_cons(u,op_nil)))* -> .
+252[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_EC,op_cons(v,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))* -> .
+251[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TP,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_IP,op_cons(v,op_cons(u,op_nil))) -> .
+250[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TO,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_IO,op_cons(v,op_cons(u,op_nil))) -> .
+249[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TU,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_IU,op_cons(v,op_cons(u,op_nil))) -> .
+248[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IPP,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_IP,op_cons(u,op_cons(v,op_nil))) -> .
+246[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_superposition,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_E,op_cons(v,op_cons(u,op_nil))) -> .
+245[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_superposition,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_E,op_cons(u,op_cons(v,op_nil))) -> .
+244[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_boundary_connected,op_cons(v,op_cons(u,op_nil))) pred_rel(op_superposition,op_cons(v,op_cons(u,op_nil)))* -> .
+242[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_internal_enclosure,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_E,op_cons(u,op_cons(v,op_nil))) -> .
+241[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_tangential_enclosure,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_internal_enclosure,op_cons(v,op_cons(u,op_nil))) -> .
+240[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_location,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(v,op_nil))) -> .
+239[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_exxisting,op_cons(u,op_cons(v,op_nil)))* -> .
+237[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_componentOf,op_cons(u,op_cons(v,op_nil)))* -> .
+236[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_elementOf,op_cons(u,op_cons(v,op_nil)))* -> .
+235[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* -> .
+231[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil)))* -> .
+228[0:Inp] sort_individual(u) || SkP3(v,w)* pred_rel(w,op_cons(u,op_cons(u,op_nil)))* -> pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))*.
+229[0:Inp] sort_individual(u) || pred_rel(v,op_cons(u,op_nil)) pred_rel(op_exxisting,op_cons(u,op_cons(skf127(v,w),op_nil)))* -> SkP0(v,w).
+296[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(skf68(u,v),op_cons(v,op_nil)))*.
+295[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(skf68(u,v),op_cons(u,op_nil)))*.
+290[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IO,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_IP,op_cons(skf78(u,v),op_cons(v,op_nil)))*.
+289[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IO,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_IP,op_cons(skf78(u,v),op_cons(u,op_nil)))*.
+286[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TPP,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_EC,op_cons(skf80(u,v),op_cons(v,op_nil)))*.
+285[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TPP,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_EC,op_cons(skf80(u,v),op_cons(u,op_nil)))*.
+283[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_superposition,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_E,op_cons(skf83(u,v),op_cons(v,op_nil)))*.
+282[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_superposition,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_E,op_cons(skf83(u,v),op_cons(u,op_nil)))*.
+280[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_PL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(skf89(u,v),op_cons(v,op_nil)))*.
+279[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_PL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_L,op_cons(skf89(u,v),op_cons(u,op_nil)))*.
+278[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TPL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_TP,op_cons(skf90(u,v),op_cons(v,op_nil)))*.
+277[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TPL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_L,op_cons(skf90(u,v),op_cons(u,op_nil)))*.
+276[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IPL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_IP,op_cons(skf91(u,v),op_cons(v,op_nil)))*.
+275[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IPL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_L,op_cons(skf91(u,v),op_cons(u,op_nil)))*.
+274[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_WL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(skf92(v,u),op_cons(u,op_nil)))*.
+272[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TWL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_TP,op_cons(skf93(v,u),op_cons(u,op_nil)))*.
+270[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IWL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_IP,op_cons(skf94(v,u),op_cons(u,op_nil)))*.
+268[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_GL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(skf96(u,v),op_cons(v,op_nil)))*.
+267[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_GL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(skf95(u,v),op_cons(u,op_nil)))*.
+264[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(skf104(v,u),op_cons(u,op_nil)))*.
+263[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(skf105(v,u),op_cons(u,op_nil)))*.
+294[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_underlaps,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(v,op_cons(skf69(u,v),op_nil)))*.
+293[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_underlaps,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(u,op_cons(skf69(u,v),op_nil)))*.
+288[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IU,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_IP,op_cons(v,op_cons(skf79(u,v),op_nil)))*.
+287[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IU,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_IP,op_cons(u,op_cons(skf79(u,v),op_nil)))*.
+273[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_WL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_L,op_cons(v,op_cons(skf92(v,u),op_nil)))*.
+271[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_TWL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_L,op_cons(v,op_cons(skf93(v,u),op_nil)))*.
+269[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IWL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_L,op_cons(v,op_cons(skf94(v,u),op_nil)))*.
+266[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_UL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(u,op_cons(skf97(v,u),op_nil)))*.
+265[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_UL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_L,op_cons(v,op_cons(skf97(v,u),op_nil)))*.
+262[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_exxisting,op_cons(v,op_cons(skf115(u,v),op_nil)))*.
+261[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_exxisting,op_cons(u,op_cons(skf115(u,v),op_nil)))*.
+292[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(skf72(u,v),op_cons(u,op_nil)))* -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil))).
+284[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_C,op_cons(skf82(u,v),op_cons(u,op_nil)))* -> pred_rel(op_E,op_cons(v,op_cons(u,op_nil))).
+281[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_S,op_cons(skf84(u,v),op_cons(u,op_nil)))* -> pred_rel(op_internal_enclosure,op_cons(v,op_cons(u,op_nil))).
+291[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_atomic_part,op_cons(u,op_nil)) pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* -> equal(v,u).
+298[0:Inp] sort_list(u) sort_list(v) sort_individual(w) sort_individual(x) || equal(op_cons(x,v),op_cons(w,u))* -> equal(x,w).
+297[0:Inp] sort_list(u) sort_list(v) sort_individual(w) sort_individual(x) || equal(op_cons(x,v),op_cons(w,u))* -> equal(v,u).
+456[0:Res:143.0,332.3] sort_individual(op_a) sort_individual(op_now) || SkP0(u,v)* pred_rel(v,op_cons(op_now,op_nil))* -> pred_rel(u,op_cons(skf125(op_a,u),op_nil))*.
+471[0:Res:142.0,332.3] sort_individual(op_now) sort_individual(op_a) || SkP0(u,v)* pred_rel(v,op_cons(op_a,op_nil))* -> pred_rel(u,op_cons(skf125(op_now,u),op_nil))*.
+304[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(skf104(v,u),op_cons(v,op_nil)))* -> .
+303[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(skf105(v,u),op_cons(v,op_nil)))* -> .
+300[0:Inp] sort_individual(u) sort_individual(v) SkP6(w) || pred_rel(w,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(w,op_cons(v,op_cons(v,op_nil)))*.
+299[0:Inp] sort_individual(u) sort_individual(v) SkP6(w) || pred_rel(w,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(w,op_cons(u,op_cons(u,op_nil)))*.
+302[0:Inp] sort_individual(u) || SkP4(v,w)* pred_rel(op_overlaps,op_cons(u,op_cons(w,op_nil)))* -> pred_rel(op_overlaps,op_cons(u,op_cons(skf133(u,v),op_nil)))*.
+301[0:Inp] sort_individual(u) || pred_rel(v,op_cons(u,op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(skf134(v,w),op_cons(u,op_nil)))* -> SkP4(v,w).
+447[0:Res:143.0,340.3] sort_individual(u) sort_individual(op_now) sort_individual(op_a) ||  -> pred_rel(op_SCD,op_cons(op_now,op_cons(u,op_nil)))* pred_rel(op_exxisting,op_cons(op_now,op_cons(skf118(op_now),op_nil)))*.
+462[0:Res:142.0,340.3] sort_individual(u) sort_individual(op_a) sort_individual(op_now) ||  -> pred_rel(op_SCD,op_cons(op_a,op_cons(u,op_nil)))* pred_rel(op_exxisting,op_cons(op_a,op_cons(skf118(op_a),op_nil)))*.
+448[0:Res:143.0,339.4] sort_individual(u) sort_individual(op_now) sort_individual(op_a) || pred_rel(op_constitutes,op_cons(u,op_cons(op_now,op_nil)))* -> pred_rel(op_SCD,op_cons(op_now,op_cons(u,op_nil))).
+463[0:Res:142.0,339.4] sort_individual(u) sort_individual(op_a) sort_individual(op_now) || pred_rel(op_constitutes,op_cons(u,op_cons(op_a,op_nil)))* -> pred_rel(op_SCD,op_cons(op_a,op_cons(u,op_nil))).
+446[0:Res:143.0,341.3] sort_individual(u) sort_individual(op_now) sort_individual(op_a) || pred_rel(op_SCD,op_cons(op_now,op_cons(u,op_nil))) -> pred_rel(op_constitutes,op_cons(u,op_cons(op_now,op_nil)))*.
+461[0:Res:142.0,341.3] sort_individual(u) sort_individual(op_a) sort_individual(op_now) || pred_rel(op_SCD,op_cons(op_a,op_cons(u,op_nil))) -> pred_rel(op_constitutes,op_cons(u,op_cons(op_a,op_nil)))*.
+445[0:Res:143.0,350.3] sort_individual(u) sort_individual(op_now) sort_individual(op_a) || pred_rel(op_SED,op_cons(op_now,op_cons(u,op_nil))) -> pred_rel(op_exxisting,op_cons(u,op_cons(op_a,op_nil)))*.
+460[0:Res:142.0,350.3] sort_individual(u) sort_individual(op_a) sort_individual(op_now) || pred_rel(op_SED,op_cons(op_a,op_cons(u,op_nil))) -> pred_rel(op_exxisting,op_cons(u,op_cons(op_now,op_nil)))*.
+305[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_GL,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_L,op_cons(skf96(u,v),op_cons(skf95(u,v),op_nil)))*.
+306[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* -> equal(v,u).
+455[0:Res:143.0,381.3] sort_individual(op_a) sort_individual(op_now) || SkP0(u,v)* pred_rel(v,op_cons(op_now,op_nil))* -> pred_rel(op_exxisting,op_cons(skf125(op_a,u),op_cons(op_a,op_nil)))*.
+470[0:Res:142.0,381.3] sort_individual(op_now) sort_individual(op_a) || SkP0(u,v)* pred_rel(v,op_cons(op_a,op_nil))* -> pred_rel(op_exxisting,op_cons(skf125(op_now,u),op_cons(op_now,op_nil)))*.
+308[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_memberOf,op_cons(u,op_cons(v,op_nil)))* -> pred_rel(op_U,op_cons(op_fun(skf114(v),op_cons(v,op_cons(v,op_nil))),op_nil))*.
+307[0:Inp] sort_individual(u) || SkP4(v,w)* pred_rel(op_overlaps,op_cons(u,op_cons(w,op_nil)))* -> pred_rel(v,op_cons(skf133(u,v),op_cons(skf133(u,v),op_nil)))*.
+310[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(skf88(u),op_nil)))* -> pred_rel(op_SC,op_cons(u,op_nil)) pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))).
+309[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(skf87(u),op_nil)))* -> pred_rel(op_SC,op_cons(u,op_nil)) pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))).
+311[0:Inp] sort_list(u) sort_list(v) sort_individual(w) sort_individual(x) || equal(v,u) equal(x,w) -> equal(op_cons(x,v),op_cons(w,u))*.
+322[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_overcross,op_cons(v,op_cons(u,op_nil))) pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+321[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_underlaps,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_undercross,op_cons(v,op_cons(u,op_nil))) pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+320[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_C,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_EC,op_cons(v,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))*.
+319[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_TP,op_cons(v,op_cons(u,op_nil))) pred_rel(op_IP,op_cons(v,op_cons(u,op_nil))).
+318[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_TO,op_cons(v,op_cons(u,op_nil))) pred_rel(op_IO,op_cons(v,op_cons(u,op_nil))).
+317[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_underlaps,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_TU,op_cons(v,op_cons(u,op_nil))) pred_rel(op_IU,op_cons(v,op_cons(u,op_nil))).
+315[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_C,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_boundary_connected,op_cons(v,op_cons(u,op_nil))) pred_rel(op_superposition,op_cons(v,op_cons(u,op_nil)))*.
+314[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_E,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_tangential_enclosure,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_internal_enclosure,op_cons(v,op_cons(u,op_nil))).
+323[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_ppart,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(v,op_nil))).
+316[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_IP,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_IPP,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_IP,op_cons(u,op_cons(v,op_nil))).
+312[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_L,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_proper_location,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_L,op_cons(u,op_cons(v,op_nil))).
+313[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_L,op_cons(w,op_cons(v,op_nil)))* -> equal(v,u)*.
+444[0:Res:143.0,401.3] sort_individual(u) sort_individual(op_now) sort_individual(op_a) ||  -> equal(op_now,u) pred_rel(op_SED,op_cons(op_now,op_cons(u,op_nil))) pred_rel(op_exxisting,op_cons(op_now,op_cons(skf99(u,op_now),op_nil)))*.
+459[0:Res:142.0,401.3] sort_individual(u) sort_individual(op_a) sort_individual(op_now) ||  -> equal(op_a,u) pred_rel(op_SED,op_cons(op_a,op_cons(u,op_nil))) pred_rel(op_exxisting,op_cons(op_a,op_cons(skf99(u,op_a),op_nil)))*.
+325[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_proper_enclosure,op_cons(u,op_cons(v,op_nil))) pred_rel(op_tangential_enclosure,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_proper_tangential_enclosure,op_cons(v,op_cons(u,op_nil))).
+324[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_SED,op_cons(u,op_cons(v,op_nil))) pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil))).
+327[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overcross,op_cons(u,op_cons(v,op_nil))) pred_rel(op_overcross,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_partialoverlap,op_cons(v,op_cons(u,op_nil)))*.
+326[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_undercross,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_undercross,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_partialunderlap,op_cons(v,op_cons(u,op_nil))).
+443[0:Res:143.0,404.4] sort_individual(u) sort_individual(op_now) sort_individual(op_a) || pred_rel(op_exxisting,op_cons(u,op_cons(skf99(u,op_now),op_nil)))* -> equal(op_now,u) pred_rel(op_SED,op_cons(op_now,op_cons(u,op_nil))).
+458[0:Res:142.0,404.4] sort_individual(u) sort_individual(op_a) sort_individual(op_now) || pred_rel(op_exxisting,op_cons(u,op_cons(skf99(u,op_a),op_nil)))* -> equal(op_a,u) pred_rel(op_SED,op_cons(op_a,op_cons(u,op_nil))).
+331[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_IP,op_cons(v,op_cons(u,op_nil))) pred_rel(op_C,op_cons(skf77(u,v),op_cons(v,op_nil)))*.
+329[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(op_z,op_cons(u,op_nil)))* -> pred_rel(op_constitutes,op_cons(skf116(v),op_cons(op_z,op_nil)))*.
+330[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(op_z,op_cons(u,op_nil)))* -> pred_rel(op_part,op_cons(skf116(v),op_cons(v,op_nil)))*.
+328[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> SkP1(x).
+334[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(skf77(u,v),op_cons(u,op_nil)))* -> pred_rel(op_IP,op_cons(v,op_cons(u,op_nil))).
+335[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_comp,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(w,op_cons(v,op_nil)))*.
+333[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_GED,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> SkP0(w,x).
+332[0:Inp] sort_individual(u) sort_individual(v) || SkP0(w,x)* pred_rel(x,op_cons(v,op_nil))* pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(w,op_cons(skf125(u,w),op_nil))*.
+377[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(skf76(v,u),op_cons(v,op_nil)))* -> pred_rel(op_comp,op_cons(v,op_cons(u,op_nil))) pred_rel(op_part,op_cons(skf76(v,u),op_cons(u,op_nil)))*.
+376[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(skf76(v,u),op_cons(u,op_nil)))* -> pred_rel(op_comp,op_cons(v,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(skf76(v,u),op_cons(v,op_nil)))*.
+340[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_exxisting,op_cons(v,op_cons(w,op_nil)))* -> pred_rel(op_SCD,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_exxisting,op_cons(v,op_cons(skf118(v),op_nil)))*.
+341[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_SCD,op_cons(v,op_cons(u,op_nil))) pred_rel(op_exxisting,op_cons(v,op_cons(w,op_nil)))* -> pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil)))*.
+339[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_exxisting,op_cons(v,op_cons(w,op_nil)))* pred_rel(op_constitutes,op_cons(u,op_cons(v,op_nil)))* -> pred_rel(op_SCD,op_cons(v,op_cons(u,op_nil))).
+336[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_constitutes,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(v,op_cons(w,op_nil)))* -> pred_rel(op_elementOf,op_cons(v,op_cons(w,op_nil))).
+374[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_IP,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_C,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_overlaps,op_cons(w,op_cons(u,op_nil)))*.
+369[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_C,op_cons(w,op_cons(v,op_nil)))* pred_rel(op_internal_enclosure,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_S,op_cons(w,op_cons(u,op_nil)))*.
+368[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_PL,op_cons(v,op_cons(u,op_nil)))*.
+367[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_TP,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_TPL,op_cons(v,op_cons(u,op_nil)))*.
+366[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_IP,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_IPL,op_cons(v,op_cons(u,op_nil)))*.
+365[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(v,op_cons(w,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))* -> pred_rel(op_WL,op_cons(v,op_cons(u,op_nil)))*.
+364[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(v,op_cons(w,op_nil)))* pred_rel(op_TP,op_cons(w,op_cons(u,op_nil)))* -> pred_rel(op_TWL,op_cons(v,op_cons(u,op_nil)))*.
+363[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(v,op_cons(w,op_nil)))* pred_rel(op_IP,op_cons(w,op_cons(u,op_nil)))* -> pred_rel(op_IWL,op_cons(v,op_cons(u,op_nil)))*.
+362[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(v,op_cons(w,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(w,op_nil)))* -> pred_rel(op_UL,op_cons(v,op_cons(u,op_nil)))*.
+361[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_P,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_WL,op_cons(w,op_cons(u,op_nil)))*.
+360[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_TP,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_TWL,op_cons(w,op_cons(u,op_nil)))*.
+359[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_IP,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_IWL,op_cons(w,op_cons(u,op_nil)))*.
+358[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_PL,op_cons(u,op_cons(w,op_nil)))*.
+357[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_TP,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_TPL,op_cons(u,op_cons(w,op_nil)))*.
+356[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_IP,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_IPL,op_cons(u,op_cons(w,op_nil)))*.
+344[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_L,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_EL,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_WL,op_cons(w,op_cons(u,op_nil)))*.
+379[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil)))*.
+378[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_part,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_part,op_cons(v,op_cons(w,op_nil)))* -> pred_rel(op_underlaps,op_cons(v,op_cons(u,op_nil)))*.
+375[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_C,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_C,op_cons(v,op_cons(u,op_nil)))*.
+373[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_IP,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_IP,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_IO,op_cons(v,op_cons(u,op_nil)))*.
+372[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_IP,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_IP,op_cons(v,op_cons(w,op_nil)))* -> pred_rel(op_IU,op_cons(v,op_cons(u,op_nil)))*.
+371[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_C,op_cons(w,op_cons(v,op_nil)))* pred_rel(op_E,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_C,op_cons(w,op_cons(u,op_nil)))*.
+370[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_E,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_E,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_superposition,op_cons(v,op_cons(u,op_nil)))*.
+355[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_P,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_PL,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_PL,op_cons(w,op_cons(u,op_nil)))*.
+354[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_P,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_IPL,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_IPL,op_cons(w,op_cons(u,op_nil)))*.
+353[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_P,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_TPL,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_TPL,op_cons(w,op_cons(u,op_nil)))*.
+352[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_P,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_WL,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_WL,op_cons(u,op_cons(v,op_nil)))*.
+351[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_IP,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_IWL,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_IWL,op_cons(u,op_cons(v,op_nil)))*.
+350[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_SED,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_exxisting,op_cons(v,op_cons(w,op_nil)))* -> pred_rel(op_exxisting,op_cons(u,op_cons(w,op_nil)))*.
+343[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_overlaps,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_memberOf,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_overlaps,op_cons(u,op_cons(v,op_nil)))*.
+380[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))*.
+349[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_SED,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_SED,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_SED,op_cons(w,op_cons(u,op_nil)))*.
+347[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_componentOf,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_componentOf,op_cons(w,op_cons(u,op_nil)))*.
+346[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_elementOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_elementOf,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_elementOf,op_cons(w,op_cons(u,op_nil)))*.
+345[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_EL,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_EL,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_EL,op_cons(w,op_cons(u,op_nil)))*.
+342[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_constitutes,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_constitutes,op_cons(w,op_cons(u,op_nil)))*.
+337[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_SCD,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_SCD,op_cons(w,op_cons(v,op_nil)))* -> pred_rel(op_SCD,op_cons(w,op_cons(u,op_nil)))*.
+348[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || SkP2(w,x) pred_rel(op_GED,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> .
+338[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || SkP2(w,x) pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> .
+383[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_GED,op_cons(op_fun(skf103(v,u),op_cons(u,op_nil)),op_cons(op_fun(skf102(v,u),op_cons(v,op_nil)),op_nil)))*.
+382[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_constitutes,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_GCD,op_cons(op_fun(skf124(v,u),op_cons(u,op_nil)),op_cons(op_fun(skf123(v,u),op_cons(v,op_nil)),op_nil)))*.
+385[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) -> equal(v,u) pred_rel(op_NTPP,op_cons(v,op_cons(u,op_nil))) pred_rel(op_EC,op_cons(skf81(u,v),op_cons(v,op_nil)))*.
+384[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) -> equal(v,u) pred_rel(op_NTPP,op_cons(v,op_cons(u,op_nil))) pred_rel(op_EC,op_cons(skf81(u,v),op_cons(u,op_nil)))*.
+387[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_comp,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(w,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))* -> .
+386[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_EC,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_EC,op_cons(w,op_cons(v,op_nil)))* pred_rel(op_NTPP,op_cons(v,op_cons(u,op_nil)))* -> .
+381[0:Inp] sort_individual(u) sort_individual(v) || SkP0(w,x)* pred_rel(x,op_cons(v,op_nil))* pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_exxisting,op_cons(skf125(u,w),op_cons(u,op_nil)))*.
+390[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_ppart,op_cons(v,op_cons(w,op_nil))) pred_rel(op_memberOf,op_cons(u,op_cons(w,op_nil)))* -> pred_rel(op_overlaps,op_cons(skf112(v,w),op_cons(v,op_nil)))*.
+391[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_ppart,op_cons(v,op_cons(w,op_nil))) pred_rel(op_memberOf,op_cons(u,op_cons(w,op_nil)))* -> pred_rel(op_memberOf,op_cons(skf112(v,w),op_cons(w,op_nil)))*.
+389[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_memberOf,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_overlaps,op_cons(v,op_cons(w,op_nil))) -> pred_rel(op_memberOf,op_cons(skf113(v,w),op_cons(w,op_nil)))*.
+396[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_underlaps,op_cons(w,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(v,op_cons(w,op_nil))) -> pred_rel(op_overlaps,op_cons(v,op_cons(skf70(u,w),op_nil)))*.
+395[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_underlaps,op_cons(w,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_overlaps,op_cons(v,op_cons(skf70(u,w),op_nil)))*.
+442[0:MRR:416.3,379.5] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_part,op_cons(v,op_cons(w,op_nil))) pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_part,op_cons(v,op_cons(skf71(u,w),op_nil)))*.
+388[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_memberOf,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_overlaps,op_cons(v,op_cons(w,op_nil))) -> pred_rel(op_overlaps,op_cons(v,op_cons(skf113(v,w),op_nil)))*.
+394[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_overlaps,op_cons(w,op_cons(u,op_nil))) pred_rel(op_part,op_cons(v,op_cons(skf71(u,w),op_nil)))* -> pred_rel(op_part,op_cons(v,op_cons(w,op_nil))).
+393[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_overlaps,op_cons(w,op_cons(u,op_nil))) pred_rel(op_part,op_cons(v,op_cons(skf71(u,w),op_nil)))* -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil))).
+392[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_GED,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> pred_rel(x,op_cons(skf101(x),op_nil))*.
+397[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_SC,op_cons(u,op_nil)) pred_rel(op_overlaps,op_cons(v,op_cons(skf87(u),op_nil))) pred_rel(op_overlaps,op_cons(v,op_cons(skf88(u),op_nil)))*.
+399[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_PO,op_cons(v,op_cons(u,op_nil))) pred_rel(op_part,op_cons(u,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+398[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_superposition,op_cons(v,op_cons(u,op_nil)))* -> pred_rel(op_proper_superposition,op_cons(v,op_cons(u,op_nil))) pred_rel(op_E,op_cons(u,op_cons(v,op_nil))) pred_rel(op_E,op_cons(v,op_cons(u,op_nil))).
+402[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_E,op_cons(v,op_cons(u,op_nil))) pred_rel(op_internal_enclosure,op_cons(v,op_cons(u,op_nil))) -> pred_rel(op_proper_internal_enclosure,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_E,op_cons(u,op_cons(v,op_nil))).
+401[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_exxisting,op_cons(v,op_cons(w,op_nil)))* -> equal(v,u) pred_rel(op_SED,op_cons(v,op_cons(u,op_nil))) pred_rel(op_exxisting,op_cons(v,op_cons(skf99(u,v),op_nil)))*.
+400[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_overlaps,op_cons(w,op_cons(v,op_nil)))* pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_memberOf,op_cons(w,op_cons(u,op_nil)))* -> equal(v,op_d).
+404[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_exxisting,op_cons(v,op_cons(w,op_nil)))* pred_rel(op_exxisting,op_cons(u,op_cons(skf99(u,v),op_nil)))* -> equal(v,u) pred_rel(op_SED,op_cons(v,op_cons(u,op_nil))).
+403[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_GED,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> pred_rel(op_exxisting,op_cons(skf101(x),op_cons(skf100(x),op_nil)))*.
+408[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_overlaps,op_cons(x,op_cons(w,op_nil)))* pred_rel(op_sum,op_cons(w,op_cons(v,op_cons(u,op_nil))))* -> pred_rel(op_overlaps,op_cons(x,op_cons(u,op_nil)))*.
+407[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_overlaps,op_cons(x,op_cons(v,op_nil)))* pred_rel(op_sum,op_cons(w,op_cons(v,op_cons(u,op_nil))))* -> pred_rel(op_overlaps,op_cons(x,op_cons(u,op_nil)))*.
+406[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_part,op_cons(x,op_cons(w,op_nil)))* pred_rel(op_prod,op_cons(w,op_cons(v,op_cons(u,op_nil))))* -> pred_rel(op_part,op_cons(x,op_cons(u,op_nil)))*.
+405[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_part,op_cons(x,op_cons(v,op_nil)))* pred_rel(op_prod,op_cons(w,op_cons(v,op_cons(u,op_nil))))* -> pred_rel(op_part,op_cons(x,op_cons(u,op_nil)))*.
+409[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* pred_rel(skf106(u),op_cons(w,op_cons(v,op_nil)))* -> pred_rel(skf106(u),op_cons(v,op_cons(w,op_nil)))*.
+414[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_overlaps,op_cons(skf73(v,w,u),op_cons(w,op_nil)))* pred_rel(op_overlaps,op_cons(skf73(v,w,u),op_cons(u,op_nil)))* -> pred_rel(op_sum,op_cons(w,op_cons(v,op_cons(u,op_nil)))).
+413[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_overlaps,op_cons(skf73(v,w,u),op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(skf73(v,w,u),op_cons(u,op_nil)))* -> pred_rel(op_sum,op_cons(w,op_cons(v,op_cons(u,op_nil)))).
+412[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_part,op_cons(skf74(v,w,u),op_cons(w,op_nil)))* pred_rel(op_part,op_cons(skf74(v,w,u),op_cons(u,op_nil)))* -> pred_rel(op_prod,op_cons(w,op_cons(v,op_cons(u,op_nil)))).
+411[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_part,op_cons(skf74(v,w,u),op_cons(v,op_nil)))* pred_rel(op_part,op_cons(skf74(v,w,u),op_cons(u,op_nil)))* -> pred_rel(op_prod,op_cons(w,op_cons(v,op_cons(u,op_nil)))).
+410[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) SkP1(x) ||  -> SkP2(w,x) pred_rel(x,op_cons(skf122(w,x),op_nil))* pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))*.
+415[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_underlaps,op_cons(w,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(v,op_cons(skf70(u,w),op_nil)))* -> pred_rel(op_overlaps,op_cons(v,op_cons(u,op_nil))) pred_rel(op_overlaps,op_cons(v,op_cons(w,op_nil))).
+422[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_EC,op_cons(w,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_EC,op_cons(w,op_cons(u,op_nil)))* -> equal(v,u) pred_rel(op_TPP,op_cons(v,op_cons(u,op_nil))).
+417[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil))) -> pred_rel(op_GED,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))*.
+421[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_part,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_L,op_cons(x,op_cons(w,op_nil)))* pred_rel(op_part,op_cons(x,op_cons(v,op_nil)))* -> pred_rel(op_GL,op_cons(v,op_cons(u,op_nil)))*.
+418[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_L,op_cons(x,op_cons(v,op_nil)))* pred_rel(op_EL,op_cons(x,op_cons(w,op_nil)))* -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+420[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_L,op_cons(x,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(x,op_cons(w,op_nil)))* -> pred_rel(op_part,op_cons(v,op_cons(u,op_nil)))*.
+419[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_L,op_cons(w,op_cons(u,op_nil)))* pred_rel(op_L,op_cons(x,op_cons(v,op_nil)))* pred_rel(op_C,op_cons(x,op_cons(w,op_nil)))* -> pred_rel(op_C,op_cons(v,op_cons(u,op_nil)))*.
+424[0:Inp] sort_individual(u) || SkP6(skf106(u)) SkP3(u,skf106(u)) SkP5(u,skf106(u)) SkP4(skf106(u),u) -> pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))* pred_rel(skf106(u),op_cons(skf108(u),op_cons(skf107(u),op_nil))).
+426[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_SC,op_cons(u,op_nil)) pred_rel(op_overlaps,op_cons(skf85(v,w,u),op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(skf85(v,w,u),op_cons(w,op_nil)))* -> pred_rel(op_C,op_cons(w,op_cons(v,op_nil))).
+425[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_SC,op_cons(u,op_nil)) pred_rel(op_overlaps,op_cons(skf85(v,w,u),op_cons(u,op_nil)))* pred_rel(op_overlaps,op_cons(skf85(v,w,u),op_cons(v,op_nil)))* -> pred_rel(op_C,op_cons(w,op_cons(v,op_nil))).
+423[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) SkP1(x) ||  -> SkP2(w,x) pred_rel(op_exxisting,op_cons(skf122(w,x),op_cons(skf121(w,x),op_nil)))* pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))*.
+428[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_overlaps,op_cons(x,op_cons(u,op_nil)))* pred_rel(op_sum,op_cons(w,op_cons(v,op_cons(u,op_nil))))* -> pred_rel(op_overlaps,op_cons(x,op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(x,op_cons(w,op_nil)))*.
+427[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(op_part,op_cons(x,op_cons(u,op_nil)))* pred_rel(op_prod,op_cons(w,op_cons(v,op_cons(u,op_nil))))* -> pred_rel(op_part,op_cons(x,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(x,op_cons(w,op_nil)))*.
+429[0:Inp] sort_individual(u) || SkP6(skf106(u)) SkP5(u,skf106(u)) SkP3(u,skf106(u)) SkP4(skf106(u),u) pred_rel(skf106(u),op_cons(skf107(u),op_cons(skf108(u),op_nil))) -> pred_rel(op_U,op_cons(op_fun(skf106(u),op_cons(u,op_cons(u,op_nil))),op_nil))*.
+454[0:Res:143.0,435.6] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(op_a) sort_individual(op_now) || SkP0(w,x) pred_rel(x,op_cons(op_now,op_nil)) -> SkP2(w,x) pred_rel(op_GED,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))*.
+469[0:Res:142.0,435.6] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(op_now) sort_individual(op_a) || SkP0(w,x) pred_rel(x,op_cons(op_a,op_nil)) -> SkP2(w,x) pred_rel(op_GED,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))*.
+453[0:Res:143.0,436.8] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(op_a) sort_individual(op_now) || pred_rel(x,op_cons(op_now,op_nil)) pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> pred_rel(w,op_cons(skf119(op_now,w),op_nil))*.
+468[0:Res:142.0,436.8] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(op_now) sort_individual(op_a) || pred_rel(x,op_cons(op_a,op_nil)) pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> pred_rel(w,op_cons(skf119(op_a,w),op_nil))*.
+431[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) ||  -> pred_rel(op_sum,op_cons(w,op_cons(v,op_cons(u,op_nil)))) pred_rel(op_overlaps,op_cons(skf73(v,w,u),op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(skf73(v,w,u),op_cons(w,op_nil)))* pred_rel(op_overlaps,op_cons(skf73(v,w,u),op_cons(u,op_nil)))*.
+430[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) ||  -> pred_rel(op_prod,op_cons(w,op_cons(v,op_cons(u,op_nil)))) pred_rel(op_part,op_cons(skf74(v,w,u),op_cons(v,op_nil)))* pred_rel(op_part,op_cons(skf74(v,w,u),op_cons(w,op_nil)))* pred_rel(op_part,op_cons(skf74(v,w,u),op_cons(u,op_nil)))*.
+432[0:Inp] sort_individual(u) sort_individual(v) || SkP5(w,x)* pred_rel(x,op_cons(u,op_cons(u,op_nil)))* pred_rel(x,op_cons(v,op_cons(v,op_nil)))* pred_rel(op_part,op_cons(u,op_cons(w,op_nil)))* pred_rel(op_part,op_cons(v,op_cons(w,op_nil)))* -> pred_rel(x,op_cons(v,op_cons(u,op_nil)))*.
+452[0:Res:143.0,438.8] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(op_a) sort_individual(op_now) || pred_rel(x,op_cons(op_now,op_nil)) pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> pred_rel(op_constitutes,op_cons(skf119(op_now,w),op_cons(op_now,op_nil))).
+467[0:Res:142.0,438.8] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(op_now) sort_individual(op_a) || pred_rel(x,op_cons(op_a,op_nil)) pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> pred_rel(op_constitutes,op_cons(skf119(op_a,w),op_cons(op_a,op_nil))).
+434[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) || pred_rel(op_SC,op_cons(u,op_nil)) -> pred_rel(op_C,op_cons(w,op_cons(v,op_nil))) pred_rel(op_overlaps,op_cons(skf85(v,w,u),op_cons(v,op_nil)))* pred_rel(op_overlaps,op_cons(skf85(v,w,u),op_cons(w,op_nil)))* pred_rel(op_overlaps,op_cons(skf85(v,w,u),op_cons(u,op_nil)))*.
+433[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) SkP1(x) sort_individual(y) || pred_rel(w,op_cons(y,op_nil)) pred_rel(op_constitutes,op_cons(y,op_cons(skf122(w,x),op_nil)))* -> SkP2(w,x) pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))*.
+435[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(y) sort_individual(z) || SkP0(w,x) pred_rel(x,op_cons(z,op_nil))* pred_rel(op_exxisting,op_cons(z,op_cons(y,op_nil)))* -> SkP2(w,x) pred_rel(op_GED,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))*.
+437[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || pred_rel(x,op_cons(u,op_nil)) pred_rel(w,op_cons(v,op_nil)) pred_rel(op_part,op_cons(v,op_cons(u,op_nil))) pred_rel(op_GED,op_cons(op_fun(x,op_cons(u,op_nil)),op_cons(op_fun(w,op_cons(v,op_nil)),op_nil)))* -> pred_rel(op_componentOf,op_cons(v,op_cons(u,op_nil))).
+436[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(y) sort_individual(z) || pred_rel(x,op_cons(z,op_nil))* pred_rel(op_exxisting,op_cons(z,op_cons(y,op_nil)))* pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> pred_rel(w,op_cons(skf119(z,w),op_nil))*.
+438[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(y) sort_individual(z) || pred_rel(x,op_cons(z,op_nil))* pred_rel(op_exxisting,op_cons(z,op_cons(y,op_nil)))* pred_rel(op_GCD,op_cons(op_fun(x,op_cons(v,op_nil)),op_cons(op_fun(w,op_cons(u,op_nil)),op_nil)))* -> pred_rel(op_constitutes,op_cons(skf119(z,w),op_cons(z,op_nil)))*.
+439[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) || equal(op_R,op_F) pred_rel(op_memberOf,op_cons(x,op_cons(w,op_nil)))* pred_rel(op_memberOf,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_U,op_cons(op_fun(op_R,op_cons(u,op_cons(u,op_nil))),op_nil))* pred_rel(op_U,op_cons(op_fun(op_F,op_cons(w,op_cons(w,op_nil))),op_nil))* -> equal(u,w)*.
+441[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(y) sort_individual(z) || pred_rel(op_GED,op_cons(op_fun(z,op_cons(w,op_nil)),op_cons(op_fun(y,op_cons(v,op_nil)),op_nil)))* pred_rel(op_GED,op_cons(op_fun(y,op_cons(v,op_nil)),op_cons(op_fun(x,op_cons(u,op_nil)),op_nil)))* -> SkP2(x,z) pred_rel(op_GED,op_cons(op_fun(z,op_cons(w,op_nil)),op_cons(op_fun(x,op_cons(u,op_nil)),op_nil)))*.
+440[0:Inp] sort_individual(u) sort_individual(v) sort_individual(w) sort_individual(x) sort_individual(y) sort_individual(z) || pred_rel(op_GCD,op_cons(op_fun(z,op_cons(w,op_nil)),op_cons(op_fun(y,op_cons(v,op_nil)),op_nil)))* pred_rel(op_GCD,op_cons(op_fun(y,op_cons(v,op_nil)),op_cons(op_fun(x,op_cons(u,op_nil)),op_nil)))* -> SkP2(x,z) pred_rel(op_GCD,op_cons(op_fun(z,op_cons(w,op_nil)),op_cons(op_fun(x,op_cons(u,op_nil)),op_nil)))*.
+SPASS V 3.9 
+SPASS beiseite: Proof found.
+Problem: /tmp/./_Ax_0252-683.tptp 
+SPASS derived 30 clauses, backtracked 0 clauses, performed 0 splits and kept 441 clauses.
+SPASS allocated 109019 KBytes.
+SPASS spent	0:00:00.29 on the problem.
+		0:00:00.02 for the input.
+		0:00:00.19 for the FLOTTER CNF translation.
+		0:00:00.00 for inferences.
+		0:00:00.00 for the backtracking.
+		0:00:00.05 for the reduction.
+
+
+Here is a proof with depth 1, length 7 :
+37[0:Inp] ||  -> sort_individual(op_a)*.
+51[0:Inp] ||  -> sort_individual(op_now)*.
+142[0:Inp] ||  -> pred_rel(op_exxisting,op_cons(op_a,op_cons(op_now,op_nil)))*.
+143[0:Inp] ||  -> pred_rel(op_exxisting,op_cons(op_now,op_cons(op_a,op_nil)))*.
+239[0:Inp] sort_individual(u) sort_individual(v) || pred_rel(op_exxisting,op_cons(v,op_cons(u,op_nil)))* pred_rel(op_exxisting,op_cons(u,op_cons(v,op_nil)))* -> .
+449[0:Res:143.0,239.2] sort_individual(op_a) sort_individual(op_now) || pred_rel(op_exxisting,op_cons(op_a,op_cons(op_now,op_nil)))* -> .
+473[0:MRR:449.0,449.1,449.2,37.0,51.0,142.0] ||  -> .
+Formulae used in the proof : sign_op_a sign_op_now ax_ax_0 ax_PRIME_MINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUSMINUS_mereology_PRIME sign_op_z
+
+--------------------------SPASS-STOP------------------------------
