@@ -1,6 +1,0 @@
-fof(axiom10, axiom, (! [X] :  (el(X,X)))).
-fof(axiom20, axiom, (! [X] : ! [Y] : ! [Z] :  (((el(X,Y) & el(Y,Z)) => el(X,Z))))).
-fof(axiom30, axiom, (! [X] : ! [Y] :  ((part(X,Y) => el(X,Y))))).
-fof(axiom40, axiom, (! [X] :  (part(X,X)))).
-fof(axiom50, axiom, (! [X] : ! [Y] :  (((part(X,Y) & part(Y,X)) => X=Y)))).
-fof(axiom60, axiom, (! [X] : ! [Y] : ! [Z] :  (((part(X,Y) & part(Y,Z)) => part(X,Z))))).

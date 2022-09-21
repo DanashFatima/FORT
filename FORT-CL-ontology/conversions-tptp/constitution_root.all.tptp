@@ -1,9 +1,0 @@
-fof(axiom10, axiom, (! [X] :  (~(constitutes(X,X))))).
-fof(axiom20, axiom, (! [X] : ! [Y] :  ((constitutes(X,Y) => ~(constitutes(Y,X)))))).
-fof(axiom30, axiom, (! [X] : ! [Y] : ! [Z] :  (((constitutes(X,Y) & constitutes(Y,Z)) => constitutes(X,Z))))).
-fof(axiom40, axiom, (! [X] : ! [Y] :  ((constitutes(X,Y) => (? [T] :  ((existing(X,T) & existing(Y,T)))))))).
-fof(axiom50, axiom, (! [X] : ! [Y] :  (((constitutes(X,Y) & part('Z',Y)) => (? [W] :  ((part(W,X) & constitutes(W,'Z')))))))).
-fof(axiom70, axiom, (! [X] :  (part(X,X)))).
-fof(axiom80, axiom, (! [X] : ! [Y] :  (((part(X,Y) & part(Y,X)) => X=Y)))).
-fof(axiom90, axiom, (! [X] : ! [Y] : ! [Z] :  (((part(X,Y) & part(Y,Z)) => part(X,Z))))).
-fof(axiom60, axiom, (! [X] : ! [T] :  ((existing(X,T) => ~(existing(T,X)))))).

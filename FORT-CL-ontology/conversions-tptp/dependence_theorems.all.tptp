@@ -1,5 +1,0 @@
-fof(axiom10, axiom, (! [X] : ! [Y] : ! [Z] :  (((sed(X,Y) & sed(Y,Z)) => sed(X,Z))))).
-fof(axiom20, axiom, (! [PSI] : ! [PHI] : ! [RHO] :  (((ged(PSI,PHI) & ged(PHI,RHO) & ~(PSI=RHO)) => ged(PSI,RHO))))).
-fof(axiom30, axiom, (! [X] : ! [Y] :  ((sed(X,Y) <=> ((! [T] :  ((existing(X,T) => existing(Y,T)))) & ~(X=Y) & (? [T] :  (existing(X,T)))))))).
-fof(axiom40, axiom, (! [X] : ! [Y] :  ((ged(psi(X),phi(Y)) <=> ((! [X] : ! [T] :  (((psi(X) & existing(X,T)) => (? [Y] :  ((phi(Y) & existing(Y,T))))))) & (? [X] : ? [T] :  ((psi(X) & existing(X,T)))) & ~(? [Z] :  ((psi(Z) & phi(Z))))))))).
-fof(axiom50, axiom, (! [X] : ! [T] :  ((existing(X,T) => ~(existing(T,X)))))).
