@@ -1,0 +1,73 @@
+For location; FILE COMPLETE
+
+From colore > location_varzi repository; we used the following files:
+1- colore_varzi_location_root = the 2 basic axioms of L (La1 and La2) with an axiom of region (R+1)
+2- colore_varzi_location_definitions = colore_varzi_location_root + partial location PL (Ld1) +whole location WL (Ld4)
+										+ GL (generic location) + UL + proper-location + TPL (Ld2) + IPL (Ld3)
+									-----note that: Ld5/Ld6/La3
+3- colore_varzi_location_mt = colore_varzi_location_root + axioms La4 and La5 that make a link to parthood and connection
+4- colore_varzi_location_L = colore_varzi_location_mt + colore_varzi_location_definitions + Lt7 + Lt8 + Lt9
+
+
+======> Modification points:
+MISSING axioms/definitions/theorems with respect to my theory i.e. what I would add/remove:
+In 1) remove R+1 
+	===> colore_varzi_location_root = La1 + La2
+In 2) removed the  region axiom  (-- also, I can remove: GL, UL, proper location -- but I did not)
+	  add Ld5, Ld6, La3 
+	  add the importing of mereotopology_definitions which is the only file that contains IP and TP definitions so its a MUST
+			note that; even in Varzi's book 1999 page 83, it is mentioned that "with the help of topology (or mereotopology which
+						satisfies more our needs) one can assert the following definitions"
+	===> colore_varzi_location_definitions = colore_varzi_location_root + LD1 + Ld2 + Ld3 + Ld4 + Ld5 + Ld6 + La3
+In 3) add importing of m_mereology (the 3 axioms of P) and connection (the 3 basic axioms of C) so that theorems can be proved later
+In 4) add Lt4, Lt5, Lt6, Lt10, Lt11, Lt12, Lt13, Lt14, Lt15
+	===> colore_varzi_location_L = colore_varzi_location_mt + colore_varzi_location_definitions + Lt7 + Lt8 + Lt9 
+									+ Lt4, Lt5, Lt6, Lt10, Lt11, Lt13, Lt14, Lt15
+==> FILE COMPLETE
+
+
+
+(∀x,y)L(x,y) → L(y,y) (La1)
+(∀x,y, z)(L(x,y)∧L(x, z) → y = z) (La2)
+(∀x)R(x) → L(x,x) (R+1)
+
+(∀x,y, z,w)(L(x,y)∧L(z,w)∧L(y,w) → y = w) (Lt1)
+(∀x,y)(L(x,y)∧L(y,x) → x = y) (Lt2)
+(∀x,y, z)(L(x,y)∧L(y, z) → L(x, z)) (Lt3)
+
+(∀x,y)PL(x,y) =df ∃z(P(z,x)∧L(z,y)) (Ld1)
+(∀x,y)TPL(x,y) =df ∃z(TP(z,x)∧L(z,y)) (Ld2)
+(∀x,y)IPL(x,y) =df ∃z(IP(z,x)∧L(z,y)) (Ld3)
+(∀x,y)WL(x,y) =df ∃z(P(z,y)∧L(x, z)) (Ld4)
+(∀x,y)TWL(x,y) =df ∃z(TP(z,y)∧L(x, z)) (Ld5)
+(∀x,y)IWL(x,y) =df ∃z(IP(z,y)∧L(x, z)) (Ld6)
+(∀x,y)L(x,y) → PL(x,y)∧WL(x,y)) (La3)
+
+(∀x,y, z,w)P(x,y)∧L(x, z)∧L(y,w) → P(z,w) (La4)
+(∀x,y, z,w)C(x,y)∧L(x, z)∧L(y,w) → C(z,w) (La5)
+
+%%%%%these are the axioms 7.16 7.17 7.18 in Varzi's theory 
+--reasoning about the location of the mereological properties x of y with respect to the location z of y
+(∀x,y, z)P(x,y)∧L(y, z) → WL(x, z) (Lt4)
+(∀x,y, z)TP(x,y)∧L(y, z) → TWL(x, z) (Lt5)
+(∀x,y, z)IP(x,y)∧L(y, z) → IWL(x, z) (Lt6)
+
+%%%%%these are the axioms L5 L6 L7 in Varzi's theory  
+--reasoning about the location of an entity x with respect to the mereotopological properties z of its location y
+(∀x,y, z)L(x,y)∧P(z,y) → PL(x, z) (Lt7)
+(∀x,y, z)L(x,y)∧IP(z,y) → IPL(x, z) (Lt8)
+(∀x,y, z)L(x,y)∧TP(z,y) → TPL(x, z) (Lt9)
+
+%%%%%these are the axioms 7.19 7.20 7.21 in Varzi's theory
+--reasoning about the location of entity x with respect to the mereotopological properties z of its location y
+(∀x,y, z)PL(x,y)∧P(z,y) → PL(x, z) (Lt10)
+(∀x,y, z)IPL(x,y)∧P(z,y) → IPL(x, z) (Lt11)
+(∀x,y, z)TPL(x,y)∧P(z,y) → TPL(x, z) (Lt12)
+
+%%%%%these are the axioms 7.22 7.23 7.24 in Varzi's theory
+--reasoning about the location of the mereotopological properties z of an entity x with respect to its location y
+(∀x,y, z)WL(x,y)∧P(z,x) → WL(z, y) (Lt13)
+(∀x,y, z)IWL(x,y)∧IP(z,x) → IWL(z, y) (Lt14)
+(∀x,y, z)TWL(x,y)∧TP(z,x) → TWL(z, y) (***) -----------not true, depending on the position of the tangential part z of x, there are some positions where z will not be TWL in y
+
+(∀x,y, z)PL(x,y)∧P(x, z) → PL(z,y) (Lt15)

@@ -1,0 +1,36 @@
+For mereotopology; FILE COMPLETE
+
+From colore > combined_mereotopology repository; we used the following files:
+- colore_connection = the 2 basic axioms of C (Ca1 and Ca2)
+- colore_combined_mereotopology_mt = m_mereology + connection + the bridging axiom Ca3
+- colore_combined_mereotopology_cem_mt = colore_combined_mereotopology_mt + cem_mereology
+- mereotopology_definitions = colore_mereology_definitions + colore_combined_mereotopology_mt 
+								+ Disconnected (Cd10) + external connected (Cd1) + TPP (Cd5) + non TPP (Cd11)
+								+ IP (Cd3) + TP (Cd2) + IO (Cd6) + TO (Cd7) + IU (Cd8) + TU (Cd9) + IPP (Cd4) + SC
+								+ Enclosure + superposition + proper superposition + boundary connected + internal enclosure
+								+ proper internal enclosure + tangential enclosure + proper tangential enclosure
+	%%%%% note: all these definitions are introduced in mt using m_mereology (no need for cem!!)
+
+======> Modification points:
+	Removed: proper-overlap (added it to the mereology definitions file) 
+==> FILE COMPLETE
+
+
+(∀x,y)C(x,x) (Ca1)
+(∀x,y)(C(x,y) → C(y,x)) (Ca2)
+(∀x,y)P(x,y) → ∀z(C(z,x) → C(z,y)) (Ca3)
+
+(∀x,y)EC(x,y) =df C(x,y)∧ ¬O(x,y) (Cd1)
+(∀x,y)TP(x,y) =df P(x,y)∧∃z(EC(z,x)∧EC(z,y)) (Cd2)
+(∀x,y)IP(x,y) =df P(x,y)∧ ¬TP(x,y) (Cd3)
+(∀x,y)IPP(x,y) =df PP(x,y)∧∀z(C(z,x) → O(z,y)) (Cd4)
+(∀x,y)TPP(x,y) =df PP(x,y)∧ ¬IPP(x,y) (Cd5)
+(∀x,y)IO(x,y) =df ∃z(IP(z,x)∧IP(z,y)) (Cd6)
+(∀x,y)TO(x,y) =df O(x,y)∧ ¬IO(x,y) (Cd7)
+(∀x,y)IU(x,y) =df ∃z(IP(x, z)∧IP(y, z)) (Cd8)
+(∀x,y)TU(x,y) =df U(x,y)∧ ¬IU(x,y) (Cd9)
+(∀x,y)DC(x,y) =df ¬C(x,y) (Cd10)
+(∀x,y)NTPP(x,y) =df P(x,y)∧ ¬EQ(x,y) ∧ ¬ ∃z(EC(z,x)∧EC(z,y)) (Cd11)
+
+NOTE: the definitions of enclosure, which in turn account for all the definitions of superposition are essential 
+to allow for additional definitions concerning the superposition of two entities in the EL micro-theory
