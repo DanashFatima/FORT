@@ -1,7 +1,0 @@
-formulas(sos).
-(all x all y all z  ((SED(x,y) & SED(y,z)) -> SED(x,z))).
-(all PSI all PHI all RHO  ((GED(PSI,PHI) & GED(PHI,RHO) & -(=(PSI,RHO))) -> GED(PSI,RHO))).
-(all x all y  (SED(x,y) <-> ((all t  (existing(x,t) -> existing(y,t))) & -(=(x,y)) & (exists t  existing(x,t))))).
-(all x all y  (GED(PSI(x),PHI(y)) <-> ((all x all t  ((PSI(x) & existing(x,t)) -> (exists y  (PHI(y) & existing(y,t))))) & (exists x exists t  (PSI(x) & existing(x,t))) & -(exists z  (PSI(z) & PHI(z)))))).
-(all x all t  (existing(x,t) -> -(existing(t,x)))).
-end_of_list.
