@@ -19,6 +19,8 @@
 
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/colore/location_varzi/location_L.clif )
 
+(cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/existing.clif )
+
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/dependence_definitions.clif )
 (cl-imports https://raw.githubusercontent.com/DanashFatima/FORT/main/FORT-CL-ontology/dependence_theorems.clif )
 
