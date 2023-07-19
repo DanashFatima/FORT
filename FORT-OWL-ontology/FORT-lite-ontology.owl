@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#"
+     xml:base="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ComponentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Connected -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Connected">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Constitutes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Constitutes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ElementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ElementOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#SED"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-entityLocation"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Equal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Equal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ExistsAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ExistsAt">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#SED"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ExistsAt"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ExternallyConnected -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ExternallyConnected">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Connected"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negOverlaps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternalPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternalPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentialPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternallyPartiallyLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternallyPartiallyLocatedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartiallyLocatedAt"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternallyPartiallyLocatedAt"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternalPartOf"/>
+            </rdf:Description>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternalPartOf"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternallyWhollyLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternallyWhollyLocatedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#WhollyLocatedAt"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternalPartOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternallyWhollyLocatedAt"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#InternalPartOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartiallyLocatedAt"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#WhollyLocatedAt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overcross -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overcross">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-memberOf-"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-overlaps"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negOverlaps"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Underlaps"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartiallyLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartiallyLocatedAt">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartiallyLocatedAt"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartiallyLocatedAt"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperOverlap -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperOverlap">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overcross"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overcross"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-constitutes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-constitutes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-entityLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-entityLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-memberOf- -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-memberOf-"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-overlaps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-overlaps"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-partOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#SED -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#SED">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentialPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentialPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentiallyPartiallyLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentiallyPartiallyLocatedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartiallyLocatedAt"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentialPartOf"/>
+            </rdf:Description>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentiallyPartiallyLocatedAt"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentialPartOf"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentiallyWhollyLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentiallyWhollyLocatedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#WhollyLocatedAt"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#TangentialPartOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Undercross -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Undercross">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Underlaps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Underlaps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Underlaps">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#WhollyLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#WhollyLocatedAt">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#WhollyLocatedAt"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negEqual -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negEqual">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#SED"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negMemberOf">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperPartOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperOverlap"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#ProperPartOf"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negOverlaps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negOverlaps"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#properExtension -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#properExtension">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#negPartOf"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#properUnderlap -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#properUnderlap">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Undercross"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Underlaps"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Undercross"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-EntityLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-EntityLocation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-entityLocation"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-constitutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-constitutes">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Constitutes"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-constitutes"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-memberOf- -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-memberOf-">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-memberOf-"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-overlaps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-overlaps">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-overlaps"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-partOf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-partOf">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-partOf"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Constitutes"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-constitutes"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Constitutes"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-constitutes"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-EntityLocation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#EntityLocation"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-entityLocation"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-overlaps"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#Overlaps"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-overlaps"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-partOf"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-partOf"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf"/>
+            </rdf:Description>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#C-memberOf-"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#MemberOf"/>
+            </rdf:Description>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#R-memberOf-"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConditionalReflexive_LocatedAt</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#LocatedAt"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#y"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antisymmetric_PartOf</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#PartOf"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#y"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/danashf/ontologies/2022/11/untitled-ontology-73#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
